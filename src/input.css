@@ -23,7 +23,7 @@
 
 @layer components{
     body{
-        @apply mx-15;
+        @apply mx-1;
     }
 
     .btn{
@@ -35,6 +35,9 @@
 
     .cards{
         @apply border border-primary
-        px-3 py-3
+        px-3 py-3 rounded-2xl ;
     }
+
+    
+    
 }
