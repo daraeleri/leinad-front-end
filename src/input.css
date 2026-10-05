@@ -34,9 +34,10 @@
     }
 
     .cards{
-        @apply border border-primary
+        @apply border border-gray-200 border-t-4 border-t-secondary
         px-3 py-3 rounded-2xl ;
     }
+
 
     
     
