@@ -6,7 +6,12 @@
 
     --color-text-500:#ffffff;
     --color-text-muted-400:#a3a3a3;
-    --color-text:#fff;
+
+    /* text orange */
+    --color-text:#F97316;
+
+    /* text green */
+    --color-text-secondary:#0B9268;
 
     --spacing-18:4.5rem;
     --spacing-30:7.5rem;
@@ -26,5 +31,10 @@
              mt-2 p-1 
              text-text-500 rounded-btn
              cursor-pointer
+    }
+
+    .cards{
+        @apply border border-primary
+        px-3 py-3
     }
 }
