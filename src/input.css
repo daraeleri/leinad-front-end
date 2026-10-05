@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@theme{
+    --color-primary:#F97316;
+    --color-secondary:#10B981;
+
+    --color-text-500:#ffffff;
+    --color-text-muted-400:#a3a3a3;
+    --color-text:#fff;
+
+    --spacing-18:4.5rem;
+    --spacing-30:7.5rem;
+
+    --radius-btn:0.5rem;
+    --radius-pill: 2000px;
+
+}
+
+@layer components{
+    body{
+        @apply mx-15;
+    }
+
+    .btn{
+        @apply bg-primary ml-47
+             mt-2 p-1 
+             text-text-500 rounded-btn
+             cursor-pointer
+    }
+}
