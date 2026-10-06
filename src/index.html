@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=x, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./assets/css/dist/output.css" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -19,7 +19,7 @@
                 <img src="./assets/images/leinad_logo.png" alt="" class="h-10 w-44">
 
 
-                <ul class="flex gap-8 text-center ml-45 mt-3">
+                <ul class="flex gap-8 text-center ml-45 mt-3 text-white">
                     <li>LEINAD ERP</li>
                     <li>LEINAD CONNECT</li>
                     <li>FNE</li>
@@ -46,7 +46,9 @@
 
     <!-- hero section -->
 
-    <section>
+    <section class="
+        relative min-h-screen overflow-hidden bg-black text-white
+    bg-[radial-gradient(circle_at_15%_20%,rgba(249,115,22,0.35),transparent_40%),radial-gradient(circle_at_85%_80%,rgba(16,185,129,0.30),transparent_40%)]">
         <div class="flex mx-6 relative min-h-162.5 overflow-hidden">
             <div class="text-nowrap relative z-10 px-12">
                 <h1 class="mt-53 text-3xl font-semibold ">La Gestion de Votre Entreprise.</h1>
@@ -56,12 +58,12 @@
 
             <div>
                 <span class="absolute bg-cover bg-center
-                 bg-[url('../../images/ngIm.jpeg')]"></span>
+                 bg-[url('../../images/bg.png')]"></span>
 
                 <span class="absolute inset-0"></span>
 
                 <span>
-                    <img class="absolute bottom-0 right-0 z-10 h-[90%] w-auto" src="./assets/images/bgIm.jpeg" alt="">
+                    <img class="absolute bottom-0 right-0 z-10 h-[90%] w-auto" src="./assets/images/bg.png" alt="">
                 </span>
             </div>
         </div>
@@ -76,7 +78,7 @@
                     <div class="flex gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-search preview-icon">
+                            class="lucide lucide-search text-black preview-icon">
                             <path d="m21 21-4.34-4.34" />
                             <circle cx="11" cy="11" r="8" />
                         </svg>
@@ -87,7 +89,7 @@
                         text-lg mt-2">
                         LEINARD ERP
                     </h3>
-                    <p>Gerez toute votre entreprise avec une seule <br> solution</p>
+                    <p class="text-black">Gerez toute votre entreprise avec une seule <br> solution</p>
                     <p class="text-primary font-semibold">Decouvrir LEINAD ERP</p>
                 </span>
             </div>
@@ -100,7 +102,8 @@
 
                     <div class="flex gap-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big 
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="lucide text-black lucide-circle-check-big 
                             preview-icon">
                             <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                             <path d="m9 11 3 3L22 4" />
@@ -113,7 +116,7 @@
                         font-bold text-lg mt-3">
                         LEINARD CONNECT
                     </h3>
-                    <p>Gardez votre logiciel. Connectez-le a la FNE</p>
+                    <p class="text-black">Gardez votre logiciel. Connectez-le a la FNE</p>
                     <p class="text-secondary 
                         font-semibold mt-4">
                         Verifier la comptabilite
@@ -509,8 +512,8 @@
 
     <!-- LEINAD CONNECT -->
 
-    <section>
-        <div class="text-center mt-24">
+    <section class="mx-9">
+        <div class="mt-24">
             <p class="text-4xl text-secondary
                  font-bold">
                 LEINARD
@@ -521,8 +524,257 @@
                 Gardez votre logiciel. Connectez-le à la FNE.
             </p>
         </div>
+
+        <div class="font-bold">
+            <p class="text-text-muted-400">
+                Pas besoin de le remplacer ni de changer vos habitudes : <br>LEINAD fait le
+                pont entre votre outil et la plateforme de la DGI.
+            </p>
+
+            <p class="text-text-muted-700">
+                Mise en conformité rapide, selon votre système.
+            </p>
+        </div>
+
+        <div class="flex items-start gap-10">
+
+            <div class="border border-secondary 
+            w-fit 
+            rounded-2xl mt-6 p-4">
+                <span class="font-bold text-2xl">
+                    Comment ça se passe
+                </span>
+
+                <div class="flex items-center gap-8">
+
+                    <div class="w-12 h-12 shrink-0 ">
+                        <span class="number-btn">1</span>
+                    </div>
+
+                    <div>
+                        <p class="font-bold mt-2">Audit gratuit de votre system</p>
+                        <p>
+                            30 minutes, par téléphone ou sur place : on regarde votre <br>logiciel et on vous dit
+                            comment il se
+                            branche.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex items-center gap-8">
+
+                    <div class="w-12 h-12 shrink-0 ">
+                        <span class="number-btn">2</span>
+                    </div>
+
+                    <div>
+                        <p class="font-bold mt-2">Installation du connecteur</p>
+                        <p>
+                            Nos techniciens relient votre outil à la FNE et testent avec <br> vous : vente, avoir,
+                            bordereau.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="flex items-center gap-8">
+
+                    <div class="w-12 h-12 shrink-0 ">
+                        <span class="number-btn">3</span>
+                    </div>
+
+                    <div>
+                        <p class="font-bold mt-2">Vous êtes conforme</p>
+                        <p>
+                            Vos factures sortent avec le sticker officiel, le QR code et <br> la numérotation sécurisée.
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <button class="bg-secondary w-96 mt-6
+                rounded-btn p-2 mx-20
+                text-white font-semibold text-lg">
+                    Verifier la comptabilite
+                </button>
+            </div>
+
+
+            <div class="mt-2">
+                <div class="bg-primary w-150 
+                     p-3 rounded-2xl grid grid-cols-5
+                     items-center px-5 py-4
+                    origin-center -rotate-2 ... gap-9">
+                    <span>
+                        SAGE 100
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                    
+                    <span>
+                        LEINAD
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+
+                    <span>
+                        FNE
+                    </span>
+                </div>
+
+                <div class="bg-primary w-150 
+                    mt-5 p-3 rounded-2xl grid grid-cols-5
+                    origin-center -rotate-2 ... gap-9 text-nowrap">
+                    <span>
+                        OMEGA POS
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+
+                    <span>
+                        LEINAD
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+
+                    <span>
+                        FNE
+                    </span>
+                </div>
+
+                <div class="bg-primary w-150 
+                    mt-8 p-3 rounded-2xl grid grid-cols-5
+                    origin-center -rotate-5 ... gap-9 text-nowrap">
+                    <span>
+                        VOTRE ERP
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+
+                    <span>
+                        LEINAD
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+
+                    <span>
+                        FNE
+                    </span>
+                </div>
+
+                <div class="bg-primary w-150 
+                    mt-10 p-3 rounded-2xl grid grid-cols-5
+                    origin-center -rotate-3 ... gap-19 text-nowrap">
+                    <span>
+                        VOTRE CAISSE
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+
+                    <span>
+                        LEINAD
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+
+                    <span>
+                        FNE
+                    </span>
+                </div>
+
+                <div class="bg-primary mt-10 w-150 
+                     p-3 rounded-2xl grid grid-cols-5
+                    origin-center rotate-2 ... gap-25 text-nowrap">
+                    <span>
+                        LOGICIEL METIER
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+
+                    <span>
+                        LEINAD
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
+                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
+                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                         <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                    <span>
+                        FNE
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-8">
+            <span class="bg-secondary rounded p-3 text-white">Déjà en production : Omega POS interfacé avec la FNE par LEINAD</span>
+        </div>
+
     </section>
     <!-- LEINAD CONNECT -->
+
+
+    <!-- LE FNE SANS STRESS -->
+
+        <section>
+            <div class="text-center mt-25">
+                <p class="text-5xl font-bold">La FNE, sans stress.</p>
+
+                <p class="mt-5 text-black/45
+                font-semibold">Que vous choisissiez LEINAD ERP ou LEINAD CONNECT, la certification FNE est <br>
+                    incluse.
+                </p>
+            </div>
+        </section>
+
+    <!-- LE FNE SANS STRESS -->
 
 </body>
 

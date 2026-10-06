@@ -1,44 +1,52 @@
 @import "tailwindcss";
 
-@theme{
-    --color-primary:#F97316;
-    --color-secondary:#10B981;
+@theme {
+    --color-primary: #F97316;
+    --color-secondary: #10B981;
 
-    --color-text-500:#ffffff;
-    --color-text-muted-400:#a3a3a3;
+    --color-text-500: #ffffff;
+    --color-text-muted-400: #a3a3a3;
 
     /* text orange */
-    --color-text:#F97316;
+    --color-text: #F97316;
 
     /* text green */
-    --color-text-secondary:#0B9268;
+    --color-text-secondary: #0B9268;
 
-    --spacing-18:4.5rem;
-    --spacing-30:7.5rem;
+    --spacing-18: 4.5rem;
+    --spacing-30: 7.5rem;
 
-    --radius-btn:0.5rem;
+    --radius-btn: 0.5rem;
     --radius-pill: 2000px;
 
 }
 
-@layer components{
-    body{
+@layer components {
+    body {
         @apply mx-1;
     }
 
-    .btn{
-        @apply bg-primary ml-47
-             mt-2 p-1 
-             text-text-500 rounded-btn
-             cursor-pointer
+    nav{
+        @apply fixed top-0 left-0
+        w-full z-50 transition-colors duration-300
+        md:px-14;
     }
 
-    .cards{
-        @apply border border-gray-200 border-t-4 border-t-secondary
-        px-3 py-3 rounded-2xl ;
+    .btn {
+        @apply bg-primary ml-47 mt-2 p-1 text-text-500 rounded-btn cursor-pointer
+    }
+
+    .cards {
+        @apply border border-gray-200 border-t-4 border-t-secondary px-3 py-3 rounded-2xl;
+    }
+
+    .number-btn {
+        @apply bg-secondary rounded-full
+         text-white flex w-full h-full 
+         items-center justify-center
+         font-bold
     }
 
 
-    
-    
+
 }
