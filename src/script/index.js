@@ -11,11 +11,14 @@ btn.addEventListener('click', () => {
 });
 
 
-// for the marquee
-const track = document.getElementById('marquee');
+const slider = document.getElementById("slider");
 
-[...track.children].forEach(card=>{
-    const copy = card.cloneNode(true);
-    copy.setAttribute('aria-hidden','true')
-    track.appendChild(copy);
+const step = () => slider.firstElementChild.offsetWidth + 16 
+
+document.getElementById("next").addEventListener("click",()=>{
+    slider.scrollBy({left:step()});
+});
+
+document.getElementById("prev").addEventListener("click",()=>{
+    slider.scrollBy({left:-step()});
 });

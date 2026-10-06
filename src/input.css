@@ -11,7 +11,7 @@
     --color-text: #F97316;
 
     /* text green */
-    --color-text-secondary: #0B9268;
+    --color-text-500: #0B9268;
 
     --spacing-18: 4.5rem;
     --spacing-30: 7.5rem;
@@ -31,23 +31,30 @@
 @layer components {
    html, body {
     overflow-x: hidden;
+    
 }
     nav{
         @apply fixed top-0 left-0
         w-full z-50 transition-colors duration-300
         md:px-14
-        mt-2;
+        mt-2
+        mx-3;
     }
 
     .btn {
         @apply bg-primary px-4 py-2
-         text-text-500 rounded-btn 
+         text-black rounded-btn 
          cursor-pointer
     }
 
-    .cards {
+    .cards{
+        @apply border border-gray-200
+         p-3 rounded-2xl;
+    }
+
+    .cards-primary{
         @apply border border-gray-200 border-t-4
-         border-t-secondary px-3 py-3 
+       px-3 py-3 
          rounded-2xl;
     }
 
@@ -66,11 +73,28 @@
         [--r:125px] md:[--r:250px]
     }
 
-    .cards-ad{
+    .cards-scroll{
         @apply
-         border border-gray-200 border-t-4
-         border-t-secondary px-3
-         rounded-2xl mb-4
+        flex gap-4 overflow-x-auto snap-x
+        snap-mandatory scroll-smooth pb-4
+        [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+    }
+
+    .cards-content{
+        @apply border rounded-2xl
+        shrink-0 snap-start w-72
+        md:w-80 p-5
+    }
+
+    .tarifs{
+        @apply relative bg-black border
+         border-white/70
+        rounded-2xl w-150 h-93 mt-34 p-3
+        before:content-[''] before:absolute
+        before:inset-0
+        before:-z-10 before:border-2
+         before:border-green-500
+        before:rounded-2xl before:rotate-3;
     }
 
    
