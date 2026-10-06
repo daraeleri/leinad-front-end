@@ -14,12 +14,13 @@
 
     <section>
 
-        <nav class="mx-6 text-nowrap my-3 p-2">
-            <div class="flex">
-                <img src="./assets/images/leinad_logo.png" alt="" class="h-10 w-44">
+        <nav class="text-nowrap px-4 md:px-14 py-3 bg-black/70 backdrop-blur">
+            <div class="flex items-center justify-between gap-6">
+                <img src="./assets/images/leinad_logo.png" alt="" class="h-10 w-auto shrink-0">
 
 
-                <ul class="flex gap-8 text-center ml-45 mt-3 text-white">
+                <ul class="md:flex gap-8 text-center 
+                mt-3 text-white hidden">
                     <li>LEINAD ERP</li>
                     <li>LEINAD CONNECT</li>
                     <li>FNE</li>
@@ -33,8 +34,39 @@
 
                 </ul>
 
-                <button class="btn">Demande une demo</button>
+                <button class="btn hidden md:block">Demande une demo</button>
 
+
+                <button id="menu-btn" class="ml-auto text-white md:hidden" aria-label="Menu" aria-expanded="false">
+
+                    <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M4 5h16" />
+                        <path d="M4 12h16" />
+                        <path d="M4 19h16" />
+                    </svg>
+                    <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M18 6 6 18" />
+                        <path d="m6 6 12 12" />
+                    </svg>
+
+                </button>
+
+            </div>
+
+            <div id="mobile-menu" class="hidden pb-4 md:hidden">
+                <ul class="mt-4 flex flex-col gap-4 text-white">
+                    <li>LEINAD ERP</li>
+                    <li>LEINAD CONNECT</li>
+                    <li>FNE</li>
+                    <li>Integrations</li>
+                    <li>Tarifs</li>
+                    <li>Espace Client</li>
+                </ul>
+                <button class="btn mt-4 w-full">Demande une demo</button>
             </div>
 
         </nav>
@@ -46,12 +78,18 @@
 
     <!-- hero section -->
 
-    <section class="
+    <section
+        class="
         relative min-h-screen overflow-hidden bg-black text-white
     bg-[radial-gradient(circle_at_15%_20%,rgba(249,115,22,0.35),transparent_40%),radial-gradient(circle_at_85%_80%,rgba(16,185,129,0.30),transparent_40%)]">
-        <div class="flex mx-6 relative min-h-162.5 overflow-hidden">
-            <div class="text-nowrap relative z-10 px-12">
-                <h1 class="mt-53 text-3xl font-semibold ">La Gestion de Votre Entreprise.</h1>
+        <div class="flex flex-col mx-1 relative min-h-162.5 md:flex-row md:overflow-hidden">
+
+            <div class="text-nowrap relative 
+                mt-50
+                md:mt-8
+                z-10 
+                md:px-12 md:self-center">
+                <h1 class="text-3xl lg:text-2xl font-semibold ">La Gestion de Votre Entreprise.</h1>
                 <h2 class="text-3xl font-semibold text-primary">La Conformité FNE.</h2>
                 <h3 class="text-3xl font-semibold text-secondary">Une Seule Plateforme.</h3>
             </div>
@@ -62,71 +100,81 @@
 
                 <span class="absolute inset-0"></span>
 
-                <span>
-                    <img class="absolute bottom-0 right-0 z-10 h-[90%] w-auto" src="./assets/images/bg.png" alt="">
-                </span>
+                <img class="mx-auto mt-8 w-full max-w-sm
+                    md:absolute
+                     md:bottom-0 
+                    md:right-0 z-10 
+                    md:max-w-none
+                    md:h-[90%] md:w-auto" src="./assets/images/bg.png" alt="">
             </div>
         </div>
 
-        <div class="flex items-start mx-6">
+        <div class="flex justify-center items-start mx-3
+            md:justify-start md:gap-4 md:mx-6">
 
-            <div class="border
-             border-primary w-93
-             rounded-2xl px-3 py-3
-             relative z-10 rounded-2xl bg-white p-4 shadow-lg">
-                <span class="">
-                    <div class="flex gap-3">
+            <!-- CARD 1 -->
+            <div class="w-48 shrink-0 md:w-93
+              border border-primary rounded-2xl bg-white shadow-lg
+              relative z-10 p-3 pr-9 md:p-4">
+                <span>
+                    <div class="flex gap-2 md:gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-search text-black preview-icon">
+                            class="lucide lucide-search text-black preview-icon w-4 h-4 shrink-0 md:w-6 md:h-6">
                             <path d="m21 21-4.34-4.34" />
                             <circle cx="11" cy="11" r="8" />
                         </svg>
-                        <p>Je cherche un ERP</p>
+                        <p class="text-xs md:text-base text-black">Je cherche un ERP</p>
                     </div>
 
-                    <h3 class="text-primary font-bold 
-                        text-lg mt-2">
-                        LEINARD ERP
+                    <h3 class="text-primary font-bold text-sm md:text-lg mt-2">
+                        LEINAD ERP
                     </h3>
-                    <p class="text-black">Gerez toute votre entreprise avec une seule <br> solution</p>
-                    <p class="text-primary font-semibold">Decouvrir LEINAD ERP</p>
+                    <p class="text-black text-xs md:text-base">
+                        Gerez toute votre entreprise avec une seule <br class="hidden md:block"> solution
+                    </p>
+                    <p class="text-primary font-semibold text-xs md:text-base mt-1">
+                        Decouvrir LEINAD ERP
+                    </p>
                 </span>
             </div>
 
-            <div class="border border-secondary w-93
-             rounded-2xl px-3 py-3 relative z-20 
-             -ml-12 rounded-2xl
-              bg-white p-4 shadow-lg mt-16">
-                <span class="">
-
-                    <div class="flex gap-3">
+            <!-- CARD 2 -->
+            <div class="w-48 shrink-0 md:w-93
+              border border-secondary rounded-2xl bg-white shadow-lg
+              relative z-20 p-3 md:p-4
+              -ml-8 mt-10 md:-ml-12 md:mt-16">
+                <span>
+                    <div class="flex gap-2 md:gap-3 items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                             class="lucide text-black lucide-circle-check-big 
-                            preview-icon">
+                            class="lucide lucide-circle-check-big text-black preview-icon w-4 h-4 shrink-0 md:w-6 md:h-6">
                             <path d="M21.801 10A10 10 0 1 1 17 3.335" />
                             <path d="m9 11 3 3L22 4" />
                         </svg>
-                        <p>J'AI DEJA UN LOGICIEL</p>
-
+                        <p class="text-xs md:text-base text-black">J'AI DEJA UN LOGICIEL</p>
                     </div>
 
-                    <h3 class="text-secondary 
-                        font-bold text-lg mt-3">
-                        LEINARD CONNECT
+                    <h3 class="text-secondary font-bold text-sm md:text-lg mt-2 md:mt-3">
+                        LEINAD CONNECT
                     </h3>
-                    <p class="text-black">Gardez votre logiciel. Connectez-le a la FNE</p>
-                    <p class="text-secondary 
-                        font-semibold mt-4">
+                    <p class="text-black text-xs md:text-base">
+                        Gardez votre logiciel. Connectez-le a la FNE
+                    </p>
+                    <p class="text-secondary font-semibold text-xs md:text-base mt-2 md:mt-4">
                         Verifier la comptabilite
                     </p>
                 </span>
             </div>
+
         </div>
 
-        <div class="flex justify-center gap-8 mt-9">
-            <div class="flex gap-1">
+        <div class="flex flex-col items-start gap-2
+            w-fit mx-auto mt-7
+            text-sm md:flex-row md:items-center
+            md:justify-center md:gap-8 
+            md:mt-12 md:w-auto md:text-nowrap md:text-lg">
+            <div class="flex gap-2 items-center md:gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-check preview-icon">
@@ -135,7 +183,7 @@
                 <p>Conforme FNE/DGI</p>
             </div>
 
-            <div class="flex gap-1">
+            <div class="flex gap-2 items-center md:gap-1">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -146,7 +194,7 @@
 
             </div>
 
-            <div class="flex gap-1">
+            <div class="flex gap-2 items-center md:gap-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                     class="lucide lucide-check preview-icon">
@@ -166,17 +214,21 @@
 
     <section class="mx-6">
 
-        <div class="my-30 grid grid-cols-2 gap-8">
+        <div class="my-16 md:my-30
+         md:grid md:grid-cols-2 gap-8">
 
-            <div>
-                <p class="text-5xl text-nowrap font-bold">Quelle est Votre Situation ?</p>
+            <div class="mb-8 md:mb-0">
+                <p class="text-3xl md:text-5xl md:text-nowrap 
+                    font-bold">Quelle est Votre Situation ?</p>
 
-                <p class="mt-3">Choisissez ce qui vous ressemble : on vous montre directement la bonne solution.</p>
+                <p class="mt-3 text-sm 
+                    md:text-base">Choisissez ce qui vous ressemble : on vous montre directement la bonne solution.</p>
             </div>
 
 
-            <div class="grid grid-cols-2 gap-18 ml-9">
-                <span class="cards">
+            <div class="grid grid-cols-2 
+                md:gap-18 md:ml-9 gap-3">
+                <span class="cards flex flex-col">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-column-decreasing w-25 h-10  
@@ -186,25 +238,29 @@
                         <path d="M3 3v16a2 2 0 0 0 2 2h16" />
                         <path d="M8 17V5" />
                     </svg>
-                    <p>Je travail avec Excel</p>
+                    <p class="text-sm md:text-base mt-2">Je travail avec Excel</p>
 
-                    <div class="flex mt-6">
+                    <div class="flex items-center gap-1 
+                        mt-auto pt-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right preview-icon mt-4">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right 
+                            preview-icon w-4 h-4 shrink-0 md:w-6 md:h-6">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
 
 
                         </svg>
 
-                        <p class="text-primary font-bold my-4">LEINARD ERP</p>
+                        <p class="text-primary font-bold 
+                        text-xs md:text-base">
+                            LEINARD ERP
+                        </p>
 
                     </div>
 
                 </span>
 
-                <span class="cards">
+                <span class="cards flex flex-col">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-landmark 
@@ -217,30 +273,30 @@
                         <path d="M3 22h18" />
                         <path d="M6 18v-7" />
                     </svg>
-                    <p>Je cherche un ERP ou une caisse</p>
+                    <p text-sm md:text-base mt-2>Je cherche un ERP ou une caisse</p>
 
-                    <div class="flex">
+                    <div class="flex items-center gap-1 mt-auto pt-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right preview-icon mt-4">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right
+                             preview-icon w-4 h-4 shrink-0 md:w-6 md:h-6">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
 
 
                         </svg>
 
-                        <p class="text-primary font-bold my-4">LEINARD ERP</p>
+                        <p class="text-primary font-bold text-xs md:text-base">LEINARD ERP</p>
 
                     </div>
 
 
                 </span>
 
-                <span class="cards">
+                <span class="cards flex flex-col">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-receipt-text
-                         preview-icon w-25 h-10">
+                         preview-icon w-8 h-8 md:w-25 md:h-10">
                         <path d="M13 16H8" />
                         <path d="M14 8H8" />
                         <path d="M16 12H8" />
@@ -249,44 +305,44 @@
                         1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.
                         6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
                     </svg>
-                    <p>J'ai deja une caisse (Omega POS...)</p>
+                    <p class="text-sm md:text-base mt-2">J'ai deja une caisse (Omega POS...)</p>
 
-                    <div class="flex">
+                    <div class="flex items-center gap-1 mt-auto pt-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right preview-icon mt-4">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right 
+                            preview-icon w-4 h-4 shrink-0 md:w-6 md:h-6">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
 
 
                         </svg>
 
-                        <p class="text-primary font-bold my-4">LEINARD ERP</p>
+                        <p class="text-secondary font-bold text-xs md:text-base">LEINARD ERP</p>
 
                     </div>
 
 
                 </span>
 
-                <span class="cards">
+                <span class="cards flex flex-col">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-link preview-icon w-25 h-10">
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link 
+                        preview-icon w-8 h-8 md:w-25 md:h-10">
                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
                     </svg>
-                    <p>J'utilise Saga 100, un ERP <br> ou un logiciel metier</p>
+                    <p class="text-sm md:text-base mt-2"></p>>J'utilise Saga 100, un ERP <br> ou un logiciel metier</p>
 
-                    <div class="flex">
+                    <div class="flex items-center gap-1 mt-auto pt-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-arrow-right preview-icon mt-4">
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right 
+                            preview-icon shrink-0 md:w-6 md:h-6">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
                         </svg>
 
-                        <p class="text-primary font-bold my-4">LEINARD ERP</p>
+                        <p class="text-secondary font-bold text-xs md:text-base">LEINARD ERP</p>
 
                     </div>
 
@@ -294,8 +350,8 @@
 
             </div>
 
-            <div class="flex justify-center mt-4">
-                <p class="">Dans tous les cas, </p>
+            <div class="flex flex-wrap justify-center gap-x-1 text-center text-sm md:text-base mt-6 md:mt-4">
+                <p>Dans tous les cas,</p>
                 <p class="text-text-muted-400 font-semibold">LEINAD vous accompagne vers la FNE.</p>
             </div>
 
@@ -310,9 +366,9 @@
 
     <!-- TOUTES VOTRE ENTREPRISE -->
 
-    <section>
+    <section class="mx-6">
 
-        <div class="text-center ">
+        <div class="text-center">
             <p class="text-4xl text-primary
                  font-bold">
                 LEINARD
@@ -324,188 +380,113 @@
             </p>
         </div>
 
-        <div class="relative w-[500px] h-[500px] mx-auto my-32">
-            <div class="absolute inset-0 rounded-full 
-                border-2 border-dashed border-violet-500/50">
+
+        <div id="marquee" class="md:flex 
+            md:w-max md:px-0 md:pr-2
+            grid grid-cols-2
+            my-27 
+            gap-2 
+            w-full
+            md:animate-marquee md:hover:[animation-play-state:paused]">
 
 
-                <div class="absolute top-1/2 left-1/2
-                    -translate-x-1/2 -translate-y-1/2
-                    w-40 h-40 rounded-full bg-violet-800
-                    flex items-center justify-center">
-
-                </div>
-
-
-                <div style="--i:0" class="group absolute top-1/2 left-1/2 -mt-10
-                    -ml-10 w-20 h-20 hover:z:50
-                    [transform:rotate(calc(var(--i)*40deg)) translateY(-250px)
-                    rotate(calc(var(--i)*-40deg))]">
-
-                    <div class="w-full h-full rounded-full bg-white
-                    overflow-hidden shadow-lg cursor-pointer transition-transform
-                    duration-300 group-hover:scale-110">
-
-                        <img src="./assets/images/leinad_logo.png" alt="" class="mt-8 w-34">
-                    </div>
-
-                    <div class="cards absolute bottom-full
-                        left=1/2 -translate-x-1/2 mb-3 w-64
-                        opacity-0 invisible pointer-events-none
-                        transition-opacity duration-300
-                        group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">Facturation & Devis</span>
-                        <p>Factures, avoirs et proformas, certifiés FNE en un clic</p>
-                    </div>
-
-                </div>
-
-
-                <div style="--i:1" class="group absolute top-1/2 left-1/2 -mt-10 -ml-10 w-20 h-20 hover:z-50
-                    [transform:rotate(calc(var(--i)*40deg))_translateY(-250px)_rotate(calc(var(--i)*-40deg))]">
-                    <div class="w-full h-full rounded-full bg-white overflow-hidden shadow-lg cursor-pointer
-                  transition-transform duration-300 group-hover:scale-110">
-                        <img src="./assets/images/icon2.png" alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div class="cards absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64
-                  opacity-0 invisible pointer-events-none
-                  transition-opacity duration-300
-                  group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">Caisse/POS</span>
-                        <p>Vente rapide, scanner, ouverture et fermeture de caisse, tickets imprimés</p>
-                    </div>
-                </div>
-
-
-                <div style="--i:2" class="group absolute top-1/2 left-1/2 -mt-10 -ml-10 w-20 h-20 hover:z-50
-             [transform:rotate(calc(var(--i)*40deg))_translateY(-250px)_rotate(calc(var(--i)*-40deg))]">
-                    <div class="w-full h-full rounded-full bg-white overflow-hidden shadow-lg cursor-pointer
-                  transition-transform duration-300 group-hover:scale-110">
-                        <img src="./assets/images/icon3.png" alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div class="cards absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64
-                  opacity-0 invisible pointer-events-none
-                  transition-opacity duration-300
-                  group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">Stocks</span>
-                        <p>Entrées, sorties, transferts entre boutiques, inventaire, alertes, composition</p>
-                    </div>
-                </div>
-
-                <div style="--i:3" class="group absolute top-1/2 left-1/2 -mt-10 -ml-10 w-20 h-20 hover:z-50
-             [transform:rotate(calc(var(--i)*40deg))_translateY(-250px)_rotate(calc(var(--i)*-40deg))]">
-                    <div class="w-full h-full rounded-full bg-white overflow-hidden shadow-lg cursor-pointer
-                  transition-transform duration-300 group-hover:scale-110">
-                        <img src="./assets/images/icon4.png" alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div class="cards absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64
-                  opacity-0 invisible pointer-events-none
-                  transition-opacity duration-300
-                  group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">Ventes & Achats</span>
-                        <p>Bons de commande clients et fournisseurs, réceptions, historique des prix</p>
-                    </div>
-                </div>
-
-
-                <div style="--i:4" class="group absolute top-1/2 left-1/2 -mt-10 -ml-10 w-20 h-20 hover:z-50
-             [transform:rotate(calc(var(--i)*40deg))_translateY(-250px)_rotate(calc(var(--i)*-40deg))]">
-                    <div class="w-full h-full rounded-full bg-white overflow-hidden shadow-lg cursor-pointer
-                  transition-transform duration-300 group-hover:scale-110">
-                        <img src="./assets/images/icon5.png" alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div class="cards absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64
-                  opacity-0 invisible pointer-events-none
-                  transition-opacity duration-300
-                  group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">Clients & Fournisseurs</span>
-                        <p>Fiches, grands livres, paiements, relances et reprise des soldes</p>
-                    </div>
-                </div>
-
-                <div style="--i:5" class="group absolute top-1/2 left-1/2 -mt-10 -ml-10 w-20 h-20 hover:z-50
-             [transform:rotate(calc(var(--i)*40deg))_translateY(-250px)_rotate(calc(var(--i)*-40deg))]">
-                    <div class="w-full h-full rounded-full bg-white overflow-hidden shadow-lg cursor-pointer
-                  transition-transform duration-300 group-hover:scale-110">
-                        <img src="./assets/images/icon6.png" alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div class="cards absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64
-                  opacity-0 invisible pointer-events-none
-                  transition-opacity duration-300
-                  group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">Tableaux de Bord</span>
-                        <p>Chiffre d'affaires, marges, produits phares, statistiques avancées</p>
-                    </div>
-                </div>
-
-                <div style="--i:6" class="group absolute top-1/2 left-1/2 -mt-10 -ml-10 w-20 h-20 hover:z-50
-             [transform:rotate(calc(var(--i)*40deg))_translateY(-250px)_rotate(calc(var(--i)*-40deg))]">
-                    <div class="w-full h-full rounded-full bg-white overflow-hidden shadow-lg cursor-pointer
-                  transition-transform duration-300 group-hover:scale-110">
-                        <img src="./assets/images/icon7.png" alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div class="cards absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64
-                  opacity-0 invisible pointer-events-none
-                  transition-opacity duration-300
-                  group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">Utilisateurs & Permissions</span>
-                        <p>Chacun ne voit que ce qui le concerne, module par module</p>
-                    </div>
-                </div>
-
-                <div style="--i:7" class="group absolute top-1/2 left-1/2 -mt-10 -ml-10 w-20 h-20 hover:z-50
-             [transform:rotate(calc(var(--i)*40deg))_translateY(-250px)_rotate(calc(var(--i)*-40deg))]">
-                    <div class="w-full h-full rounded-full bg-white overflow-hidden shadow-lg cursor-pointer
-                  transition-transform duration-300 group-hover:scale-110">
-                        <img src="./assets/images/icon8.png" alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div class="cards absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64
-                  opacity-0 invisible pointer-events-none
-                  transition-opacity duration-300
-                  group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">FNE/Interfaçage DGI</span>
-                        <p>Certification intégrée : QR code, sticker officiel, numérotation</p>
-                    </div>
-                </div>
-
-                <div style="--i:8" class="group absolute top-1/2 left-1/2 -mt-10 -ml-10 w-20 h-20 hover:z-50
-             [transform:rotate(calc(var(--i)*40deg))_translateY(-250px)_rotate(calc(var(--i)*-40deg))]">
-                    <div class="w-full h-full rounded-full bg-white overflow-hidden shadow-lg cursor-pointer
-                  transition-transform duration-300 group-hover:scale-110">
-                        <img src="./assets/images/icon9.png" alt="" class="w-full h-full object-cover">
-                    </div>
-                    <div class="cards absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-64
-                  opacity-0 invisible pointer-events-none
-                  transition-opacity duration-300
-                  group-hover:opacity-100 group-hover:visible">
-                        <span class="font-bold text-2xl">Web & Mobile</span>
-                        <p>Sur ordinateur, tablette, téléphone ou terminal de caisse</p>
-                    </div>
-                </div>
+            <div class="cards-ad 
+                min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">Facturation & devis</p>
+                <p class="text-xs md:text-sm md:text-nowrap ">Factures, avoirs et proformas, <br> certifiés FNE en un
+                    clic.
+                </p>
             </div>
+
+            <div class="cards-ad min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">Caisse / POS</p>
+                <p class="text-xs md:text-sm md:text-nowrap">">Vente rapide, scanner, ouverture et <br> fermeture de
+                    caisse, tickets imprimés.
+                </p>
+            </div>
+
+            <div class="cards-ad min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">Stocks</p>
+                <p class="text-xs md:text-sm md:text-nowrap">Entrées, sorties, transferts entre <br>
+                    boutiques, inventaire, alertes, composition.
+                </p>
+            </div>
+
+            <div class="cards-ad min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">Ventes & achats</p>
+                <p class="text-xs md:text-sm md:text-nowrap">Bons de commande clients et <br>
+                    fournisseurs, réceptions, historique des prix.
+            </div>
+
+            <div class="cards-ad min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">Clients & fournisseurs</p>
+                <p class="text-xs md:text-sm md:text-nowrap">Fiches, grands livres, paiements, relances <br>et reprise
+                    des soldes.
+            </div>
+
+            <div class="cards-ad min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">Tableaux de bord</p>
+                <p class="text-xs md:text-sm md:text-nowrap">Chiffre d'affaires, marges, produits
+                    <br> phares, statistiques avancées.
+                </p>
+            </div>
+
+            <div class="cards-ad min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">Utilisateurs & permissions</p>
+                <p class="text-xs md:text-sm md:text-nowrap">Chacun ne voit que ce qui le concerne, module par module.
+                </p>
+            </div>
+
+            <div class="cards-ad min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">FNE / interfaçage DGI</p>
+                <p class="text-xs md:text-sm md:text-nowrap">Certification intégrée : QR code, sticker officiel,
+                    numérotation.</p>
+            </div>
+
+            <div class="cards-ad min-h-28 md:w-72 md:h-28">
+                <p class="font-bold text-sm md:text-base">Web & mobile</p>
+                <p class="ttext-xs md:text-sm md:text-nowrap">Sur ordinateur, tablette, téléphone ou terminal de caisse.
+                </p>
+            </div>
+
+
+
+            <!-- cards on the right -->
+
+
+
         </div>
 
 
-        <div class="bg-primary text-white mx-6 rounded-lg px-3 py-3">
 
-            <p class="text-2xl font-bold">Votre entreprise mérite plus qu'Excel.</p>
 
-            <div class="flex">
+        <div class="text-white bg-primary 
+            px-4 py-4 rounded-2xl">
+
+            <div>
+                <p class="text-wrap md:text-nowrap text-lg font-bold">
+                    Votre entreprise merite plus
+                </p>
+
+
+            </div>
+
+            <div class="md:flex gap-3">
                 <span>
                     Vous travaillez encore avec des fichiers ? Passez à une vraie solution de gestion, à votre rythme :
                     nous
                     reprenons vos données et formons votre équipe.
                 </span>
 
-                <button class=" bg-white
-                     text-primary rounded text-nowrap
-                     font-semibold p-3 mb-9">
-                    Demander une demonstration
+                <button class="bg-white
+                    text-primary font-semibold
+                    md:text-nowrap rounded p-2 my-5">
+                    Demander une Demonstration
                 </button>
             </div>
 
-
         </div>
+
     </section>
     <!-- TOUTES VOTRE ENTREPRISE -->
 
@@ -536,10 +517,11 @@
             </p>
         </div>
 
-        <div class="flex items-start gap-10">
+        <div class="md:flex gap-10">
 
             <div class="border border-secondary 
-            w-fit 
+            md:w-fit
+            w-96 h-full
             rounded-2xl mt-6 p-4">
                 <span class="font-bold text-2xl">
                     Comment ça se passe
@@ -594,39 +576,43 @@
 
                 </div>
 
-                <button class="bg-secondary w-96 mt-6
+                <button class="bg-secondary 
+                md:w-96 mt-6
                 rounded-btn p-2 mx-20
-                text-white font-semibold text-lg">
+                text-white font-semibold md:text-lg">
                     Verifier la comptabilite
                 </button>
             </div>
 
 
-            <div class="mt-2">
-                <div class="bg-primary w-150 
-                     p-3 rounded-2xl grid grid-cols-5
-                     items-center px-5 py-4
-                    origin-center -rotate-2 ... gap-9">
+            <div class="mt-6">
+                <div class=" bg-primary
+                    md:w-150 
+                    w-96
+                     md:p-3 rounded-2xl grid grid-cols-5
+                     items-center px-5 md:py-4
+                    origin-center gap-9
+                    text-nowrap">
                     <span>
                         SAGE 100
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="lucide size-7
+                        ml-8 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
-                    
+
                     <span>
                         LEINAD
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
 
                     <span>
@@ -634,29 +620,33 @@
                     </span>
                 </div>
 
-                <div class="bg-primary w-150 
-                    mt-5 p-3 rounded-2xl grid grid-cols-5
-                    origin-center -rotate-2 ... gap-9 text-nowrap">
+                <div class="bg-primary
+                    md:w-150 
+                    w-96
+                     md:p-3 rounded-2xl grid grid-cols-5
+                     items-center px-5 md:py-4
+                    origin-center gap-9
+                    text-nowrap mt-3">
                     <span>
                         OMEGA POS
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="lucide size-7
+                        ml-8 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
 
                     <span>
                         LEINAD
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
 
                     <span>
@@ -664,28 +654,32 @@
                     </span>
                 </div>
 
-                <div class="bg-primary w-150 
-                    mt-8 p-3 rounded-2xl grid grid-cols-5
-                    origin-center -rotate-5 ... gap-9 text-nowrap">
+                <div class="bg-primary
+                    md:w-150 
+                    w-96
+                     md:p-3 rounded-2xl grid grid-cols-5
+                     items-center px-5 md:py-4
+                    origin-center gap-9
+                    text-nowrap mt-3">
                     <span>
                         VOTRE ERP
                     </span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="lucide size-7
+                        ml-8 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
 
                     <span>
                         LEINAD
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
 
                     <span>
@@ -693,29 +687,33 @@
                     </span>
                 </div>
 
-                <div class="bg-primary w-150 
-                    mt-10 p-3 rounded-2xl grid grid-cols-5
-                    origin-center -rotate-3 ... gap-19 text-nowrap">
+                <div class="bg-primary
+                    md:w-150 
+                    w-96
+                     md:p-3 rounded-2xl grid grid-cols-5
+                     items-center px-5 md:py-4
+                    origin-center gap-9
+                    text-nowrap mt-3">
                     <span>
                         VOTRE CAISSE
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="lucide size-7
+                        ml-8 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
 
                     <span>
                         LEINAD
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
 
                     <span>
@@ -723,28 +721,32 @@
                     </span>
                 </div>
 
-                <div class="bg-primary mt-10 w-150 
-                     p-3 rounded-2xl grid grid-cols-5
-                    origin-center rotate-2 ... gap-25 text-nowrap">
+                <div class="bg-primary
+                    md:w-150 
+                    w-96
+                     md:p-3 rounded-2xl grid grid-cols-5
+                     items-center px-5 md:py-4
+                    origin-center gap-9
+                    text-nowrap mt-5">
                     <span>
                         LOGICIEL METIER
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" class="lucide size-7 text-black 
+                        ml-8 lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
 
                     <span>
                         LEINAD
                     </span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" 
-                        fill="none" stroke="#000000" stroke-width="0.5" stroke-linecap="round"
-                         stroke-linejoin="round" class="lucide size-7 text-black lucide-arrow-right preview-icon">
-                         <path d="M5 12h14"/>
-                        <path d="m12 5 7 7-7 7"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none"
+                        stroke="#000000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide size-7 text-black lucide-arrow-right preview-icon">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
                     </svg>
                     <span>
                         FNE
@@ -753,8 +755,13 @@
             </div>
         </div>
 
-        <div class="text-center mt-8">
-            <span class="bg-secondary rounded p-3 text-white">Déjà en production : Omega POS interfacé avec la FNE par LEINAD</span>
+        <div class="text-center mt-8 ">
+            <span class="bg-secondary 
+             p-3 text-white md:text-wrap
+             rounded-2xl md:text-lg text-sm">
+                Déjà en production : Omega POS interfacé avec la FNE par
+                LEINAD
+            </span>
         </div>
 
     </section>
@@ -763,19 +770,126 @@
 
     <!-- LE FNE SANS STRESS -->
 
-        <section>
-            <div class="text-center mt-25">
-                <p class="text-5xl font-bold">La FNE, sans stress.</p>
+    <section class="mx-6">
+        <div class="text-center mt-25">
+            <p class="text-5xl font-bold">La FNE, sans stress.</p>
 
-                <p class="mt-5 text-black/45
+            <p class="mt-5 text-black/45
                 font-semibold">Que vous choisissiez LEINAD ERP ou LEINAD CONNECT, la certification FNE est <br>
-                    incluse.
-                </p>
+                incluse.
+            </p>
+        </div>
+
+        <div class="flex gap-20">
+
+            <div class="flex mt-15">
+
+                <img src="./assets/images/Crystal Glass Shield Emblem.png" alt="" class="w-110">
+
+                <div>
+
+                    <div class="mt-5">
+                        <span class="font-bold text-xl">QR code et sticker officiel</span>
+                        <p class="text-text-muted-400">Chaque facture et chaque ticket reçoivent <br> automatiquement le
+                            QR
+                            code de <br> vérification et le sticker <br>électronique de la DGI.</p>
+                    </div>
+
+                    <div class="mt-5">
+                        <span class="font-bold text-xl">Numérotation sécurisée
+                        </span>
+                        <p class="text-text-muted-400">Une numérotation ininterrompue et <br>annuelle, calculée par le
+                            système : <br> impossible de sauter ou de <br>doubler un numéro.</p>
+                    </div>
+
+                    <div class="mt-5">
+                        <span class="font-bold text-xl">Timbre, TVA et AIRSI calculés</span>
+                        <p class="text-text-muted-400">Droit de timbre selon le barème, TVA par <br> produit, AIRSI :
+                            tout
+                            est calculé et apparaît <br> correctement sur le document.</p>
+                    </div>
+
+                    <div class="mt-5">
+                        <span class="font-bold text-xl">Archivage prêt pour un contrôle</span>
+                        <p class="text-text-muted-400">Tous vos documents certifiés sont conservés <br> et retrouvables
+                            en
+                            quelques secondes <br> en cas de contrôle fiscal.</p>
+                    </div>
+
+                </div>
+
+
             </div>
-        </section>
+
+            <div class="mt-20 bg-white rounded-3xl h-100 w-100 p-4 border">
+                <div class="">
+                    <div class="flex border border-gray-300 p-2 rounded-2xl">
+                        <span class="number-btn shrink-0 ">1</span>
+                        <p class="w-96 mt-2 ml-3">Vente ou facture saisie</p>
+
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="flex border border-gray-300 p-2 rounded-2xl">
+                        <span class="number-btn shrink-0 ">2</span>
+                        <p class="w-96 mt-2 ml-3">Vente ou facture saisie</p>
+
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="flex border border-gray-300 p-2 rounded-2xl">
+                        <span class="number-btn shrink-0 ">3</span>
+                        <p class="w-96 mt-2 ml-3">Vente ou facture saisie</p>
+
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <div class="flex border border-gray-300 p-2 rounded-2xl">
+                        <span class="number-btn">4</span>
+                        <p class="w-96 mt-2 ml-3">Vente ou facture saisie</p>
+
+                    </div>
+                </div>
+
+                <p class="mt-5 text-center text-black/70">Flux automatise en quelque secondes</p>
+            </div>
+        </div>
+
+
+        <div class="place-items-center mt-10 ">
+
+            <div class="">
+
+                <div class="border rounded-2xl w-180 p-3 bg-amber-200">
+                    <span class="text-xl font-semibold">
+                        Vous êtes en retard ? Pas de panique.
+                    </span>
+
+                    <p class="mt-2">La loi de finances 2025 exige la Facture Normalisée Électronique pour les entreprises (articles
+                        384 et suivants du CGI). LEINAD vous met en conformité rapidement, avec ou sans changement de
+                        logiciel.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+
+        <div>
+            <h2 class="text-4xl">
+                Intégrations : compatible avec votre logiciel.
+            </h2>
+        </div>
+    </section>
 
     <!-- LE FNE SANS STRESS -->
 
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
