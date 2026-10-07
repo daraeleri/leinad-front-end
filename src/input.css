@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 
-@font-face{
-    font-family:'Sora';
-    src:url('../../../fonts/Sora-Variable.tff') format('truetype');
-    font-weight:100 800;
-    font-style:normal;
-    font-display:swap;
+@font-face {
+    font-family: 'Sora';
+    src: url('../../../fonts/Sora-Variable.tff') format('truetype');
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
 }
 
-@font-face{
-    font-family:'PlusJakarta';
-    src:url('../../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
-    font-weight:200 800;
-    font-style:normal;
-    font-display:swap;
+@font-face {
+    font-family: 'PlusJakarta';
+    src: url('../../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 800;
+    font-style: normal;
+    font-display: swap;
 }
 
-@font-face{
-    font-family:'Inter';
-    src:url('../../../fonts/Inter-Variable.ttf') format('truetype');
-    font-weight:100 900;
-    font-style:normal;
-    font-display:swap;
+@font-face {
+    font-family: 'Inter';
+    src: url('../../../fonts/Inter-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -34,7 +34,7 @@
     --color-text-muted-400: #a3a3a3;
 
     /* text orange */
-    --color-text: #F97316;
+    --color-text-600: #F97316;
 
     /* text green */
     --color-text-500: #0B9268;
@@ -45,114 +45,99 @@
     --radius-btn: 0.5rem;
     --radius-pill: 2000px;
 
-    --font-body:"Inter",sans-serif;
-    --font-heading:"PlusJakarta",sans-serif;
-    --font-display:"Sora",sans-serif:
-
+    --font-body: "Inter", sans-serif;
+    --font-heading: "PlusJakarta", sans-serif;
+    --font-display: "Sora", sans-serif:
 }
 
-@layer base{
-    body{
-        font-family:var(--font-body);
+@layer base {
+    body {
+        font-family: var(--font-body);
     }
 
-    h1,h2,
+    h1,
+    h2,
     [class*="text-5xl"],
-    [class*="text-6xl"]{
+    [class*="text-6xl"] {
         font-family: var(--font-display);
     }
 
-    h3,h4,h5,h6,
-    button,.btn,.number-btn,
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    .btn,
+    .number-btn,
     [class*="text-2xl"],
-    [class*="text-3xl"]{
-        font-family:var(--font-heading);
+    [class*="text-3xl"] {
+        font-family: var(--font-heading);
     }
 }
 
 @layer components {
-   html, body {
-    overflow-x: hidden;
-    
-}
-    nav{
-        @apply fixed top-0 left-0
-        w-full z-50 transition-colors duration-300
-        md:px-14
-        mt-2
-        mx-3;
+
+    html,
+    body {
+        overflow-x: hidden;
+
+    }
+
+    nav {
+        @apply fixed top-0 left-0 w-full z-50 transition-colors duration-300 md:px-14 mt-2 mx-3;
     }
 
     .btn {
-        @apply bg-primary px-4 py-2
-         text-black rounded-btn 
-         cursor-pointer font-semibold ;
+        @apply bg-primary px-4 py-2 text-black rounded-btn cursor-pointer font-semibold;
     }
 
-    .cards{
-        @apply border border-gray-200
-         p-3 rounded-2xl;
+    .cards {
+        @apply border border-gray-200 p-3 rounded-2xl;
     }
 
-    .cards-primary{
-        @apply border border-gray-200 border-t-4
-       px-3 py-3 
-         rounded-2xl;
+    .cards-primary {
+        @apply border border-gray-200 border-t-4 px-3 py-3 rounded-2xl;
     }
 
     .number-btn {
-        @apply bg-secondary rounded-full
-         text-white flex size-10
-         items-center justify-center
-         font-bold
+        @apply bg-secondary rounded-full text-white flex size-10 items-center justify-center font-bold
     }
 
-    .circle{
-        @apply relative mx-auto
-        my-16 md:my-32
-        w-[250px] h-[250px]
-        md:w-[500px] md:h-[500px]
-        [--r:125px] md:[--r:250px]
+    .circle {
+        @apply relative mx-auto my-16 md:my-32 w-[250px] h-[250px] md:w-[500px] md:h-[500px] [--r:125px] md:[--r:250px]
     }
 
-    .cards-scroll{
-        @apply
-        flex gap-4 overflow-x-auto snap-x
-        snap-mandatory scroll-smooth pb-4
-        [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+    .cards-scroll {
+        @apply flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
     }
 
-    .cards-content{
-        @apply border rounded-2xl
-        shrink-0 snap-start w-72
-        md:w-80 p-5
+    .cards-content {
+        @apply border rounded-2xl shrink-0 snap-start w-72 md:w-80 p-5
     }
 
-    .tarifs{
-        @apply relative bg-red-200/70 border
-         border-white/70
-        rounded-2xl w-150 h-93 mt-34 p-3
-        before:content-[''] before:absolute
-        before:inset-0
-        before:-z-10 before:border-2
-         before:border-gray-500
-         text-black
-        before:rounded-2xl before:rotate-3;
+    .tarifs {
+        @apply relative bg-white border border-white/70 rounded-xl md:w-150 md:h-99 
+        md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-gray-500 text-black before:rounded-2xl before:rotate-3;
     }
 
-    label{
+    label {
         @apply text-black font-bold;
     }
 
-    input{
-        @apply border border-black 
-        mt-2 p-2 rounded-2xl text-black;
+    input {
+        @apply border border-black mt-2 p-2 rounded text-black focus:outline-none focus:border-secondary;
     }
 
-    .small-cards{
-        @apply border border-white/20 p-6
-         rounded-2xl hover:border-primary
+    .small-cards {
+        @apply border border-white/20 p-6 rounded-xl hover:border-primary my-5 text-center;
     }
-   
+
+    .tarifBtn {
+        @apply bg-secondary p-2 mb-9 rounded text-sm text-black font-bold
+    }
+
+    .tarifBtns {
+        @apply bg-primary p-2 rounded mb-9 text-sm text-black font-bold
+    }
 
 }
