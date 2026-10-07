@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+
+@font-face{
+    font-family:'Sora';
+    src:url('../../../fonts/Sora-Variable.tff') format('truetype');
+    font-weight:100 800;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face{
+    font-family:'PlusJakarta';
+    src:url('../../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    font-weight:200 800;
+    font-style:normal;
+    font-display:swap;
+}
+
+@font-face{
+    font-family:'Inter';
+    src:url('../../../fonts/Inter-Variable.ttf') format('truetype');
+    font-weight:100 900;
+    font-style:normal;
+    font-display:swap;
+}
+
+
 @theme {
     --color-primary: #F97316;
     --color-secondary: #10B981;
@@ -19,13 +45,29 @@
     --radius-btn: 0.5rem;
     --radius-pill: 2000px;
 
-    --animate-marquee:marquee 40s linear infinite;
+    --font-body:"Inter",sans-serif;
+    --font-heading:"PlusJakarta",sans-serif;
+    --font-display:"Sora",sans-serif:
 
-    @keyframes marquee{
-        from{transform:translateX(0);}
-        to {transform:translateX(-50%);}
+}
+
+@layer base{
+    body{
+        font-family:var(--font-body);
     }
 
+    h1,h2,
+    [class*="text-5xl"],
+    [class*="text-6xl"]{
+        font-family: var(--font-display);
+    }
+
+    h3,h4,h5,h6,
+    button,.btn,.number-btn,
+    [class*="text-2xl"],
+    [class*="text-3xl"]{
+        font-family:var(--font-heading);
+    }
 }
 
 @layer components {
@@ -44,7 +86,7 @@
     .btn {
         @apply bg-primary px-4 py-2
          text-black rounded-btn 
-         cursor-pointer
+         cursor-pointer font-semibold ;
     }
 
     .cards{
@@ -87,16 +129,30 @@
     }
 
     .tarifs{
-        @apply relative bg-black border
+        @apply relative bg-red-200/70 border
          border-white/70
         rounded-2xl w-150 h-93 mt-34 p-3
         before:content-[''] before:absolute
         before:inset-0
         before:-z-10 before:border-2
-         before:border-green-500
+         before:border-gray-500
+         text-black
         before:rounded-2xl before:rotate-3;
     }
 
+    label{
+        @apply text-black font-bold;
+    }
+
+    input{
+        @apply border border-black 
+        mt-2 p-2 rounded-2xl text-black;
+    }
+
+    .small-cards{
+        @apply border border-white/20 p-6
+         rounded-2xl hover:border-primary
+    }
    
 
 }
