@@ -22,3 +22,20 @@ document.getElementById("next").addEventListener("click",()=>{
 document.getElementById("prev").addEventListener("click",()=>{
     slider.scrollBy({left:-step()});
 });
+
+
+// faq toggle
+
+document.querySelectorAll('.faq-btn').forEach((btn)=>{
+    btn.addEventListener('click',()=>{
+        const item = btn.closest('.faq.item');
+        const answer = item.querySelector('.faq-answer');
+        const plus = item.querySelector('icon-plus');
+        const minus = item.querySelector('.icon-minus');
+
+        const isOpen = answer.classList.toggle('hidden') === false;
+        plus.classList.toggle('hidden',isOpen);
+        minus.classList.toggle('hidden',!isOpen);
+        btn.setAttribute('aria-expanded',isOpen);
+    });
+});
