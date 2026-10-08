@@ -91,6 +91,31 @@
         @apply bg-primary px-4 py-2 text-black rounded-btn cursor-pointer font-semibold;
     }
 
+    /* HERO SECTION */
+
+    .text-check {
+        @apply flex flex-col my-7 items-start 
+        gap-2 w-fit mt-7 md:flex-row
+        mx-15 md:gap-8 md:mt-12 md:w-auto md:text-nowrap 
+        text-sm;
+    }
+
+    .check-text{
+        @apply flex gap-2 items-center md:gap-1
+    }
+
+    /* HERO SECTION */
+
+
+    /* THIRD SECTION */
+
+        .left-cards{
+            @apply border rounded-xl border-gray-200/70 
+                    md:py-4 md:w-110 md:mx-10 md:mt-6
+        }
+
+    /* THIRD SECTION */
+
     .cards {
         @apply border border-gray-200 p-3 rounded-2xl;
     }
@@ -128,8 +153,7 @@
     }
 
     .tarifs {
-        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 
-        before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-red-200 text-black before:rounded-2xl before:rotate-3;
+        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-red-200 text-black before:rounded-2xl before:rotate-3;
     }
 
 
@@ -138,17 +162,18 @@
     }
 
     input {
-        @apply border border-black/20 mt-2 p-2 rounded
-         text-black focus:outline-none
-         focus:border-secondary;
+        @apply border border-black/20 mt-2 p-2 rounded text-black focus:outline-none focus:border-secondary;
     }
 
     .small-cards {
-        @apply border border-white/20 p-6 
-            rounded-xl hover:border-primary my-5 text-center;
+        @apply border border-white/20 p-6 rounded-xl hover:border-primary my-5 text-center;
     }
 
-   
+    .small-cardSize {
+        @apply md:scale-130 md:z-10;
+    }
+
+
 
     .cards-hero {
         @apply transition-transform duration-300 ease-in-out hover:scale-109;
@@ -159,12 +184,10 @@
     }
 
     .img {
-        @apply md:w-74 w-50 shrink-0 h-auto object-cover
-                relative z-10 bg-secondary/20
-                rounded-[63%_37%_54%_46%/55%_48%_52%_45%];
+        @apply md:w-74 w-50 shrink-0 h-auto object-cover relative z-10 bg-secondary/20 rounded-[63%_37%_54%_46%/55%_48%_52%_45%];
     }
-    
-    .sixthSec{
+
+    .sixthSec {
         @apply border border-white/20 bg-white/40 rounded w-65
     }
 
