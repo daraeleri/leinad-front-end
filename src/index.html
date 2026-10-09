@@ -81,107 +81,127 @@
     <div class="relative">
 
         <!-- hero section -->
-        <section
-            class="sticky top-0 min-h-screen overflow-hidden
-             bg-black text-white bg-[radial-gradient(circle_at_15%_20%,rgba(249,115,22,0.35),transparent_100%),radial-gradient(circle_at_85%_80%,rgba(16,185,129,0.30),transparent_40%)]">
+        <section aria-labelledby="hero-title"
+            class="relative flex flex-col overflow-hidden bg-white text-neutral-950 md:sticky md:top-0 md:h-svh md:min-h-176">
 
-            <div class="my-20">
+            <!-- soft brand glows -->
+            <div aria-hidden="true" class="pointer-events-none absolute inset-0">
+                <div class="absolute -left-48 top-1/3 size-160 rounded-full bg-secondary/30 blur-3xl"></div>
+                <div class="absolute -right-48 -top-24 size-176 rounded-full bg-primary/30 blur-3xl"></div>
+                <div class="absolute right-1/4 top-1/2 size-96 rounded-full bg-amber-300/30 blur-3xl"></div>
+            </div>
+            <!-- soft brand glows -->
 
-                <div class="flex flex-col mx-1 relative min-h-142.5 md:flex-row md:overflow-hidden">
+            <div class="relative z-10 flex flex-col px-5 pt-28 text-center md:min-h-0 md:flex-1 md:px-8 md:short:pt-24">
 
-                    <div class="text-nowrap relative mt-30 md:mt-1 z-10 md:px-12 px-6 md:self-center">
+                <!-- text -->
+                <div class="mx-auto flex max-w-4xl flex-col items-center">
 
-                        <div class="border text-sm rounded-xl
-                         md:w-85 w-80 md:py-2 md:px-6 px-3">
-                            <p>Conçu pour les entreprises en Côte d'Ivoire</p>
-                        </div>
-
-                        <h1 class="text-3xl md:text-5xl font-semibold md:my-2 my-3">Gérez votre entreprise.</h1>
-                        <h2 class="text-2xl md:text-4xl font-semibold text-primary md:ml-1 md:my-2 my-3">Restez conforme
-                            au
-                            FNE.
-                        </h2>
-                        <h3 class="text-xl md:text-3xl 
-                        font-semibold text-text-500 md:ml-1 my-3">
-                            Une seule et unique plateforme .
-                        </h3>
-
-                        <div class="md:ml-2">
-                            <p class="text-sm shrink-0 max-w-sm">
-                                Whether you need a complete management suite or want to <br> keep your current software,
-                                LEINAD takes
-                                you to the electronic <br> standardised invoice
-                            </p>
-                        </div>
+                    <div
+                        class="inline-flex items-center gap-2 rounded-full border border-black/5 bg-white/70 p-1 pr-4 text-left text-xs text-neutral-700 backdrop-blur sm:text-sm">
+                        <span
+                            class="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-full bg-neutral-950 px-3 py-1 text-xs font-semibold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="currentColor" class="text-primary" aria-hidden="true">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+                            </svg>
+                            FNE / DGI
+                        </span>
+                        <p>Conçu pour les entreprises en Côte d'Ivoire</p>
                     </div>
 
-                    <!-- image -->
-                    <div>
-                        <span class="absolute bg-cover bg-center
-                 bg-[url('../../images/bg.png')]"></span>
+                    <h1 id="hero-title"
+                        class="font-heading mt-6 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl md:short:mt-4 lg:text-7xl lg:short:text-6xl">
+                        <span class="block">Gérez votre entreprise.</span>
+                        <span class="block text-balance">Restez <em
+                                class="font-accent text-[1.1em] font-normal italic text-orange-600">conforme au
+                                FNE.</em></span>
+                    </h1>
 
-                        <span class="absolute inset-0"></span>
+                    <p class="mx-auto mt-6 max-w-2xl text-base text-neutral-600 md:short:mt-4 md:text-lg">
+                        Une seule et unique plateforme. Que vous ayez besoin d'une suite de gestion complète ou
+                        souhaitiez garder votre logiciel actuel, LEINAD vous mène à la facture électronique
+                        normalisée.
+                    </p>
 
-                        <img class="mx-auto mt-8 w-full max-w-sm
-                    md:absolute
-                     md:bottom-0 
-                    md:right-0 z-10 
-                    md:max-w-none
-                    md:h-[70%] md:w-auto" src="./assets/images/bg.png" alt="">
+                    <!-- buttons -->
+                    <div class="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:gap-4 md:short:mt-6">
+
+                        <a href="#"
+                            class="group font-heading inline-flex items-center gap-3 rounded-full bg-primary py-1.5 pl-6 pr-1.5 font-semibold text-black shadow-lg shadow-orange-500/25 transition hover:brightness-105">
+                            Je cherche un ERP
+                            <span
+                                class="flex size-9 items-center justify-center rounded-full bg-white text-black transition-transform group-hover:translate-x-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M7 7h10v10" />
+                                    <path d="M7 17 17 7" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a href="#"
+                            class="group font-heading inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/80 py-1.5 pl-6 pr-1.5 font-semibold text-neutral-950 backdrop-blur transition hover:bg-white">
+                            J'ai déjà un logiciel
+                            <span
+                                class="flex size-9 items-center justify-center rounded-full bg-secondary text-white transition-transform group-hover:translate-x-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M7 7h10v10" />
+                                    <path d="M7 17 17 7" />
+                                </svg>
+                            </span>
+                        </a>
+
                     </div>
-                    <!-- image -->
+                    <!-- buttons -->
+
+                    <!-- reassurance -->
+                    <ul class="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-neutral-700 md:short:mt-4">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-secondary" aria-hidden="true">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            Conforme FNE/DGI
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-secondary" aria-hidden="true">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            Audit gratuit, sans engagement
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="text-secondary" aria-hidden="true">
+                                <path d="M20 6 9 17l-5-5" />
+                            </svg>
+                            Support à Abidjan &amp; à l'intérieur
+                        </li>
+                    </ul>
+                    <!-- reassurance -->
 
                 </div>
+                <!-- text -->
 
-                <!-- button -->
-                <div class="mx-15 md:flex md:gap-8
-             md:-mt-30">
-
-                    <button class="btn text-white bg-orange-700/90">
-                        Je cherche un ERP
-                    </button>
-
-                    <button class="btn bg-black/70
-                        text-white md:mt-0 mt-4">
-                        J'ai deja un Logiciel
-                    </button>
-
-
-                </div>
-                <!-- button -->
-
-
-                <div class="text-check">
-                    <div class="check-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-check preview-icon">
-                            <path d="M20 6 9 17l-5-5" />
-                        </svg>
-                        <p>Conforme FNE/DGI</p>
-                    </div>
-
-                    <div class="check-text">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-check preview-icon">
-                            <path d="M20 6 9 17l-5-5" />
-                        </svg>
-                        <p>Audit gratuit,sans engagement</p>
-
-                    </div>
-
-                    <div class="check-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-check preview-icon">
-                            <path d="M20 6 9 17l-5-5" />
-                        </svg>
-                        <p>Support à Abidjan & à l'intérieur</p>
-
+                <!-- product preview: cropped by the bottom edge of the hero, like the reference -->
+                <div class="mx-auto mt-10 w-full max-w-6xl md:min-h-0 md:flex-1 md:short:mt-6">
+                    <div
+                        class="overflow-hidden rounded-t-[1.75rem] border border-b-0 border-white/70 bg-white/40 p-2 shadow-[0_-10px_60px_-15px_rgba(15,23,42,0.18)] ring-1 ring-black/5 backdrop-blur md:h-auto md:max-h-full md:rounded-t-[2rem] md:p-3">
+                        <img src="./assets/images/leinad-hero-image.jpeg" width="1600" height="941"
+                            alt="Aperçu de LEINAD Connect : historique des ventes avec certification FNE"
+                            fetchpriority="high"
+                            class="aspect-[16/8] w-full rounded-t-xl border border-b-0 border-black/5 bg-white object-cover object-top md:aspect-auto md:h-auto md:rounded-t-2xl">
                     </div>
                 </div>
+                <!-- product preview -->
 
             </div>
 

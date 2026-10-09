@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* applies on short viewports (e.g. 13" laptops) so the hero keeps part of the product preview visible */
+@custom-variant short (@media (max-height: 48rem));
+
 
 @font-face {
     font-family: 'Sora';
@@ -25,6 +28,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Instrument Serif';
+    src: url('../../../fonts/InstrumentSerif-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
 
 @theme {
     --color-primary: #F97316;
@@ -45,6 +56,7 @@
     --radius-btn: 0.5rem;
     --radius-pill: 2000px;
 
+    --font-accent: "Instrument Serif", Georgia, serif;
     --font-body: "Inter", sans-serif;
     --font-heading: "PlusJakarta", sans-serif;
     --font-display: "Sora", sans-serif:
