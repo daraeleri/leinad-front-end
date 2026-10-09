@@ -2000,105 +2000,188 @@
 
 
     <!-- FOOTER -->
+    <!-- NB: do not use <nav> inside the footer, input.css makes every <nav> fixed to the top of the page -->
 
-    <section class="mt-35">
+    <footer class="mt-24 md:mt-32 bg-neutral-950 text-white
+        bg-[radial-gradient(circle_at_8%_0%,rgba(249,115,22,0.16),transparent_45%),radial-gradient(circle_at_95%_100%,rgba(16,185,129,0.14),transparent_40%)]">
 
-        <div class="w-full bg-amber-500 h-px my-30"></div>
+        <div class="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24">
 
+            <div class="grid gap-14 lg:grid-cols-[minmax(0,4fr)_minmax(0,8fr)] lg:gap-16 xl:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
 
-
-        <div class="mx-15">
-
-
-            <div class="md:flex">
+                <!-- brand -->
                 <div>
-                    <img src="./assets/images/leinad_logo.png" alt="" class="h-10 w-auto shrink-0">
+                    <a href="#" aria-label="LEINAD, retour en haut de la page" class="inline-block">
+                        <img src="./assets/images/leinad_logo.png" alt="LEINAD" class="h-14 w-auto md:h-20">
+                    </a>
 
-                    <p class="md:w-100 mt-2 text-sm">
+                    <p class="font-heading mt-8 max-w-md text-3xl font-semibold leading-tight md:text-4xl lg:text-3xl xl:text-4xl">
+                        Gérez votre entreprise.
+                        <span class="block text-primary">Restez conforme.</span>
+                    </p>
+
+                    <p class="mt-5 max-w-sm text-sm leading-relaxed text-text-muted-400">
                         LEINAD ERP et LEINAD CONNECT : la gestion de votre entreprise et la conformité FNE, pour les
                         entreprises en Côte d'Ivoire.
                     </p>
                 </div>
+                <!-- brand -->
 
-                <div class="grid grid-cols-1 md:grid-cols-3 
-                gap-10 md:gap-30">
+                <!-- columns -->
+                <div class="grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-3 md:gap-y-16">
 
+                    <!-- navigation -->
                     <div>
-                        <div class="md:ml-10 md:mt-0 mt-10 text-nowrap">
-                            <span class="font-bold">
-                                Nos Offres
-                            </span>
+                        <p class="text-xs uppercase leading-4 tracking-wide text-text-muted-400">Navigation</p>
 
-                            <div class="text-sm
-                     text-text-muted-400 cursor-pointer">
-                                <p class="my-1 hover:text-primary">LEINAD ERP</p>
-                                <p class="my-1 hover:text-primary">LEINAD CONNECT</p>
-                                <p class="my-1 hover:text-primary">FNE</p>
-                                <p class="my-1 hover:text-primary">Integrations</p>
-                                <p class="my-1 hover:text-primary">Tarifs</p>
+                        <div class="mt-8 space-y-9">
+
+                            <div>
+                                <p class="font-heading font-semibold text-primary">Nos offres</p>
+                                <ul class="mt-3 space-y-3 text-[15px] leading-6 text-white/90">
+                                    <li><a href="#" class="transition-colors hover:text-primary">LEINAD ERP</a></li>
+                                    <li><a href="#" class="transition-colors hover:text-primary">LEINAD CONNECT</a></li>
+                                    <li><a href="#" class="transition-colors hover:text-primary">FNE</a></li>
+                                </ul>
                             </div>
+
+                            <div>
+                                <p class="font-heading font-semibold text-primary">Tarifs</p>
+                                <ul class="mt-3 space-y-3 text-[15px] leading-6 text-white/90">
+                                    <li><a href="#" class="transition-colors hover:text-primary">Devis ERP</a></li>
+                                    <li><a href="#" class="transition-colors hover:text-primary">Devis CONNECT</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <p class="font-heading font-semibold text-primary">Ressources</p>
+                                <ul class="mt-3 space-y-3 text-[15px] leading-6 text-white/90">
+                                    <li><a href="#" class="transition-colors hover:text-primary">Intégrations</a></li>
+                                    <li><a href="#" class="transition-colors hover:text-primary">FAQ</a></li>
+                                </ul>
+                            </div>
+
                         </div>
                     </div>
+                    <!-- navigation -->
 
+                    <!-- legal + contact buttons -->
                     <div>
-                        <div class="text-nowrap">
-                            <span class="font-bold">
-                                Legal
-                            </span>
+                        <p class="text-xs uppercase leading-4 tracking-wide text-text-muted-400">Légal</p>
 
-                            <div class="text-sm
-                                md:my-3 text-text-muted-400 cursor-pointer">
-                                <p class="my-1 hover:text-primary">Politique de confidentialite</p>
-                                <p class="my-1 hover:text-primary">Conditions d'utilisation</p>
-                                <p class="my-1 hover:text-primary">Mentions Legales</p>
-                                <p class="my-1 hover:text-primary">Integrations</p>
-                            </div>
+                        <ul class="mt-8 space-y-3 text-[15px] leading-6 text-white/90">
+                            <li><a href="#" class="transition-colors hover:text-primary">Mentions légales</a></li>
+                            <li><a href="#" class="transition-colors hover:text-primary">Politique de
+                                    confidentialité</a></li>
+                            <li><a href="#" class="transition-colors hover:text-primary">Conditions d'utilisation</a>
+                            </li>
+                        </ul>
+
+                        <p class="mt-14 text-xs uppercase leading-4 tracking-wide text-text-muted-400">Nous contacter
+                        </p>
+
+                        <div class="mt-8 flex flex-col items-start gap-3">
+                            <a href="#"
+                                class="font-heading rounded-btn bg-secondary px-4 py-2 text-sm font-semibold text-black transition hover:brightness-110">
+                                Espace client
+                            </a>
+                            <a href="#" class="btn text-sm transition hover:brightness-110">
+                                Demander une démo
+                            </a>
                         </div>
                     </div>
+                    <!-- legal + contact buttons -->
 
+                    <!-- social -->
+                    <div class="col-span-2 md:col-span-1">
+                        <p class="sr-only">Réseaux sociaux</p>
+
+                        <ul class="flex gap-3">
+                            <li>
+                                <a href="#" aria-label="LinkedIn"
+                                    class="flex size-10 items-center justify-center rounded-full border border-white/20 text-white transition-colors hover:border-primary hover:text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect width="4" height="12" x="2" y="9" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Facebook"
+                                    class="flex size-10 items-center justify-center rounded-full border border-white/20 text-white transition-colors hover:border-primary hover:text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Instagram"
+                                    class="flex size-10 items-center justify-center rounded-full border border-white/20 text-white transition-colors hover:border-primary hover:text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" aria-hidden="true">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- social -->
+
+                    <!-- address -->
                     <div>
-                        <div class="">
-                            <span class="font-bold">
-                                Contact
-                            </span>
+                        <p class="text-xs uppercase leading-4 tracking-wide text-text-muted-400">Adresse</p>
+                        <address class="mt-8 text-[15px] not-italic leading-6 text-white/90">
+                            Abidjan,<br>Côte d'Ivoire
+                        </address>
+                    </div>
+                    <!-- address -->
 
-                            <div class="text-sm
-                    my-3 text-text-muted-400 cursor-pointer">
-                                <p class="my-1 hover:text-primary">Abidjan,Cote d'Ivoire</p>
-                                <p class="my-1 hover:text-primary">+255 01 02 42 03 42</p>
-                                <p class="my-1 hover:text-primary">leinad@sophopsy.com</p>
-                                <p class="my-1 hover:text-primary">Espace Client</p>
-                            </div>
+                    <!-- contact -->
+                    <div>
+                        <p class="text-xs uppercase leading-4 tracking-wide text-text-muted-400">Contact</p>
+                        <div class="mt-8 space-y-1 text-sm leading-6 text-white/90 md:text-[15px]">
+                            <a href="mailto:leinad@sophopsy.com"
+                                class="block transition-colors hover:text-primary">leinad@sophopsy.com</a>
+                            <p>+255 01 02 42 03 42</p>
                         </div>
                     </div>
+                    <!-- contact -->
+
+                    <!-- copyright -->
+                    <div class="col-span-2 md:col-span-1">
+                        <p class="text-xs leading-4 text-text-muted-400">&copy; 2026 LEINAD — SOPHOPSY</p>
+                        <p class="text-xs leading-4 text-text-muted-400">Distributeur officiel en Côte d'Ivoire</p>
+
+                        <a href="#"
+                            class="mt-4 inline-flex items-center gap-2 text-[15px] leading-6 text-white/90 transition-colors hover:text-primary">
+                            Retour en haut
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="m5 12 7-7 7 7" />
+                                <path d="M12 19V5" />
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- copyright -->
+
                 </div>
+                <!-- columns -->
 
-            </div>
-
-            <div class="w-full bg-amber-500 h-px mt-15"></div>
-
-            <div>
-                <div class="text-xs mt-2 md:flex justify-between">
-                    <p>&copy 2026 LEINAD — SOPHOPSY, distributeur officiel en Côte d'Ivoire</p>
-                    <p class="mt-2">Propulsé par
-                        SOPHOPSY</p>
-                </div>
-            </div>
-
-
-            <div class="text-center my-15
-                text-6xl 
-                md:text-9xl ">
-                <p class="tracking-wider md:tracking-widest text-stone-700">
-                    LEINAD
-                </p>
             </div>
 
         </div>
 
-
-
-    </section>
+    </footer>
     <!-- FOOTER -->
 
     <!-- toast -->
