@@ -280,7 +280,8 @@
                                         FNE.</p>
 
                                     <div>
-                                        <button id="btn-name" class="md:btn btn-sm md:mt-6 mt-3 mb-3 md:mb-0 tracking-wider">
+                                        <button id="btn-name"
+                                            class="md:btn btn-sm md:mt-6 mt-3 mb-3 md:mb-0 tracking-wider">
                                             Decouvrir LEINAD ERP
                                         </button>
                                     </div>
@@ -304,91 +305,82 @@
 
 
     <!-- TOUTES VOTRE ENTREPRISE -->
+    <section class="bg-neutral-950 px-6 py-20 text-white md:px-16 md:py-28">
+        <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-start md:gap-16">
 
-    <section class="mx-6">
-        <div>
-
-            <div class="text-center">
-                <span class="text-6xl text-secondary
-                 font-bold">
-                    LEINARD
+            <!-- left: -->
+            <div class="md:sticky md:top-28">
+                <span class="inline-block rounded bg-orange-500/20 px-3 py-1 text-sm text-orange-300">
+                    Fonctionnalités
                 </span>
 
-                <p class="font-semibold 
-                mt-8 text-lg">
-                    Toute votre entreprise,dans un seul logiciel
+                <h2 class="mt-6 text-4xl font-semibold leading-tight md:text-6xl">
+                    Toute votre entreprise,
+                    <span class="italic text-secondary">dans un seul logiciel.</span>
+                </h2>
+
+                <p class="mt-6 max-w-md text-base text-white/80 md:text-lg">
+                    Facturation, caisse, stocks, achats et conformité FNE : tout est relié, au même endroit.
                 </p>
 
-                <p>
-
-                </p>
+                <button class="btn mt-8">Decouvrir Plus</button>
             </div>
+            <!-- left -->
 
+            <!-- right: the cards -->
+            <div class="flex flex-col gap-6 pb-24 [overflow-anchor:none]">
 
-            <div id="slider" class="cards-scroll mt-18">
-
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-shield text-black preview-icon">
+                <!-- card 1 -->
+                <div data-stack style="--i:0" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
+                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
+                    <div class="flex h-12 items-center gap-3 px-4">
+                        <span
+                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-shield size-5">
                                 <path
                                     d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
                             </svg>
                         </span>
-                        <div class="h-px w-full bg-amber-600 mt-2"></div>
-                        <div class="mt-3 text-black font-semibold">
-                            <span class="text-2xl font-bold">Facturation & devis</span>
-                            <p>
-                                Factures, avoirs et proformas, certifiés FNE en un clic.
-                            </p>
-                        </div>
-
+                        <h3 class="truncate text-base font-bold md:text-xl">Facturation & devis</h3>
                     </div>
-
-
-
+                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
+                        Factures, avoirs et proformas, certifiés FNE en un clic.
+                    </p>
                 </div>
 
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-receipt text-black preview-icon">
+                <!-- card 2 -->
+                <div data-stack style="--i:1" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
+                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
+                    <div class="flex h-12 items-center gap-3 px-4">
+                        <span
+                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-receipt size-5">
                                 <path d="M12 17V7" />
                                 <path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" />
                                 <path
                                     d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
                             </svg>
-
-
                         </span>
-
-                        <div class="h-px w-full bg-amber-600 mt-2"></div>
-
-
-                        <div class="mt-2 text-black font-semibold">
-                            <span class="text-2xl font-bold">Caisse / POS</span>
-                            <p class="wrap-break-word leading-8">
-                                Vente rapide, scanner, ouverture et fermeture de caisse, tickets imprimés.
-                            </p>
-                        </div>
-
+                        <h3 class="truncate text-base font-bold md:text-xl">Caisse / POS</h3>
                     </div>
-
+                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
+                        Vente rapide, scanner, ouverture et fermeture de caisse, tickets imprimés.
+                    </p>
                 </div>
 
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide icon-cards lucide-package-check preview-icon">
+                <!-- card 3 -->
+                <div data-stack style="--i:2" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
+                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
+                    <div class="flex h-12 items-center gap-3 px-4">
+                        <span
+                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-package-check size-5">
                                 <path d="M12 22V12" />
                                 <path d="m16 17 2 2 4-4" />
                                 <path
@@ -397,30 +389,22 @@
                                 <path d="m7.5 4.27 8.997 5.148" />
                             </svg>
                         </span>
-
-                        <div class="h-px w-full mt-3 bg-amber-600"></div>
-
-
-                        <div class="mt-2 text-cards">
-                            <span class="text-2xl font-bold">Stocks</span>
-                            <p>
-                                Entrées, sorties, transferts entre boutiques, inventaire, alertes, composition.
-                            </p>
-                        </div>
-
+                        <h3 class="truncate text-base font-bold md:text-xl">Stocks</h3>
                     </div>
-
-
-
+                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
+                        Entrées, sorties, transferts entre boutiques, inventaire, alertes, composition.
+                    </p>
                 </div>
 
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-hand-coins icon-cards preview-icon">
+                <!-- card 4 -->
+                <div data-stack style="--i:3" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
+                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
+                    <div class="flex h-12 items-center gap-3 px-4">
+                        <span
+                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-hand-coins size-5">
                                 <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
                                 <path
                                     d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
@@ -429,204 +413,111 @@
                                 <circle cx="6" cy="5" r="3" />
                             </svg>
                         </span>
-
-                        <div class="h-px w-full mt-3 bg-amber-600"></div>
-
-                        <div class="mt-2 text-black font-semibold">
-                            <span class="text-2xl font-bold">Ventes & achats</span>
-                            <p>
-                                Bons de commande clients et fournisseurs, réceptions, historique des prix.
-                            </p>
-                        </div>
-
+                        <h3 class="truncate text-base font-bold md:text-xl">Ventes & achats</h3>
                     </div>
-
-
-
+                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
+                        Bons de commande clients et fournisseurs, réceptions, historique des prix.
+                    </p>
                 </div>
 
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-users icon-cards preview-icon">
+                <!-- card 5 -->
+                <div data-stack style="--i:4" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
+                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
+                    <div class="flex h-12 items-center gap-3 px-4">
+                        <span
+                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-users size-5">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                                 <path d="M16 3.128a4 4 0 0 1 0 7.744" />
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
                                 <circle cx="9" cy="7" r="4" />
                             </svg>
                         </span>
-
-                        <div class="h-px mt-3 w-full bg-amber-600"></div>
-
-                        <div class="mt-2 text-cards">
-                            <span class="text-2xl font-bold">
-                                Clients & fournisseurs</span>
-                            <p>
-                                Fiches, grands livres, paiements, relances et reprise des soldes.
-
-                            </p>
-                        </div>
-
+                        <h3 class="truncate text-base font-bold md:text-xl">Clients & fournisseurs</h3>
                     </div>
-
-
-
+                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
+                        Fiches, grands livres, paiements, relances et reprise des soldes.
+                    </p>
                 </div>
 
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-layout-dashboard icon-cards preview-icon">
+                <!-- card 6 -->
+                <div data-stack style="--i:5" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
+                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
+                    <div class="flex h-12 items-center gap-3 px-4">
+                        <span
+                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-layout-dashboard size-5">
                                 <rect width="7" height="9" x="3" y="3" rx="1" />
                                 <rect width="7" height="5" x="14" y="3" rx="1" />
                                 <rect width="7" height="9" x="14" y="12" rx="1" />
                                 <rect width="7" height="5" x="3" y="16" rx="1" />
                             </svg>
                         </span>
-
-                        <div class="h-px mt-3 w-full bg-amber-600"></div>
-                        <div class="mt-2 text-cards">
-                            <span class="text-2xl font-bold">Tableaux de bord</span>
-                            <p>
-                                Chiffre d'affaires, marges, produits phares, statistiques avancées.
-                        </div>
-
+                        <h3 class="truncate text-base font-bold md:text-xl">Tableaux de bord</h3>
                     </div>
-
-
-
+                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
+                        Chiffre d'affaires, marges, produits phares, statistiques avancées.
+                    </p>
                 </div>
 
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-user-check icon-cards preview-icon">
+                <!-- card 7 -->
+                <div data-stack style="--i:6" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
+                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
+                    <div class="flex h-12 items-center gap-3 px-4">
+                        <span
+                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-user-check size-5">
                                 <path d="m16 11 2 2 4-4" />
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                                 <circle cx="9" cy="7" r="4" />
                             </svg>
                         </span>
-
-                        <div class="h-px mt-3 w-full bg-amber-600"></div>
-                        <div class="mt-2 text-cards">
-                            <span class="text-2xl font-bold">Utilisateurs & permissions</span>
-                            <p>
-                                Chacun ne voit que ce qui le concerne, module par module.
-                            </p>
-                        </div>
-
+                        <h3 class="truncate text-base font-bold md:text-xl">Utilisateurs & permissions</h3>
                     </div>
-
-
-
+                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
+                        Chacun ne voit que ce qui le concerne, module par module.
+                    </p>
                 </div>
 
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-tablet-smartphone icon-cards preview-icon">
-                                <rect width="10" height="14" x="3" y="8" rx="2" />
-                                <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
-                                <path d="M8 18h.01" />
+                <!-- card 8 -->
+                <div data-stack style="--i:7" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
+                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
+                    <div class="flex h-12 items-center gap-3 px-4">
+                        <span
+                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-scan-qr-code size-5">
+                                <path d="M17 12v4a1 1 0 0 1-1 1h-4" />
+                                <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+                                <path d="M17 8V7" />
+                                <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+                                <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+                                <path d="M7 17h.01" />
+                                <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+                                <rect x="7" y="7" width="5" height="5" rx="1" />
                             </svg>
                         </span>
-
-                        <div class="h-px mt-3 w-full bg-amber-600"></div>
-                        <div class="mt-2 text-cards">
-                            <span class="text-2xl font-bold">
-                                FNE / interfaçage DGI</span>
-                            <p>
-                                Certification intégrée : QR code, sticker officiel, numérotation.
-                            </p>
-                        </div>
-
+                        <h3 class="truncate text-base font-bold md:text-xl">FNE / interfaçage DGI</h3>
                     </div>
-
-
-
+                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
+                        Certification intégrée : QR code, sticker officiel, numérotation.
+                    </p>
                 </div>
 
-                <div class="cards-content">
-
-                    <div class="flex flex-col items-center text-center">
-                        <span class="flex items-center justify-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="124" height="124" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-tablet-smartphone icon-cards preview-icon">
-                                <rect width="10" height="14" x="3" y="8" rx="2" />
-                                <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
-                                <path d="M8 18h.01" />
-                            </svg>
-                        </span>
-
-                        <div class="h-px mt-3 w-full bg-amber-600"></div>
-                        <div class="mt-2 text-cards">
-                            <span class="text-2xl font-bold">
-                                Web & mobile</span>
-                            <p>
-                                Sur ordinateur, tablette, téléphone ou terminal de caisse.
-                            </p>
-                        </div>
-
-                    </div>
-
-
-
-                </div>
-
-
             </div>
-
-            <div class="mt-4 flex items-center justify-center gap-3">
-
-                <svg id="next" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide hidden md:block lucide-move-left direction-buttons  preview-icon">
-                    <path d="M6 8L2 12L6 16" />
-                    <path d="M2 12H22" />
-                </svg>
-
-
-
-                <span class="text-sm tracking-widest
-                   text-center text-white md:block hidden">FAIRE GLISSER POUR EXPLORER
-                </span>
-
-                <svg id="prev" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-move-right hidden md:block direction-buttons preview-icon">
-                    <path d="M18 8L22 12L18 16" />
-                    <path d="M2 12H22" />
-                </svg>
-
-
-
-            </div>
-
-
         </div>
-
-
-
-
     </section>
     <!-- TOUTES VOTRE ENTREPRISE -->
 
 
     <!-- LEINAD CONNECT -->
-
     <section class="mx-9">
 
         <div>
@@ -637,8 +528,8 @@
                     LEINARD
                 </span>
 
-                <p class="text-white font-bold 
-                mt-8 text-2xl">
+                <p class="font-bold 
+                mt-4 text-2xl">
                     Gardez votre logiciel. Connectez-le à la FNE.
                 </p>
             </div>
@@ -655,10 +546,172 @@
                 </p>
             </div>
 
-            <div class="md:flex md:gap-30">
+            <div class="flex md:justify-center mt-4 md:gap-8">
+                <div class="border border-gray-700/70 rounded-2xl md:text-sm md:w-40 md:text-center">
+                    <p class="my-1">SAGE</p>
+                </div>
 
-                <!-- left -->
-                <div class="md:flex md:flex-col lg:flex-row lg:items-start
+                <div class="border border-gray-700/70 rounded-2xl md:text-sm md:w-40 md:text-center">
+                    <p class="my-1">OMEGA POS</p>
+                </div>
+
+                <div class="border border-gray-700/70  rounded-2xl md:w-40 md:text-center">
+                    <p class="my-1">VOTRE ERP</p>
+                </div>
+
+                <div class="border border-gray-700/70 rounded-2xl md:w-40 md:text-center">
+                    <p class="my-1">VOTRE CAISSE</p>
+                </div>
+
+                <div class="border border-gray-700/70 rounded-2xl md:text-sm md:w-40 md:text-center">
+                    <p class="my-1">LOGICIEL MÉTIER</p>
+                </div>
+            </div>
+
+            <div class="text-center md:my-2">
+                <p>
+                    Déjà en production : Omega POS interfacé avec la FNE par LEINAD
+                </p>
+            </div>
+
+            <!-- central cards -->
+            <div class="border rounded-xl md:w-220 md:mt-1 md:mx-50">
+
+                <div class="flex md:justify-center md:items-center md:py-6">
+
+                    <div class="border border-gray-700/70 rounded md:text-sm 
+                        shrink-0 md:w-40 w-80 text-xs md:text-center">
+                        <p class="md:p-2">SAGE</p>
+                    </div>
+
+                    <!-- line 1 -->
+                    <div class="relative h-0.5 w-8 overflow-hidden rounded-full
+                                 bg-gray-700/70">
+                        <div data-flow class="absolute inset-y-0 left-0 w-1/4
+                            bg-linear-to-r from transparent via-emerald-400
+                             to-transparent">
+
+                        </div>
+                    </div>
+                    <!-- line 1 -->
+
+                    <div class="border border-gray-700/70 rounded md:text-sm md:w-40 md:text-center">
+                        <p class="md:p-2">OMEGA POS</p>
+                    </div>
+
+                    <!-- line 2 -->
+                    <div class="relative h-0.5 w-8 overflow-hidden rounded-full bg-gray-700/70">
+                        <div data-flow class="absolute inset-y-0 left-0 w-1/4
+                            bg-linear-to-r from transparent via-emerald-400
+                             to-transparent">
+
+                        </div>
+                    </div>
+                    <!-- line 2 -->
+
+                    <div class="border border-gray-700/70  rounded md:w-40 md:text-center">
+                        <p class="md:p-2">VOTRE ERP</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- central cards -->
+
+
+            <!-- context -->
+
+            <div class="flex md:justify-center md:mt-7 md:gap-13">
+                <!-- first -->
+                <div class="border rounded md:w-65 ">
+                    <div class="md:px-4">
+                        <div class="md:size-13 w-8 h-8 md:-mt-4 md:-ml-5 shrink-0">
+                            <span class="number-btn">1</span>
+                        </div>
+
+                        <div class="md:text-center">
+                            <span class="md:text-lg md:-ml-3
+                            font-bold ">
+                                Audit gratuit de votre système
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="md:mx-3">
+                        <p class="md:text-sm md:mt-2 text-center">
+                            30 minutes, par téléphone ou sur place : on regarde votre logiciel et on vous dit comment il
+                            se branche.
+                        </p>
+                    </div>
+                </div>
+                <!-- first -->
+
+                <!-- second -->
+                <div class="border rounded md:w-65 ">
+                    <div class="md:px-4">
+                        <div class="md:size-13 w-8 h-8 md:-mt-4 md:-ml-5 shrink-0">
+                            <span class="number-btn">2</span>
+                        </div>
+
+                        <div class="md:text-center">
+                            <span class="md:text-lg font-bold">
+
+                                Installation du connecteur
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="md:mx-3 md:p-2">
+                        <p class="md:text-sm text-center">
+                            Nos techniciens relient votre outil à la FNE et testent avec vous : vente, avoir, bordereau.
+                        </p>
+                    </div>
+                </div>
+                <!-- second -->
+
+
+                <!-- third -->
+                <div class="border rounded md:w-65">
+                    <div class="md:px-4">
+                        <div class="md:size-13 w-8 h-8 md:-mt-4 md:-ml-5 shrink-0">
+                            <span class="number-btn">3</span>
+                        </div>
+
+                        <div class="md:text-center">
+                            <span class="md:text-lg font-bold md:text-nowrap">
+                                Vous êtes conforme
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="md:mx-3 md:p-2 text-center">
+                        <p class="md:text-sm md:mt-7">
+                            Vos factures sortent avec le sticker officiel, le QR code et la numérotation sécurisée.
+                        </p>
+                    </div>
+
+                </div>
+                <!-- third -->
+
+            </div>
+
+            <div class="md:mx-135 md:mt-6">
+                <button class="btn bg-secondary text-center md:text-nowrap">
+                    Verifier la Comptabilite
+                </button>
+            </div>
+
+            <!-- context -->
+
+
+            <!-- <div class="md:flex md:gap-30"> -->
+
+            <!-- left -->
+            <!-- <div class="md:flex md:flex-col lg:flex-row lg:items-start
                       lg:justify-center gap-6 lg:gap-10 px-3 
                       lg:px-10 mt-8 md:-ml-14 -ml-6">
 
@@ -672,11 +725,11 @@
                         rounded-[63%_37%_54%_46%/55%_48%_52%_45%]">
 
 
-                </div>
-                <!-- left -->
+                </div> -->
+            <!-- left -->
 
-                <!-- right -->
-                <div class="
+            <!-- right -->
+            <!-- <div class="
                     md:w-fit
                     w-96 md:h-full
                     rounded-2xl mt-6 p-4">
@@ -755,14 +808,14 @@
                             md:w-96 mt-6 p-2 mx-20 btn">
                         Verifier la comptabilite
                     </button>
-                </div>
+                </div> -->
 
-                <!-- right -->
-
-
+            <!-- right -->
 
 
-            </div>
+
+
+            <!-- </div> -->
 
 
         </div>

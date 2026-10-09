@@ -87,25 +87,21 @@
         @apply fixed top-0 left-0 w-full z-50 transition-colors duration-300;
     }
 
-    .btn{
+    .btn {
         @apply bg-primary px-4 py-2 text-black rounded-btn cursor-pointer font-semibold;
     }
 
     .btn-sm {
-        @apply bg-primary px-2 text-sm py-1 text-black rounded-btn
-             cursor-pointer font-semibold;
+        @apply bg-primary px-2 text-sm py-1 text-black rounded-btn cursor-pointer font-semibold;
     }
 
     /* HERO SECTION */
 
     .text-check {
-        @apply flex flex-col my-7 items-start 
-        gap-2 w-fit mt-7 md:flex-row
-        mx-15 md:gap-8 md:mt-12 md:w-auto md:text-nowrap 
-        text-sm;
+        @apply flex flex-col my-7 items-start gap-2 w-fit mt-7 md:flex-row mx-15 md:gap-8 md:mt-12 md:w-auto md:text-nowrap text-sm;
     }
 
-    .check-text{
+    .check-text {
         @apply flex gap-2 items-center md:gap-1
     }
 
@@ -114,11 +110,13 @@
 
     /* THIRD SECTION */
 
-        .left-cards{
-            @apply border rounded-xl border-gray-200/70 
-                    md:py-4 py-3 md:w-135 w-95 md:mx-10 md:mt-6 md:my-0 my-2
-                    cursor-pointer focus:outline focus:border-primary;
-        }
+    .left-cards {
+        @apply border rounded-xl border-gray-200/70 md:py-4 py-3 md:w-135 w-95 md:mx-10 md:mt-6 md:my-0 my-2 cursor-pointer focus:outline focus:border-primary;
+    }
+
+    .left-cards.active {
+        @apply border-orange-500;
+    }
 
     /* THIRD SECTION */
 
