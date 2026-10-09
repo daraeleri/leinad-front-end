@@ -90,19 +90,35 @@ window.addEventListener("resize", updateStack);
 updateStack();
 
 
-// faq toggle
-document.querySelectorAll('.faq-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const answer = item.querySelector('.faq-answer');
-        const plus = item.querySelector('icon-plus');
-        const minus = item.querySelector('.icon-minus');
-        console.log({ item, answer, plus, minus });
+// faq : items (open / closed is driven by data-state, styles live in input.css)
+const faqItems = document.querySelectorAll('.faq-item');
+const faqCats = document.querySelectorAll('.faq-cat');
 
-        const isOpen = answer.classList.toggle('hidden') === false;
-        plus.classList.toggle('hidden', isOpen);
-        minus.classList.toggle('hidden', !isOpen);
-        btn.setAttribute('aria-expanded', isOpen);
+function setFaqState(item, open) {
+    item.dataset.state = open ? 'open' : 'closed';
+    const question = item.querySelector('.faq-question');
+    if (question) question.setAttribute('aria-expanded', String(open));
+}
+
+faqItems.forEach((item) => {
+    const question = item.querySelector('.faq-question');
+    if (!question) return;
+
+    question.addEventListener('click', () => {
+        setFaqState(item, item.dataset.state !== 'open');
+    });
+});
+
+// faq : category filter
+faqCats.forEach((cat) => {
+    cat.addEventListener('click', () => {
+        const wanted = cat.dataset.category;
+
+        faqCats.forEach((other) => other.setAttribute('aria-pressed', String(other === cat)));
+
+        faqItems.forEach((item) => {
+            item.hidden = wanted !== 'all' && item.dataset.category !== wanted;
+        });
     });
 });
 

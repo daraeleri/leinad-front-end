@@ -14,8 +14,8 @@
 
     <section>
 
-        <nav class="text-nowrap px-4 md:px-14 py-3 bg-black/70 backdrop-blur items-center">
-            <div class="flex justify-between gap-6">
+        <nav class="text-nowrap py-3 bg-black/70 backdrop-blur items-center">
+            <div class="section-container flex justify-between gap-6">
                 <img src="./assets/images/leinad_logo.png" alt="" class="h-10 w-auto shrink-0">
 
 
@@ -92,7 +92,7 @@
             </div>
             <!-- soft brand glows -->
 
-            <div class="relative z-10 flex flex-col px-5 pt-28 text-center md:min-h-0 md:flex-1 md:px-8 md:short:pt-24">
+            <div class="section-container relative z-10 flex flex-col pt-28 text-center md:min-h-0 md:flex-1 md:short:pt-24">
 
                 <!-- text -->
                 <div class="mx-auto flex max-w-4xl flex-col items-center">
@@ -210,9 +210,9 @@
 
 
         <!-- situation page -->
-        <section class="relative z-10 bg-white rounded-t-3xl px-8 pt-20 pb-20">
+        <section class="relative z-10 bg-white rounded-t-3xl pt-20 pb-20">
 
-            <div class="">
+            <div class="section-container">
 
                 <div class="">
 
@@ -325,8 +325,8 @@
 
 
     <!-- TOUTES VOTRE ENTREPRISE -->
-    <section class="bg-neutral-950 px-6 py-20 text-white md:px-16 md:py-28">
-        <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-2 md:items-start md:gap-16">
+    <section class="bg-neutral-950 py-20 text-white md:py-28">
+        <div class="section-container grid gap-10 md:grid-cols-2 md:items-start md:gap-16">
 
             <!-- left: -->
             <div class="md:sticky md:top-28">
@@ -538,7 +538,7 @@
 
 
     <!-- LEINAD CONNECT -->
-    <section class="mx-9">
+    <section class="section-container">
 
         <div>
 
@@ -846,7 +846,7 @@
 
     <!-- LE FNE SANS STRESS -->
 
-    <section class="mx-6">
+    <section class="section-container">
         <div class="text-center mt-25">
 
             <div class="md:text-6xl text-4xl 
@@ -1081,159 +1081,242 @@
 
 
     <!-- integrations -->
-    <section class="py-24 md:mt-35">
+    <section class="section-container py-24 md:mt-35">
 
-        <div class="grid grid-cols-1 gap-8 
-            mx-8 md:mx-15 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-3 xl:grid-cols-4">
 
-            <div class="col-span-1 lg:col-span-2">
+            <!-- title -->
+            <div class="flex flex-col justify-center py-4 md:col-span-2 md:py-8 lg:col-span-3 xl:col-span-2">
 
-                <div class="gap-2 text-xl text-center md:text-4xl font-bold md:text-wrap">
-                    <span class="">Intégrations : compatible avec votre</span>
-                    <p class="text-text-500 text-center">logiciel.</p>
+                <!-- <span
+                    class="font-heading inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.22em] text-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                    LEINAD CONNECT
+                </span> -->
 
-                </div>
+                <h2
+                    class="font-heading mt-4 text-3xl font-extrabold uppercase leading-[1.05] tracking-tight text-neutral-950 md:text-4xl xl:text-[2.75rem]">
+                    Intégrations : compatible avec votre
+                    <span class="text-secondary">logiciel.</span>
+                </h2>
 
-                <p class="text-center mt-2 text-sm font-semibold">
+                <p class="mt-4 max-w-md text-sm leading-relaxed text-neutral-600 md:text-base">
                     LEINAD CONNECT se branche sur ce que vous utilisez déjà.
                 </p>
+
             </div>
+            <!-- title -->
 
 
-            <div class="cards cards-hero bg-white">
+            <!-- card 1 -->
+            <div class="relative isolate flex min-h-72 flex-col justify-between overflow-hidden rounded-2xl border border-gray-200 bg-secondary p-6 text-white xl:min-h-96">
 
-                <div class="text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-database text-secondary md:mx-22 preview-icon">
-                        <ellipse cx="12" cy="5" rx="9" ry="3" />
-                        <path d="M3 5V19A9 3 0 0 0 21 19V5" />
-                        <path d="M3 12A9 3 0 0 0 21 12" />
-                    </svg>
-                    <span class="font-bold text-black 
-                     wrap-break-word min-w-0 text-lg">Logiciels de gestion & ERP</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true"
+                    class="pointer-events-none absolute -bottom-8 -right-8 -z-10 h-44 w-44 opacity-[0.08]">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                    <path d="M3 12A9 3 0 0 0 21 12" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <ellipse cx="12" cy="5" rx="9" ry="3" />
+                    <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+                    <path d="M3 12A9 3 0 0 0 21 12" />
+                </svg>
+
+                <div>
+                    <h3 class="font-heading text-2xl font-extrabold uppercase leading-[1.1]">
+                        Logiciels de gestion &amp; ERP
+                    </h3>
+                    <p class="mt-3 text-sm leading-relaxed text-white/75">
+                        Gestion commerciale, ERP ou progiciel intégré (par exemple Sage 100, Odoo, EBP, Ciel, SAP…) :
+                        vos factures partent vers la FNE depuis votre outil habituel.
+                    </p>
                 </div>
 
-
-                <p class="text-black mt-2 pb-2 text-sm">
-                    Gestion commerciale, ERP ou progiciel intégré (par exemple Sage 100, Odoo, EBP, Ciel, SAP…) :
-                    vos
-                    factures partent vers la FNE depuis votre outil habituel.
-                </p>
             </div>
+            <!-- card 1 -->
 
+            <!-- card 2 -->
+            <div class="relative isolate flex min-h-72 flex-col justify-between overflow-hidden rounded-2xl border border-white/15 bg-neutral-950 p-6 text-white xl:min-h-96">
 
-            <div class="cards cards-hero bg-white">
-                <div class="text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-receipt-text md:mx-23 text-primary preview-icon">
-                        <path d="M13 16H8" />
-                        <path d="M14 8H8" />
-                        <path d="M16 12H8" />
-                        <path
-                            d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
-                    </svg>
-                    <span class="font-bold text-black wrap-break-word min-w-0 text-lg">Logiciels de comptabilité</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true"
+                    class="pointer-events-none absolute -bottom-8 -right-8 -z-10 h-44 w-44 opacity-[0.08]">
+                    <path d="M13 16H8" />
+                    <path d="M14 8H8" />
+                    <path d="M16 12H8" />
+                    <path
+                        d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
+                </svg>
 
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M13 16H8" />
+                    <path d="M14 8H8" />
+                    <path d="M16 12H8" />
+                    <path
+                        d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
+                </svg>
+
+                <div>
+                    <h3 class="font-heading text-2xl font-extrabold uppercase leading-[1.1]">
+                        Logiciels de comptabilité
+                    </h3>
+                    <p class="mt-3 text-sm leading-relaxed text-white/70">
+                        Vos factures sont saisies dans votre logiciel comptable ? Elles sont certifiées sans
+                        ressaisie, et votre comptable garde ses habitudes.
+                    </p>
                 </div>
 
-                <p class="text-black mt-2 pb-2 text-sm">
-                    Vos factures sont saisies dans votre logiciel comptable ? Elles sont certifiées sans ressaisie, et
-                    votre comptable garde ses habitudes.
-
-
-                </p>
             </div>
+            <!-- card 2 -->
 
-            <div class="cards cards-hero bg-white">
-                <div class="text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-playing-card text-secondary md:mx-22 preview-icon">
-                        <path
-                            d="M12.832 8.445a1 1 0 00-1.589-.098l-2.075 3.098a1 1 0 000 1.11l2 3a1 1 0 001.664 0l2-3a1 1 0 000-1.11z" />
-                        <rect x="5" y="2" width="14" height="20" rx="2" />
-                    </svg>
-                    <span class="font-bold text-black wrap-break-word 
-                    min-w-0 md:text-lg">Caisses & terminaux (TPE)</span>
+            <!-- card 3 -->
+            <div class="relative isolate flex min-h-72 flex-col justify-between overflow-hidden rounded-2xl border border-gray-200 bg-primary p-6 text-black xl:min-h-96">
 
-                </div>
-                <p class="text-black mt-2 pb-2 text-sm">
-                    Omega POS ou tout autre logiciel de caisse, caisse tactile ou terminal Android : chaque ticket est
-                    certifié et sort avec son QR code et son sticker officiel.
-            </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true"
+                    class="pointer-events-none absolute -bottom-8 -right-8 -z-10 h-44 w-44 opacity-[0.08]">
+                    <path
+                        d="M12.832 8.445a1 1 0 00-1.589-.098l-2.075 3.098a1 1 0 000 1.11l2 3a1 1 0 001.664 0l2-3a1 1 0 000-1.11z" />
+                    <rect x="5" y="2" width="14" height="20" rx="2" />
+                </svg>
 
-            <div class="cards cards-hero  bg-white">
-                <div class="md:flex flex-col items-center gap-3 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path
+                        d="M12.832 8.445a1 1 0 00-1.589-.098l-2.075 3.098a1 1 0 000 1.11l2 3a1 1 0 001.664 0l2-3a1 1 0 000-1.11z" />
+                    <rect x="5" y="2" width="14" height="20" rx="2" />
+                </svg>
 
-                    <div class="md:flex shrink-0 items-center 
-                        md:justify-center mt-3">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code text-primary md:mx-22
-                            preview-icon">
-                            <path d="m16 18 6-6-6-6" />
-                            <path d="m8 6-6 6 6 6" />
-                        </svg>
-                    </div>
-
-                    <span class="font-bold text-black wrap-break-word
-                     min-w-0 text-lg leading-snug">Logiciels métier & sur
-                        mesure</span>
-
-                </div>
-                <p class="text-black mt-2 pb-2 text-sm">
-                    Pharmacie, restaurant, hôtel, quincaillerie, station-service, ou logiciel développé en interne :
-                    notre API se connecte à votre système.
-                </p>
-            </div>
-
-            <div class="cards cards-hero bg-white">
-                <div class="text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-sheet md:mx-23 md:mt-2 text-secondary preview-icon">
-                        <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
-                        <line x1="3" x2="21" y1="9" y2="9" />
-                        <line x1="3" x2="21" y1="15" y2="15" />
-                        <line x1="9" x2="9" y1="9" y2="21" />
-                        <line x1="15" x2="15" y1="9" y2="21" />
-                    </svg>
-                    <span class="font-bold text-black wrap-break-word min-w-0 md:text-xl">Vous êtes sur Excel ?</span>
-
-                </div>
-                <p class="text-black mt-2 pb-2 text-sm">
-                    C'est le bon moment pour passer à LEINAD ERP : vos données Excel sont reprises, et vous gagnez une
-                    vraie gestion en plus de la FNE.
-                </p>
-            </div>
-
-            <div class="cards cards-hero bg-white">
-                <div class="text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-laptop text-primary md:mt-2 md:mx-23 rounded preview-icon">
-                        <path
-                            d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" />
-                        <path d="M20.054 15.987H3.946" />
-                    </svg>
-                    <span class="font-bold text-black wrap-break-word
-                     min-w-0 text-lg">Votre logiciel n'est pas cité
-                        ?</span>
-
+                <div>
+                    <h3 class="font-heading text-2xl font-extrabold uppercase leading-[1.1]">
+                        Caisses &amp; terminaux (TPE)
+                    </h3>
+                    <p class="mt-3 text-sm leading-relaxed text-black/70">
+                        Omega POS ou tout autre logiciel de caisse, caisse tactile ou terminal Android : chaque
+                        ticket est certifié et sort avec son QR code et son sticker officiel.
+                    </p>
                 </div>
 
-                <p class="text-black mt-2 pb-2">
-                    Parlez-nous-en : l'audit gratuit vérifie la compatibilité de votre outil et vous indique la
-                    meilleure solution.
-                </p>
             </div>
+            <!-- card 3 -->
 
+            <!-- card 4 -->
+            <div class="relative isolate flex min-h-72 flex-col justify-between overflow-hidden rounded-2xl border border-gray-200 bg-secondary p-6 text-white xl:min-h-96">
 
+                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true"
+                    class="pointer-events-none absolute -bottom-8 -right-8 -z-10 h-44 w-44 opacity-[0.08]">
+                    <path d="m16 18 6-6-6-6" />
+                    <path d="m8 6-6 6 6 6" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="m16 18 6-6-6-6" />
+                    <path d="m8 6-6 6 6 6" />
+                </svg>
+
+                <div>
+                    <h3 class="font-heading text-2xl font-extrabold uppercase leading-[1.1]">
+                        Logiciels métier &amp; sur mesure
+                    </h3>
+                    <p class="mt-3 text-sm leading-relaxed text-white/75">
+                        Pharmacie, restaurant, hôtel, quincaillerie, station-service, ou logiciel développé en
+                        interne : notre API se connecte à votre système.
+                    </p>
+                </div>
+
+            </div>
+            <!-- card 4 -->
+
+            <!-- card 5 -->
+            <div class="relative isolate flex min-h-72 flex-col justify-between overflow-hidden rounded-2xl border border-white/15 bg-neutral-950 p-6 text-white xl:min-h-96">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true"
+                    class="pointer-events-none absolute -bottom-8 -right-8 -z-10 h-44 w-44 opacity-[0.08]">
+                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                    <line x1="3" x2="21" y1="9" y2="9" />
+                    <line x1="3" x2="21" y1="15" y2="15" />
+                    <line x1="9" x2="9" y1="9" y2="21" />
+                    <line x1="15" x2="15" y1="9" y2="21" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+                    <line x1="3" x2="21" y1="9" y2="9" />
+                    <line x1="3" x2="21" y1="15" y2="15" />
+                    <line x1="9" x2="9" y1="9" y2="21" />
+                    <line x1="15" x2="15" y1="9" y2="21" />
+                </svg>
+
+                <div>
+                    <h3 class="font-heading text-2xl font-extrabold uppercase leading-[1.1]">
+                        Vous êtes sur Excel ?
+                    </h3>
+                    <p class="mt-3 text-sm leading-relaxed text-white/70">
+                        C'est le bon moment pour passer à LEINAD ERP : vos données Excel sont reprises, et vous
+                        gagnez une vraie gestion en plus de la FNE.
+                    </p>
+                </div>
+
+            </div>
+            <!-- card 5 -->
+
+            <!-- card 6 -->
+            <div class="relative isolate flex min-h-72 flex-col justify-between overflow-hidden rounded-2xl border border-gray-200 bg-primary p-6 text-black xl:min-h-96">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="176" height="176" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true"
+                    class="pointer-events-none absolute -bottom-8 -right-8 -z-10 h-44 w-44 opacity-[0.08]">
+                    <path
+                        d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" />
+                    <path d="M20.054 15.987H3.946" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path
+                        d="M18 5a2 2 0 0 1 2 2v8.526a2 2 0 0 0 .212.897l1.068 2.127a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45l1.068-2.127A2 2 0 0 0 4 15.526V7a2 2 0 0 1 2-2z" />
+                    <path d="M20.054 15.987H3.946" />
+                </svg>
+
+                <div>
+                    <h3 class="font-heading text-2xl font-extrabold uppercase leading-[1.1]">
+                        Votre logiciel n'est pas cité ?
+                    </h3>
+                    <p class="mt-3 text-sm leading-relaxed text-black/70">
+                        Parlez-nous-en : l'audit gratuit vérifie la compatibilité de votre outil et vous indique la
+                        meilleure solution.
+                    </p>
+                </div>
+
+            </div>
+            <!-- card 6 -->
 
         </div>
-
 
     </section>
     <!-- integrations -->
@@ -1243,186 +1326,261 @@
 
     <!-- TARIFS -->
 
-    <section class="mx-13 md:mt-35 isolate">
+    <section class="py-24 md:mt-35">
 
+        <div class="section-container grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
 
-        <div class="text-center">
-            <h2 class="text-6xl text-text-500 font-bold">Tarifs</h2>
+            <!-- left : heading + ERP plan -->
+            <div>
 
-            <p class="text-white mt-5 text-sm">
-                Chaque entreprise est différente : nous établissons un devis adapté à votre taille et
-                <br> à votre besoin. Le
-                devis est gratuit et sans engagement.
-            </p>
-        </div>
+                <p class="font-heading text-sm font-semibold text-secondary">Tarifs</p>
 
-        <div class="md:flex md:gap-30 mt-20">
+                <h2
+                    class="font-heading mt-4 max-w-xl text-4xl font-extrabold leading-[1.08] tracking-tight text-secondary md:text-5xl">
+                    Chaque entreprise est différente.
+                </h2>
 
-            <!-- left -->
-            <div class="tarifs">
+                <!-- plan : ERP -->
+                <div class="relative mt-12">
 
-                <div class="p-5">
-
-                    <div>
-
-                        <div class="mt-5">
-                            <span class="text-2xl font-bold">Sur Devis ERP</span>
-
-                            <p class="text-black/70 text-sm wrap-break-word max-w-sm ">Selon le nombre de boutiques, de
-                                caisses
-                                et d'utilisateurs, et les modules choisis.
-                            </p>
-                        </div>
-
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">Tous les modules de gestion</p>
-                        </div>
-
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">Certification FNE incluse</p>
-                        </div>
-
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">Certification FNE incluse</p>
-                        </div>
-
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">
-                                Reprise de vos données et formation</p>
-                        </div>
-
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">
-                                Support à Abidjan & à l'intérieur</p>
-                        </div>
-
-
-                        <div class="text-center mt-5 md:my-7">
-                            <button class="btn bg-secondary">
-                                Demander un devis ERP
-                            </button>
-                        </div>
-
+                    <!-- hand-drawn outline -->
+                    <div class="pointer-events-none absolute -inset-3">
+                        <svg class="h-full w-full text-secondary" viewBox="0 0 640 620" preserveAspectRatio="none"
+                            fill="none" aria-hidden="true">
+                            <path
+                                d="M26 34C150 18 470 22 608 28C628 44 624 230 628 452C631 588 634 604 606 612C466 624 176 618 30 608C14 600 18 556 14 470C10 296 14 84 26 34Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                vector-effect="non-scaling-stroke" />
+                        </svg>
                     </div>
-                </div>
 
+                    <div class="relative rounded-2xl border border-gray-200 bg-white p-6 md:p-8">
 
-            </div>
-            <!-- left -->
-
-
-            <!-- right -->
-            <div class="tarifs md:mt-50 mt-20">
-
-                <div class="p-5">
-
-                    <div>
-
-                        <div class="mt-5">
-                            <span class="text-2xl font-bold">Sur Devis Connect</span>
-
-                            <p class="text-black/70 text-sm wrap-break-word max-w-sm ">Selon votre logiciel actuel et
-                                votre volume de factures.
-                            </p>
+                        <!-- header -->
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="flex size-8 shrink-0 items-center justify-center rounded-full bg-secondary text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="size-4" aria-hidden="true">
+                                    <path d="M20 6 9 17l-5-5" />
+                                </svg>
+                            </span>
+                            <h3 class="font-heading text-lg font-extrabold text-neutral-950">Sur Devis ERP</h3>
                         </div>
 
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
+                        <p class="mt-3 text-sm leading-relaxed text-neutral-500">
+                            Selon le nombre de boutiques, de caisses et d'utilisateurs, et les modules choisis.
+                        </p>
+                        <!-- header -->
 
-                            <p class="text-sm">Audit gratuit de votre système</p>
-                        </div>
+                        <ul class="mt-2">
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="mt-0.5 size-5 shrink-0 text-secondary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Tous les modules de
+                                        gestion</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Ventes, achats, stocks,
+                                        caisse et comptabilité réunis dans un seul outil.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="mt-0.5 size-5 shrink-0 text-secondary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Certification FNE
+                                        incluse</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Vos factures sont
+                                        certifiées et transmises à la DGI, avec QR code et sticker officiel.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="mt-0.5 size-5 shrink-0 text-secondary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Reprise de vos données
+                                        et formation</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Vos données existantes
+                                        sont reprises et vos équipes formées au démarrage.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="mt-0.5 size-5 shrink-0 text-secondary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Support à Abidjan &amp;
+                                        à l'intérieur</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Une assistance sur place à
+                                        Abidjan et partout en Côte d'Ivoire.</p>
+                                </div>
+                            </li>
+                        </ul>
 
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">Installation du connecteur</p>
-                        </div>
-
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">Tests avec vous avant la mise en production</p>
-                        </div>
-
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">
-                                Reprise de vos données et formation</p>
-                        </div>
-
-                        <div class="mt-5 flex gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-check text-text-500 preview-icon">
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-
-                            <p class="text-sm">
-                                Suivi et assistance</p>
-                        </div>
-
-                        <div class="text-center md:mt-12 mt-1">
-                            <button class="btn">
-                                Demander un devis CONNECT
-                            </button>
+                        <div class="mt-6">
+                            <button class="btn bg-secondary w-full">Demander un devis ERP</button>
                         </div>
 
                     </div>
 
                 </div>
+                <!-- plan : ERP -->
 
+            </div>
+            <!-- left -->
+
+            <!-- right : intro + CONNECT plan -->
+            <div>
+
+                <p class="max-w-md text-sm leading-relaxed text-neutral-600 md:text-base">
+                    Nous établissons un devis adapté à votre taille et à votre besoin. Le devis est gratuit et sans
+                    engagement.
+                </p>
+
+                <!-- plan : CONNECT -->
+                <div class="relative mt-12 lg:mt-28">
+
+                    <!-- hand-drawn outline -->
+                    <div class="pointer-events-none absolute -inset-3">
+                        <svg class="h-full w-full text-primary" viewBox="0 0 640 620" preserveAspectRatio="none"
+                            fill="none" aria-hidden="true">
+                            <path
+                                d="M34 24C166 14 476 18 598 30C622 52 618 250 622 440C625 580 628 606 610 616C480 628 190 622 24 612C8 604 12 552 8 462C4 288 10 76 34 24Z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                vector-effect="non-scaling-stroke" />
+                        </svg>
+                    </div>
+
+                    <div class="relative rounded-2xl border border-gray-200 bg-white p-6 md:p-8">
+
+                        <!-- header -->
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="flex size-8 shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                    stroke-linejoin="round" class="size-4" aria-hidden="true">
+                                    <path d="M20 6 9 17l-5-5" />
+                                </svg>
+                            </span>
+                            <h3 class="font-heading text-lg font-extrabold text-neutral-950">Sur Devis Connect</h3>
+                        </div>
+
+                        <p class="mt-3 text-sm leading-relaxed text-neutral-500">
+                            Selon votre logiciel actuel et votre volume de factures.
+                        </p>
+                        <!-- header -->
+
+                        <ul class="mt-2">
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"class="mt-0.5 size-5 shrink-0 text-primary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Audit gratuit de votre
+                                        système</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Nous analysons votre
+                                        logiciel actuel et vérifions sa compatibilité avec la FNE.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"class="mt-0.5 size-5 shrink-0 text-primary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Installation du
+                                        connecteur</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Le connecteur est installé
+                                        et branché sur votre outil existant, sans changer vos habitudes.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"class="mt-0.5 size-5 shrink-0 text-primary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Tests avec vous avant
+                                        la mise en production</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Nous validons ensemble
+                                        chaque échange avant la mise en service.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"class="mt-0.5 size-5 shrink-0 text-primary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Reprise de vos données
+                                        et formation</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Vos données sont reprises
+                                        et vos équipes formées à l'utilisation.</p>
+                                </div>
+                            </li>
+                            <li class="flex gap-4 border-t border-gray-200 py-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"class="mt-0.5 size-5 shrink-0 text-primary"
+                                    aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" />
+                                </svg>
+                                <div>
+                                    <p class="font-heading text-base font-bold text-neutral-950">Suivi et assistance</p>
+                                    <p class="mt-1 text-sm leading-relaxed text-neutral-500">Un interlocuteur unique qui
+                                        suit votre dossier après la mise en production.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="mt-6">
+                            <button class="btn w-full">Demander un devis CONNECT</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- plan : CONNECT -->
 
             </div>
             <!-- right -->
-        </div>
 
+        </div>
 
     </section>
 
@@ -1431,223 +1589,373 @@
 
     <!-- QUESTIONS FREQ -->
 
-    <section class="md:mt-54 mx-9">
+    <section class="section-container md:mt-54">
 
-        <div>
+        <!-- soft frame -->
+        <div class="">
 
-            <div class="md:flex gap-20">
-                <h1 class="md:text-7xl text-4xl text-white
-                text-center font-bold mt-30">Questions Frequente</h1>
+            <!-- white panel -->
+            <div class="relative overflow-hidden rounded-[1.5rem]  px-5 py-12 md:px-10 md:py-16">
 
+                <!-- heading -->
+                <div class="mx-auto text-center">
+                    <span
+                        class="inline-flex items-center text-xs font-semibold text-[#2F7A63] md:text-sm">
+                        Conforme FNE / DGI
+                    </span>
 
-                <div class="md:mt-15 mt-10 font-bold text-xs md:text-sm md:w-210 w-full">
+                    <h2 class="font-heading mt-5 text-4xl font-extrabold tracking-tight text-neutral-950 md:text-5xl">
+                        Questions fréquentes
+                    </h2>
 
-                    <!-- first -->
-                    <div class="faq-item md:p-0 p-1">
-                        <div class="w-full bg-white/70 h-px"></div>
-
-                        <div class="faq-btn cursor-pointer flex md:justify-evenly justify-between md:text-nowrap
-                                mx-3 md:gap-99 gap-4 items-center" role="button" aria-expanded="false">
-                            <div class="md:p-3 p-1">
-                                <span>LEINAD ERP ou LEINAD CONNECT : lequel choisir ?</span>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-plus text-white
-                                    md:ml-4 shrink-0 max-md:size-6 icon-plus preview-icon">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                            </svg>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
-                                fill="none" stroke="#000000" stroke-width="0.75" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-minus preview-icon
-                                    icon-minus hidden md:ml-4 shrink-0 max-md:size-6 preview-icon">
-                                <path d="M18 6 6 18" />
-                                <path d="m6 6 12 12" />
-                            </svg>
-                        </div>
-
-                        <!-- answer -->
-
-                        <div class="faq-answer hidden mx-3 p-3
-                                pb-5 font-normal text-white/80">
-
-                            <p>
-                                Si vous n'avez pas de logiciel, ou si vous travaillez sur Excel : LEINAD ERP, qui gère
-                                toute l'entreprise et inclut la FNE. Si vous avez déjà un logiciel qui vous convient
-                                (Sage 100, Omega POS, un ERP, un logiciel métier…) : LEINAD CONNECT, qui le relie à la
-                                FNE sans rien changer. En cas de doute, l'audit gratuit tranche.
-                            </p>
-                        </div>
-
-                        <!-- answer -->
-
-
-                        <div class="w-full bg-white/70 h-px"></div>
-
-                    </div>
-                    <!-- first -->
-
-
-                    <!-- second -->
-                    <div class="faq-item md:p-0 p-1">
-
-                        <div class="flex md:mx-3 md:text-nowrap 
-                            md:justify-evenly justify-between md:gap-105 
-                            gap-4 items-center">
-
-                            <div class="md:p-3 p-1 md:mx-2">
-                                <span>Est-ce que je dois changer mon logiciel actuel ?</span>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-plus text-white 
-                                    shrink-0 max-md:size-6 preview-icon">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                            </svg>
-                        </div>
-
-                        <div class="w-full bg-white/70 h-px"></div>
-
-                    </div>
-                    <!-- second -->
-
-                    <!-- third -->
-                    <div class="faq-item md:p-0 p-1">
-
-                        <div class="flex md:justify-evenly justify-between 
-                            md:gap-105 gap-4 items-center">
-
-                            <div class="md:p-3 p-1 md:ml-3">
-                                <span>Quelle est la date butoir pour la conformité FNE ?</span>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-plus 
-                                shrink-0 max-md:size-6 preview-icon">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                            </svg>
-                        </div>
-
-                        <div class="w-full bg-white/70 h-px"></div>
-
-                    </div>
-                    <!-- third -->
-
-
-                    <!-- forth -->
-                    <div class="faq-item md:p-0 p-1">
-
-                        <div class="flex md:justify-evenly justify-between 
-                            md:gap-115 gap-4 items-center">
-                            <div class="md:p-3 md:ml-3 p-1">
-                                <span>Combien de temps prend la mise en place ?</span>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-plus text-white 
-                                shrink-0 max-md:size-6 preview-icon">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                            </svg>
-                        </div>
-
-                        <div class="w-full bg-white/70 h-px"></div>
-
-                    </div>
-                    <!-- forth -->
-
-                    <!-- fifth -->
-                    <div class="faq-item md:p-0 p-1">
-
-                        <div class="flex md:text-nowrap md:justify-evenly 
-                            justify-between md:gap-155 gap-4 items-center">
-
-                            <div class="md:p-3 p-1 md:ml-4">
-                                <span>Combien ça coûte ?</span>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-plus 
-                                    shrink-0 max-md:size-6 preview-icon">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                            </svg>
-                        </div>
-
-                        <div class="w-full bg-white/70 h-px"></div>
-
-                    </div>
-                    <!-- fifth -->
-
-                    <!-- sixth -->
-                    <div class="faq-item md:p-0 p-1">
-
-                        <div class="flex md:justify-evenly justify-between 
-                          gap-4  md:gap-145 items-center">
-                            <div class="md:p-3 md:ml-3 p-1">
-                                <span>Et si la DGI me contrôle ?</span>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="30" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-plus text-white md:ml-3 
-                                    shrink-0 max-md:size-6 preview-icon">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                            </svg>
-                        </div>
-
-                        <div class="w-full bg-white/70 h-px"></div>
-
-                    </div>
-                    <!-- sixth -->
-
-                    <!-- 7 -->
-                    <div class="faq-item md:p-0 p-1">
-
-                        <div class="flex md:justify-evenly 
-                            justify-between md:gap-125 gap-4 items-center">
-                            <div class="md:p-3 md:ml-4 p-1">
-                                <span>LEINAD fonctionne-t-il sans internet ?</span>
-                            </div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-plus text-white 
-                                  shrink-0 max-md:size-6 preview-icon">
-                                <path d="M5 12h14" />
-                                <path d="M12 5v14" />
-                            </svg>
-                        </div>
-
-                        <div class="w-full bg-white/70 h-px"></div>
-
-                    </div>
-                    <!-- 7 -->
-
-
-
-                    <!-- toggle on phone -->
-
-                    <div id="fag-menu" class="">
-
-                    </div>
-
-                    <!-- toggle on phone -->
+                    <p class="mt-4 text-sm leading-relaxed text-neutral-600 md:text-base">
+                        Tout ce qu'il faut savoir sur LEINAD ERP, LEINAD CONNECT et la facture normalisée
+                        électronique.
+                    </p>
                 </div>
+                <!-- heading -->
+
+                <div class="mt-12 grid gap-10 lg:mt-16 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-16">
+
+                    <!-- categories -->
+                    <div class="lg:sticky lg:top-28 lg:self-start">
+                        <p class="font-heading px-3 text-sm font-bold text-[#2F7A63]">Catégories</p>
+
+                        <div class="mt-4 flex flex-col gap-1">
+                            <button class="faq-cat" type="button" data-category="all" aria-pressed="true">
+                                <span class="faq-cat-bar"></span>
+                                <span class="faq-cat-label">Toutes les questions</span>
+                            </button>
+
+                            <button class="faq-cat" type="button" data-category="logiciels" aria-pressed="false">
+                                <span class="faq-cat-bar"></span>
+                                <span class="faq-cat-label">Logiciels &amp; compatibilité</span>
+                            </button>
+
+                            <button class="faq-cat" type="button" data-category="conformite" aria-pressed="false">
+                                <span class="faq-cat-bar"></span>
+                                <span class="faq-cat-label">Conformité FNE / DGI</span>
+                            </button>
+
+                            <button class="faq-cat" type="button" data-category="mise-en-place" aria-pressed="false">
+                                <span class="faq-cat-bar"></span>
+                                <span class="faq-cat-label">Mise en place</span>
+                            </button>
+
+                            <button class="faq-cat" type="button" data-category="tarifs" aria-pressed="false">
+                                <span class="faq-cat-bar"></span>
+                                <span class="faq-cat-label">Tarifs</span>
+                            </button>
+
+                            <button class="faq-cat" type="button" data-category="technique" aria-pressed="false">
+                                <span class="faq-cat-bar"></span>
+                                <span class="faq-cat-label">Technique</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- categories -->
+
+                    <!-- accordion -->
+                    <div>
+
+                        <div class="flex flex-col gap-3">
+
+                            <!-- 1 -->
+                            <div class="faq-item" data-category="logiciels" data-state="open">
+                                <div class="faq-card">
+                                    <button class="faq-question" type="button" aria-expanded="true">
+                                        <span
+                                            class="font-heading text-base font-bold text-neutral-950 md:text-lg">LEINAD
+                                            ERP ou LEINAD CONNECT : lequel choisir ?</span>
+                                        <span class="flex size-6 shrink-0 items-center justify-center text-neutral-900">
+                                            <svg class="icon-plus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                            <svg class="icon-minus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <div class="faq-answer">
+                                        <p>
+                                            Si vous n'avez pas de logiciel, ou si vous travaillez sur Excel : LEINAD
+                                            ERP, qui gère toute l'entreprise et inclut la FNE. Si vous avez déjà un
+                                            logiciel qui vous convient (Sage 100, Omega POS, un ERP, un logiciel
+                                            métier…) : LEINAD CONNECT, qui le relie à la FNE sans rien changer. En cas
+                                            de doute, l'audit gratuit tranche.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1 -->
+
+                            <!-- 2 -->
+                            <div class="faq-item" data-category="logiciels" data-state="closed">
+                                <div class="faq-card">
+                                    <button class="faq-question" type="button" aria-expanded="false">
+                                        <span
+                                            class="font-heading text-base font-bold text-neutral-950 md:text-lg">Est-ce
+                                            que je dois changer mon logiciel actuel ?</span>
+                                        <span class="flex size-6 shrink-0 items-center justify-center text-neutral-900">
+                                            <svg class="icon-plus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                            <svg class="icon-minus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <div class="faq-answer">
+                                        <p>
+                                            Non. LEINAD CONNECT se branche sur votre outil existant et fait passer
+                                            vos factures à la FNE depuis votre logiciel habituel : vous ne changez
+                                            pas de méthode de travail et rien n'est ressaisi.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+
+                            <!-- 3 -->
+                            <div class="faq-item" data-category="conformite" data-state="closed">
+                                <div class="faq-card">
+                                    <button class="faq-question" type="button" aria-expanded="false">
+                                        <span
+                                            class="font-heading text-base font-bold text-neutral-950 md:text-lg">Quelle
+                                            est la date butoir pour la conformité FNE ?</span>
+                                        <span class="flex size-6 shrink-0 items-center justify-center text-neutral-900">
+                                            <svg class="icon-plus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                            <svg class="icon-minus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <div class="faq-answer">
+                                        <p>
+                                            L'échéance dépend de votre régime fiscal et du calendrier publié par la
+                                            DGI. L'audit gratuit vérifie votre situation et vous confirme la date qui
+                                            vous concerne, ainsi que le temps qu'il vous reste pour vous mettre en
+                                            conformité.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+
+                            <!-- 4 -->
+                            <div class="faq-item" data-category="mise-en-place" data-state="closed">
+                                <div class="faq-card">
+                                    <button class="faq-question" type="button" aria-expanded="false">
+                                        <span
+                                            class="font-heading text-base font-bold text-neutral-950 md:text-lg">Combien
+                                            de temps prend la mise en place ?</span>
+                                        <span class="flex size-6 shrink-0 items-center justify-center text-neutral-900">
+                                            <svg class="icon-plus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                            <svg class="icon-minus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <div class="faq-answer">
+                                        <p>
+                                            Pour LEINAD CONNECT : audit de votre système, installation du connecteur,
+                                            tests avec vous, puis mise en production. Pour LEINAD ERP, le délai dépend
+                                            des modules choisis et de la reprise de vos données ; il est précisé dans
+                                            votre devis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+
+                            <!-- 5 -->
+                            <div class="faq-item" data-category="tarifs" data-state="closed">
+                                <div class="faq-card">
+                                    <button class="faq-question" type="button" aria-expanded="false">
+                                        <span class="font-heading text-base font-bold text-neutral-950 md:text-lg">Combien
+                                            ça coûte ?</span>
+                                        <span class="flex size-6 shrink-0 items-center justify-center text-neutral-900">
+                                            <svg class="icon-plus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                            <svg class="icon-minus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <div class="faq-answer">
+                                        <p>
+                                            Le tarif dépend de la taille de votre entreprise : nombre de boutiques, de
+                                            caisses et d'utilisateurs, modules choisis et volume de factures. Chaque
+                                            devis est gratuit et sans engagement.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+
+                            <!-- 6 -->
+                            <div class="faq-item" data-category="conformite" data-state="closed">
+                                <div class="faq-card">
+                                    <button class="faq-question" type="button" aria-expanded="false">
+                                        <span
+                                            class="font-heading text-base font-bold text-neutral-950 md:text-lg">Et si
+                                            la DGI me contrôle ?</span>
+                                        <span class="flex size-6 shrink-0 items-center justify-center text-neutral-900">
+                                            <svg class="icon-plus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                            <svg class="icon-minus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <div class="faq-answer">
+                                        <p>
+                                            Vos factures sont certifiées et transmises à la DGI, et sortent avec leur
+                                            QR code et leur sticker officiel. Vous pouvez donc présenter à tout moment
+                                            des documents conformes et traçables.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 6 -->
+
+                            <!-- 7 -->
+                            <div class="faq-item" data-category="technique" data-state="closed">
+                                <div class="faq-card">
+                                    <button class="faq-question" type="button" aria-expanded="false">
+                                        <span
+                                            class="font-heading text-base font-bold text-neutral-950 md:text-lg">LEINAD
+                                            fonctionne-t-il sans internet ?</span>
+                                        <span class="flex size-6 shrink-0 items-center justify-center text-neutral-900">
+                                            <svg class="icon-plus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                                <path d="M12 5v14" />
+                                            </svg>
+                                            <svg class="icon-minus size-5" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                aria-hidden="true">
+                                                <path d="M5 12h14" />
+                                            </svg>
+                                        </span>
+                                    </button>
+
+                                    <div class="faq-answer">
+                                        <p>
+                                            Cela dépend de votre configuration et de la qualité de votre connexion.
+                                            Parlez-nous de votre contexte : l'audit gratuit vérifie ce qui est
+                                            possible dans votre cas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 7 -->
+
+                        </div>
+
+                        <!-- still have a question -->
+                        <div
+                            class="mt-8 flex flex-col gap-6 rounded-2xl bg-neutral-100 p-6 sm:flex-row sm:items-center sm:justify-between md:p-8">
+
+                            <div>
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="flex size-8 shrink-0 items-center justify-center rounded-full bg-neutral-950 text-white">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="size-4" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+                                        </svg>
+                                    </span>
+
+                                    <h3 class="font-heading text-xl font-extrabold text-neutral-950 md:text-2xl">
+                                        Encore une question ?
+                                    </h3>
+                                </div>
+
+                                <p class="mt-3 text-sm leading-relaxed text-neutral-600 md:text-base">
+                                    Si vous n'avez pas trouvé votre réponse, parlez-nous de votre activité : l'audit
+                                    est gratuit et sans engagement.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center gap-5 sm:shrink-0">
+                                <a href="#contact"
+                                    class="rounded-lg border border-neutral-300 bg-white px-5 py-2 text-sm font-semibold text-neutral-900 transition-colors hover:border-neutral-900">
+                                    Nous contacter
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- still have a question -->
+
+                    </div>
+                    <!-- accordion -->
+
+                </div>
+
             </div>
+            <!-- white panel -->
 
         </div>
-
+        <!-- soft frame -->
 
     </section>
     <!-- QUESTIONS FREQ -->
@@ -1655,7 +1963,7 @@
 
     <!-- contact -->
 
-    <section class="mx-15 md:mt-35 mt-20">
+    <section id="contact" class="section-container md:mt-35 mt-20">
 
         <div>
 
@@ -1904,7 +2212,7 @@
 
     <!-- valeurs -->
 
-    <section class="mx-9 md:mt-35 mt-20">
+    <section class="section-container md:mt-35 mt-20">
 
         <div>
 
@@ -2025,7 +2333,7 @@
     <footer class="mt-24 md:mt-32 bg-neutral-950 text-white
         bg-[radial-gradient(circle_at_8%_0%,rgba(249,115,22,0.16),transparent_45%),radial-gradient(circle_at_95%_100%,rgba(16,185,129,0.14),transparent_40%)]">
 
-        <div class="mx-auto max-w-7xl px-6 py-16 md:px-12 md:py-24">
+        <div class="section-container py-16 md:py-24">
 
             <div class="grid gap-14 lg:grid-cols-[minmax(0,4fr)_minmax(0,8fr)] lg:gap-16 xl:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
 
