@@ -1,1 +1,198 @@
 @import "tailwindcss";
+
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../../../fonts/Sora-Variable.tff') format('truetype');
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PlusJakarta';
+    src: url('../../../fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: 200 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../../fonts/Inter-Variable.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@theme {
+    --color-primary: #F97316;
+    --color-secondary: #0B9268;
+
+    --color-text-500: #ffffff;
+    --color-text-muted-400: #a3a3a3;
+
+    /* text orange */
+    --color-text-600: #F97316;
+
+    /* text green */
+    --color-text-500: #0B9268;
+
+    --spacing-18: 4.5rem;
+    --spacing-30: 7.5rem;
+
+    --radius-btn: 0.5rem;
+    --radius-pill: 2000px;
+
+    --font-body: "Inter", sans-serif;
+    --font-heading: "PlusJakarta", sans-serif;
+    --font-display: "Sora", sans-serif:
+}
+
+@layer base {
+    body {
+        font-family: var(--font-body);
+    }
+
+    h1,
+    h2,
+    [class*="text-5xl"],
+    [class*="text-6xl"] {
+        font-family: var(--font-display);
+    }
+
+    h3,
+    h4,
+    h5,
+    h6,
+    button,
+    .btn,
+    .number-btn,
+    [class*="text-2xl"],
+    [class*="text-3xl"] {
+        font-family: var(--font-heading);
+    }
+}
+
+@layer components {
+
+    html,
+    body {
+        overflow-x: clip;
+
+    }
+
+    nav {
+        @apply fixed top-0 left-0 w-full z-50 transition-colors duration-300;
+    }
+
+    .btn {
+        @apply bg-primary px-4 py-2 text-black rounded-btn cursor-pointer font-semibold;
+    }
+
+    .btn-sm {
+        @apply bg-primary px-2 text-sm py-1 text-black rounded-btn cursor-pointer font-semibold;
+    }
+
+    /* HERO SECTION */
+
+    .text-check {
+        @apply flex flex-col my-7 items-start gap-2 w-fit mt-7 md:flex-row mx-15 md:gap-8 md:mt-12 md:w-auto md:text-nowrap text-sm;
+    }
+
+    .check-text {
+        @apply flex gap-2 items-center md:gap-1
+    }
+
+    /* HERO SECTION */
+
+
+    /* THIRD SECTION */
+
+    .left-cards {
+        @apply border rounded-xl border-gray-200/70 md:py-4 py-3 md:w-135 w-95 md:mx-10 md:mt-6 md:my-0 my-2 cursor-pointer focus:outline focus:border-primary;
+    }
+
+    .left-cards.active {
+        @apply border-orange-500;
+    }
+
+    /* THIRD SECTION */
+
+    .cards {
+        @apply border border-gray-200 p-3 rounded-2xl;
+    }
+
+    .cards-primary {
+        @apply border border-gray-200 border-t-4 px-3 py-3 rounded-2xl;
+    }
+
+    .number-btn {
+        @apply bg-secondary rounded-full text-white flex size-10 items-center justify-center font-bold
+    }
+
+    .circle {
+        @apply relative mx-auto my-16 md:my-32 w-[250px] h-[250px] md:w-[500px] md:h-[500px] [--r:125px] md:[--r:250px]
+    }
+
+    .cards-scroll {
+        @apply flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+    }
+
+    .cards-content {
+        @apply border rounded-xl shrink-0 snap-start w-72 md:w-80 p-5 bg-white/100 border-white/10 text-white backdrop-blur-sm;
+    }
+
+    .icon-cards {
+        @apply text-black;
+    }
+
+    .text-cards {
+        @apply text-black font-semibold;
+    }
+
+    .direction-buttons {
+        @apply flex h-10 items-center justify-center border hover:bg-orange-100 rounded-2xl hover:text-black;
+    }
+
+    .tarifs {
+        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-red-200 text-black before:rounded-2xl before:rotate-3;
+    }
+
+
+    label {
+        @apply text-black font-bold;
+    }
+
+    input {
+        @apply border border-black/20 mt-2 p-2 rounded text-black focus:outline-none focus:border-secondary;
+    }
+
+    .small-cards {
+        @apply border border-white/20 p-6 rounded-xl hover:border-primary my-5 text-center;
+    }
+
+    .small-cardSize {
+        @apply md:scale-130 md:z-10;
+    }
+
+
+
+    .cards-hero {
+        @apply transition-transform duration-300 ease-in-out hover:scale-109;
+    }
+
+    .cards-img {
+        @apply w-[55%] md:w-1/2;
+    }
+
+    .img {
+        @apply md:w-74 w-50 shrink-0 h-auto object-cover relative z-10 bg-secondary/20 rounded-[63%_37%_54%_46%/55%_48%_52%_45%];
+    }
+
+    .sixthSec {
+        @apply border border-white/20 bg-white/40 rounded w-65
+    }
+
+}
