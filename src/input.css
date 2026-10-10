@@ -99,6 +99,21 @@
         @apply fixed top-0 left-0 w-full z-50 transition-colors duration-300;
     }
 
+    /* navbar background is toggled with utilities in script/index.js
+       (transparent over the hero, solid light grey once the user scrolls) */
+
+    .nav-link {
+        @apply text-neutral-700 hover:text-primary transition-colors;
+    }
+
+    .nav-link-mobile {
+        @apply text-neutral-800 hover:text-primary transition-colors;
+    }
+
+    .btn-nav {
+        @apply bg-primary text-black font-semibold px-4 py-1.5 rounded-full transition hover:brightness-105;
+    }
+
     /* shared layout container : full width on mobile, 80% of the viewport and centred from md up */
     .section-container {
         @apply mx-auto w-full px-6 md:w-4/5 md:px-0;
@@ -216,7 +231,7 @@
     /* FAQ */
 
     .faq-cat {
-        @apply flex w-full items-center gap-3  px-3 py-2 text-left transition-colors hover:bg-neutral-10;
+        @apply flex w-full items-center gap-3  px-3 py-2 text-left transition-colors hover:bg-neutral-200;
     }
 
     .faq-cat-bar {

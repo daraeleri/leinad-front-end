@@ -2,13 +2,43 @@ const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('mobile-menu');
 const iconOpen = document.getElementById('icon-open');
 const iconClose = document.getElementById('icon-close');
+const navbar = document.querySelector('.navbar-scroll nav');
+
+function updateMenuAria() {
+    btn.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+}
 
 btn.addEventListener('click', () => {
-    const isHidden = menu.classList.toggle('hidden');
-    iconOpen.classList.toggle('hidden', !isHidden);
-    iconClose.classList.toggle('hidden', isHidden);
-
+    const willShow = menu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden', !willShow);
+    iconClose.classList.toggle('hidden', willShow);
+    updateMenuAria();
 });
+
+// close mobile menu on link click
+document.querySelectorAll('.nav-link-mobile').forEach((link) => {
+    link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        updateMenuAria();
+    });
+});
+
+// navbar: transparent at the very top (over the hero), solid light grey after scrolling
+const NAVBAR_SCROLL_THRESHOLD = 8;
+const NAVBAR_SOLID_CLASSES = ['bg-neutral-100', 'shadow-sm'];
+
+function updateNavbarScroll() {
+    const isScrolled = window.scrollY > NAVBAR_SCROLL_THRESHOLD;
+
+    navbar.classList.toggle('bg-transparent', !isScrolled);
+    NAVBAR_SOLID_CLASSES.forEach((name) => navbar.classList.toggle(name, isScrolled));
+}
+
+window.addEventListener('scroll', updateNavbarScroll, { passive: true });
+window.addEventListener('resize', updateNavbarScroll);
+updateNavbarScroll();
 
 
 // const slider = document.getElementById("slider");

@@ -11,71 +11,90 @@
 <body class="">
 
     <!-- navbar section -->
+    <section class="navbar-scroll">
 
-    <section>
-
-        <nav class="text-nowrap py-3 bg-black/70 backdrop-blur items-center">
+        <nav class="text-nowrap py-3 items-center bg-transparent">
             <div class="section-container flex justify-between gap-6">
-                <img src="./assets/images/leinad_logo.png" alt="" class="h-10 w-auto shrink-0">
+                <!-- logo: orange square + LEINAD text -->
+                <a href="#" class="flex items-center gap-2 shrink-0" aria-label="LEINAD">
+                    <svg class="shrink-0" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true">
+                        <rect x="0" y="0" width="32" height="32" fill="#F97316"/>
+                        <path d="M9 7h6v5h5v6h-5v5H9v-5H4V7h5z" fill="white"/>
+                        <rect x="14" y="4" width="3" height="24" fill="#0B9268"/>
+                    </svg>
+                    <span class="text-primary font-display font-bold text-lg tracking-tight">LEINAD</span>
+                </a>
 
-
-                <ul class="md:flex gap-8 
-                mt-3 text-white hidden">
-                    <li>LEINAD ERP</li>
-                    <li>LEINAD CONNECT</li>
-                    <li>FNE</li>
-                    <li>Integrations</li>
-                    <li>Tarifs</li>
-
-                    <li class="h-5 w-0.5 bg-orange-300 text-nowrap">
-                        <span class="ml-3">Espace CLient</span>
-                    </li>
-
-
+                <!-- desktop nav links -->
+                <ul class="md:flex gap-6 items-center text-neutral-700 font-medium hidden">
+                    <li><a href="#" class="nav-link">LEINAD ERP</a></li>
+                    <li><a href="#" class="nav-link">LEINAD CONNECT</a></li>
+                    <li><a href="#" class="nav-link">FNE</a></li>
+                    <li><a href="#" class="nav-link">Intégrations</a></li>
+                    <li><a href="#" class="nav-link">Tarifs</a></li>
                 </ul>
 
-                <button class="btn hidden md:block">Demande une demo</button>
-
-
-                <button id="menu-btn" class="ml-auto text-white md:hidden" aria-label="Menu" aria-expanded="false">
-
-                    <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M4 5h16" />
-                        <path d="M4 12h16" />
-                        <path d="M4 19h16" />
-                    </svg>
-                    <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M18 6 6 18" />
-                        <path d="m6 6 12 12" />
-                    </svg>
-
-                </button>
-
+                <!-- right side: Espace client + Demarche une demo pill -->
+                <div class="flex items-center gap-3">
+                    <a href="#" class="hidden md:flex items-center gap-1.5 text-neutral-700 font-medium hover:text-primary transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="9" cy="8" r="4"/>
+                            <path d="M19 13c0 3.5-3 6.5-7 7l-2.5-1.5C8.5 18.5 10 16 12 14.5c2 1.5 4 2.5 6 2.5"/>
+                        </svg>
+                        Espace client
+                    </a>
+                    <a href="#" class="btn-nav hidden md:inline-flex items-center gap-3 bg-primary text-black font-semibold pl-5 pr-1.5 py-1.5 rounded-full transition">
+                        Demander une démo
+                        <span class="flex size-7 items-center justify-center rounded-full bg-white shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M7 7h10v10"/>
+                                <path d="M7 17 17 7"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <button id="menu-btn" class="ml-auto md:hidden p-2 rounded-full hover:bg-neutral-200 transition" aria-label="Menu" aria-expanded="false">
+                        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 6h16" />
+                            <path d="M4 12h16" />
+                            <path d="M4 18h16" />
+                        </svg>
+                        <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
             </div>
 
-            <!-- toggle on phone -->
-            <div id="mobile-menu" class="hidden pb-4 md:hidden">
-                <ul class="mt-4 flex flex-col gap-4 text-white">
-                    <li>LEINAD ERP</li>
-                    <li>LEINAD CONNECT</li>
-                    <li>FNE</li>
-                    <li>Integrations</li>
-                    <li>Tarifs</li>
-                    <li>Espace Client</li>
+            <!-- mobile menu overlay -->
+            <div id="mobile-menu" class="hidden pb-4 md:hidden bg-white border-t border-neutral-200">
+                <ul class="flex flex-col gap-3 px-4 text-neutral-800 font-medium">
+                    <li><a href="#" class="block py-2 nav-link-mobile">LEINAD ERP</a></li>
+                    <li><a href="#" class="block py-2 nav-link-mobile">LEINAD CONNECT</a></li>
+                    <li><a href="#" class="block py-2 nav-link-mobile">FNE</a></li>
+                    <li><a href="#" class="block py-2 nav-link-mobile">Intégrations</a></li>
+                    <li><a href="#" class="block py-2 nav-link-mobile">Tarifs</a></li>
+                    <li><a href="#" class="block py-2 flex items-center gap-2 nav-link-mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user preview-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        Espace client
+                    </a></li>
                 </ul>
-                <button class="btn mt-4 w-full">Demande une demo</button>
+                <a href="#" class="mt-3 mx-4 mb-4 bg-primary text-black font-semibold pl-5 pr-2 py-2 rounded-full flex items-center justify-between">
+                    <span class="flex-1 text-center">Demander une démo</span>
+                    <span class="flex size-8 items-center justify-center rounded-full bg-white shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </span>
+                </a>
             </div>
-            <!-- toggle on phone -->
-
 
         </nav>
 
-    </section>
-
+    </section>  
     <!-- navbar section -->
 
     <div class="relative">
@@ -1322,8 +1341,6 @@
     <!-- integrations -->
 
 
-
-
     <!-- TARIFS -->
 
     <section class="py-24 md:mt-35">
@@ -1583,12 +1600,10 @@
         </div>
 
     </section>
-
     <!-- TARIFS -->
 
 
     <!-- QUESTIONS FREQ -->
-
     <section class="section-container md:mt-54">
 
         <!-- soft frame -->
@@ -1962,7 +1977,6 @@
 
 
     <!-- contact -->
-
     <section id="contact" class="section-container md:mt-35 mt-20">
 
         <div>
