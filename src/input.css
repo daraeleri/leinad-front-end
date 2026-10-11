@@ -93,6 +93,14 @@
     body {
         overflow-x: clip;
 
+        /* hide the page scrollbar without disabling scrolling */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    html::-webkit-scrollbar,
+    body::-webkit-scrollbar {
+        display: none;
     }
 
     nav {
