@@ -1,39 +1,44 @@
-const nav = document.getElementById('site-nav');
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('mobile-menu');
 const iconOpen = document.getElementById('icon-open');
 const iconClose = document.getElementById('icon-close');
+const navbar = document.querySelector('.navbar-scroll nav');
 
-// navbar: transparent at the top of the page, frosted once scrolled
-const updateNavScroll = () => {
-    nav.dataset.scrolled = String(window.scrollY > 8);
-};
-updateNavScroll();
-window.addEventListener('scroll', updateNavScroll, { passive: true });
-
-// navbar: phone / tablet menu
-const setMenu = (open) => {
-    menu.classList.toggle('hidden', !open);
-    iconOpen.classList.toggle('hidden', open);
-    iconClose.classList.toggle('hidden', !open);
-    btn.setAttribute('aria-expanded', String(open));
-    nav.dataset.open = String(open);
-};
+function updateMenuAria() {
+    btn.setAttribute('aria-expanded', !menu.classList.contains('hidden'));
+}
 
 btn.addEventListener('click', () => {
-    setMenu(menu.classList.contains('hidden'));
+    const willShow = menu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden', !willShow);
+    iconClose.classList.toggle('hidden', willShow);
+    updateMenuAria();
 });
 
-// close with Escape, after choosing a link, or when the desktop layout takes over
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') setMenu(false);
+// close mobile menu on link click
+document.querySelectorAll('.nav-link-mobile').forEach((link) => {
+    link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        iconOpen.classList.remove('hidden');
+        iconClose.classList.add('hidden');
+        updateMenuAria();
+    });
 });
-menu.addEventListener('click', (e) => {
-    if (e.target.closest('a')) setMenu(false);
-});
-window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => {
-    if (e.matches) setMenu(false);
-});
+
+// navbar: transparent at the very top (over the hero), solid light grey after scrolling
+const NAVBAR_SCROLL_THRESHOLD = 8;
+const NAVBAR_SOLID_CLASSES = ['bg-neutral-100', 'shadow-sm'];
+
+function updateNavbarScroll() {
+    const isScrolled = window.scrollY > NAVBAR_SCROLL_THRESHOLD;
+
+    navbar.classList.toggle('bg-transparent', !isScrolled);
+    NAVBAR_SOLID_CLASSES.forEach((name) => navbar.classList.toggle(name, isScrolled));
+}
+
+window.addEventListener('scroll', updateNavbarScroll, { passive: true });
+window.addEventListener('resize', updateNavbarScroll);
+updateNavbarScroll();
 
 
 // const slider = document.getElementById("slider");
@@ -115,19 +120,35 @@ window.addEventListener("resize", updateStack);
 updateStack();
 
 
-// faq toggle
-document.querySelectorAll('.faq-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const answer = item.querySelector('.faq-answer');
-        const plus = item.querySelector('icon-plus');
-        const minus = item.querySelector('.icon-minus');
-        console.log({ item, answer, plus, minus });
+// faq : items (open / closed is driven by data-state, styles live in input.css)
+const faqItems = document.querySelectorAll('.faq-item');
+const faqCats = document.querySelectorAll('.faq-cat');
 
-        const isOpen = answer.classList.toggle('hidden') === false;
-        plus.classList.toggle('hidden', isOpen);
-        minus.classList.toggle('hidden', !isOpen);
-        btn.setAttribute('aria-expanded', isOpen);
+function setFaqState(item, open) {
+    item.dataset.state = open ? 'open' : 'closed';
+    const question = item.querySelector('.faq-question');
+    if (question) question.setAttribute('aria-expanded', String(open));
+}
+
+faqItems.forEach((item) => {
+    const question = item.querySelector('.faq-question');
+    if (!question) return;
+
+    question.addEventListener('click', () => {
+        setFaqState(item, item.dataset.state !== 'open');
+    });
+});
+
+// faq : category filter
+faqCats.forEach((cat) => {
+    cat.addEventListener('click', () => {
+        const wanted = cat.dataset.category;
+
+        faqCats.forEach((other) => other.setAttribute('aria-pressed', String(other === cat)));
+
+        faqItems.forEach((item) => {
+            item.hidden = wanted !== 'all' && item.dataset.category !== wanted;
+        });
     });
 });
 
