@@ -31,7 +31,7 @@
                     <li><a href="#" class="nav-link">LEINAD CONNECT</a></li>
                     <li><a href="#" class="nav-link">FNE</a></li>
                     <li><a href="#" class="nav-link">Intégrations</a></li>
-                    <li><a href="#" class="nav-link">Tarifs</a></li>
+                    <li><a href="#tarifs" class="nav-link">Tarifs</a></li>
                 </ul>
 
                 <!-- right side: Espace client + Demarche une demo pill -->
@@ -75,7 +75,7 @@
                     <li><a href="#" class="block py-2 nav-link-mobile">LEINAD CONNECT</a></li>
                     <li><a href="#" class="block py-2 nav-link-mobile">FNE</a></li>
                     <li><a href="#" class="block py-2 nav-link-mobile">Intégrations</a></li>
-                    <li><a href="#" class="block py-2 nav-link-mobile">Tarifs</a></li>
+                    <li><a href="#tarifs" class="block py-2 nav-link-mobile">Tarifs</a></li>
                     <li><a href="#" class="block py-2 flex items-center gap-2 nav-link-mobile">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user preview-icon"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
                         Espace client
@@ -1343,7 +1343,7 @@
 
     <!-- TARIFS -->
 
-    <section class="py-24 md:mt-35">
+    <section id="tarifs" class="scroll-mt-24 py-24 md:mt-35">
 
         <div class="section-container grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
 
@@ -2225,61 +2225,76 @@
 
 
     <!-- valeurs -->
+    <section id="valeurs" aria-labelledby="valeurs-title" class="section-container mt-24 scroll-mt-24 md:mt-36">
 
-    <section class="section-container md:mt-35 mt-20">
+        <!-- heading -->
+        <div class="text-center">
+            <p class="font-heading text-sm font-semibold text-secondary">Valeurs</p>
+            <h2 id="valeurs-title" class="mt-3 text-4xl font-bold leading-[1.1] tracking-tight text-neutral-950 md:text-5xl">
+                Nos valeurs
+            </h2>
+            <p class="mx-auto mt-4 max-w-xl text-base text-neutral-600 md:text-lg">
+                Les principes qui guident chacune de nos actions et décisions.
+            </p>
+        </div>
+        <!-- heading -->
 
-        <div>
+        <!-- cards: bottom-aligned on desktop so their heights stagger with the text length, like the reference -->
+        <div class="mt-12 grid gap-5 md:mt-16 md:grid-cols-3 md:items-end md:gap-6">
 
-            <div>
+            <!-- 1 : conformité -->
+            <article
+                class="flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                    class="text-primary" aria-hidden="true">
+                    <path fill="currentColor"
+                        d="M25 0C27 14 36 23 50 25 36 27 27 36 25 50 23 36 14 27 0 25 14 23 23 14 25 0Z" />
+                </svg>
 
-                <div class="md:flex justify-center mx-10 md:mx-10 gap-3 md:text-6xl
-                    font-bold text-5xl">
-                    <span class="text-text-500">Nos</span>
-                    <span class="text-white">Valeurs</span>
-                </div>
+                <p class="mt-12 text-xl leading-snug text-neutral-800 md:mt-14 md:text-[1.375rem]">
+                    Chaque facture et chaque ticket sont certifiés FNE, conformément aux exigences de la DGI en
+                    Côte d'Ivoire. Vous restez en règle, sans ressaisie.
+                </p>
 
-                <div class="text-center mt-2">
-                    <p>Les principes qui gardent chacune de nos actions et decisons</p>
-                </div>
-            </div>
-
-
-            <div class="">
-
-                <div class="md:flex md:gap-15 justify-center mt-12">
-
-                    <div class="small-cards">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="50" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-landmark  text-text-500 md:mx-15 mx-30 preview-icon">
+                <div class="mt-10 flex items-center gap-4 md:mt-12">
+                    <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-white text-neutral-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
                             <path d="M10 18v-7" />
                             <path
-                                d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z" />
+                                d="M11.12 2.198a2 2 0 0 1 1.76.006l7.866 3.847c.476.233.31.949-.22.949H3.474c-.53 0-.695-.716-.22-.949z" />
                             <path d="M14 18v-7" />
                             <path d="M18 18v-7" />
                             <path d="M3 22h18" />
                             <path d="M6 18v-7" />
                         </svg>
-
-
-                        <div class="mt-2">
-                            <p class="mx-4">
-                                Conformité
-                            </p>
-
-                            <span class="text-xl font-bold">
-                                FNE / DGI CI
-                            </span>
-                        </div>
-
-
+                    </span>
+                    <div>
+                        <h3 class="text-lg font-semibold leading-tight text-neutral-950">Conformité</h3>
+                        <p class="text-base leading-snug text-neutral-500">FNE / DGI CI</p>
                     </div>
+                </div>
+            </article>
+            <!-- 1 -->
 
-                    <div class="small-cards small-cardSize">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-handshake text-text-500 md:mx-15 mx-30 preview-icon">
+            <!-- 2 : deux offres -->
+            <article
+                class="flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                    class="text-secondary" aria-hidden="true">
+                    <circle cx="25" cy="25" r="17" fill="none" stroke="currentColor" stroke-width="16" />
+                </svg>
+
+                <p class="mt-12 text-xl leading-snug text-neutral-800 md:mt-14 md:text-[1.375rem]">
+                    LEINAD ERP pour tout gérer, ou LEINAD CONNECT pour garder votre logiciel actuel.
+                </p>
+
+                <div class="mt-10 flex items-center gap-4 md:mt-12">
+                    <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-white text-neutral-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
                             <path d="m11 17 2 2a1 1 0 1 0 3-3" />
                             <path
                                 d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" />
@@ -2287,56 +2302,58 @@
                             <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" />
                             <path d="M3 4h8" />
                         </svg>
-
-
-
-                        <div class="mt-2">
-                            <p class="mx-8">
-                                Deux offres
-                            </p>
-
-                            <span class="text-xl font-bold">
-                                ERP · CONNECT
-                            </span>
-
-                        </div>
-
+                    </span>
+                    <div>
+                        <h3 class="text-lg font-semibold leading-tight text-neutral-950">Deux offres</h3>
+                        <p class="text-base leading-snug text-neutral-500">ERP · CONNECT</p>
                     </div>
-
-                    <div class="small-cards">
-
-                        <div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                stroke-linejoin="round"
-                                class="lucide lucide-hand-fist md:mx-15 mx-30 text-text-500 preview-icon">
-                                <path
-                                    d="M12.035 17.012a3 3 0 0 0-3-3l-.311-.002a.72.72 0 0 1-.505-1.229l1.195-1.195A2 2 0 0 1 10.828 11H12a2 2 0 0 0 0-4H9.243a3 3 0 0 0-2.122.879l-2.707 2.707A4.83 4.83 0 0 0 3 14a8 8 0 0 0 8 8h2a8 8 0 0 0 8-8V7a2 2 0 1 0-4 0v2a2 2 0 1 0 4 0" />
-                                <path d="M13.888 9.662A2 2 0 0 0 17 8V5A2 2 0 1 0 13 5" />
-                                <path d="M9 5A2 2 0 1 0 5 5V10" />
-                                <path d="M9 7V4A2 2 0 1 1 13 4V7.268" />
-                            </svg>
-
-
-
-                            <div class="mt-2">
-                                <p class="mx-10">
-                                    Support
-                                </p>
-
-                                <span class="text-xl font-bold">
-                                    Abidjan & Intérieur
-                                </span>
-                            </div>
-
-
-                        </div>
-                    </div>
-
                 </div>
+            </article>
+            <!-- 2 -->
 
-            </div>
+            <!-- 3 : support -->
+            <article
+                class="flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
+                    class="text-neutral-950" aria-hidden="true">
+                    <g fill="currentColor">
+                        <ellipse cx="25" cy="11" rx="10" ry="12" transform="rotate(45 25 25)" />
+                        <ellipse cx="25" cy="11" rx="10" ry="12" transform="rotate(135 25 25)" />
+                        <ellipse cx="25" cy="11" rx="10" ry="12" transform="rotate(225 25 25)" />
+                        <ellipse cx="25" cy="11" rx="10" ry="12" transform="rotate(315 25 25)" />
+                    </g>
+                    <circle cx="25" cy="25" r="5" fill="#ecebe8" />
+                </svg>
+
+                <p class="mt-12 text-xl leading-snug text-neutral-800 md:mt-14 md:text-[1.375rem]">
+                    Une équipe à Abidjan et à l'intérieur du pays vous accompagne, de la reprise de vos données à
+                    la formation.
+                </p>
+
+                <div class="mt-10 flex items-center gap-4 md:mt-12">
+                    <span class="flex size-12 shrink-0 items-center justify-center rounded-full bg-white text-neutral-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="4" />
+                            <path d="m4.93 4.93 4.24 4.24" />
+                            <path d="m14.83 9.17 4.24-4.24" />
+                            <path d="m14.83 14.83 4.24 4.24" />
+                            <path d="m9.17 14.83-4.24 4.24" />
+                        </svg>
+                    </span>
+                    <div>
+                        <h3 class="text-lg font-semibold leading-tight text-neutral-950">Support</h3>
+                        <p class="text-base leading-snug text-neutral-500">Abidjan &amp; Intérieur</p>
+                    </div>
+                </div>
+            </article>
+            <!-- 3 -->
+
+        </div>
+        <!-- cards -->
+
     </section>
     <!-- valeurs -->
 
