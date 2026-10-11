@@ -2183,249 +2183,237 @@
 
 
     <!-- contact -->
-    <section id="contact" class="section-container md:mt-35 mt-20">
+    <section id="contact" aria-labelledby="contact-title" class="section-container mt-24 scroll-mt-24 md:mt-36">
+        <div class="grid overflow-hidden rounded-4xl border border-black/5 bg-white shadow-[0_30px_80px_-30px_rgba(15,23,42,0.35)] lg:grid-cols-[5fr_7fr]">
 
-        <div>
+            <!-- info panel -->
+            <div class="relative isolate overflow-hidden bg-neutral-950 p-8 text-white md:p-12">
+                <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+                    <div class="absolute -left-24 -top-24 size-96 rounded-full bg-primary/25 blur-3xl"></div>
+                    <div class="absolute -bottom-32 -right-24 size-96 rounded-full bg-secondary/25 blur-3xl"></div>
+                </div>
 
-            <div class="md:flex gap-50">
+                <p class="font-heading text-sm font-semibold text-primary">Contactez-nous</p>
+                <h2 id="contact-title" class="font-heading mt-3 text-4xl font-semibold leading-[1.08] tracking-tight md:text-5xl">
+                    Parlons de votre entreprise.
+                    <em class="font-accent block text-[1.1em] font-normal italic text-primary">C'est gratuit.</em>
+                </h2>
+                <p class="mt-5 max-w-md text-base leading-relaxed text-white/70">
+                    Démonstration de LEINAD ERP ou vérification de compatibilité pour LEINAD CONNECT : dites-nous où
+                    vous en êtes, nous vous répondons rapidement.
+                </p>
 
-                <!-- left -->
-                <div class="">
-
-                    <div class="text-center">
-
-                        <p class="md:text-sm text-xl">Contactez-nous</p>
-
-                        <div class="mt-4 wrap-break-word 
-                            max-w-sm md:text-5xl text-3xl font-bold">
-
-                            <span class="text-text-500">
-                                Parlons de votre entreprise.
-
+                <ul class="mt-10 space-y-3">
+                    <li>
+                        <a href="mailto:leinad@sophopsy.com" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-primary/60 hover:bg-white/10">
+                            <span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
                             </span>
+                            <span class="min-w-0">
+                                <span class="block text-xs uppercase tracking-wide text-white/50">Email</span>
+                                <span class="block truncate font-medium">leinad@sophopsy.com</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+2250102420342" class="group flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-primary/60 hover:bg-white/10">
+                            <span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>
+                            </span>
+                            <span class="min-w-0">
+                                <span class="block text-xs uppercase tracking-wide text-white/50">Téléphone</span>
+                                <span class="block font-medium">+225 01 02 42 03 42</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4">
+                        <span class="flex size-11 shrink-0 items-center justify-center rounded-full bg-white/10 text-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                        </span>
+                        <span class="min-w-0">
+                            <span class="block text-xs uppercase tracking-wide text-white/50">SOPHOPSY, siège social</span>
+                            <span class="block font-medium">Abidjan, Côte d'Ivoire</span>
+                        </span>
+                    </li>
+                </ul>
 
-                            <span>C'est gratuit.</span>
-                        </div>
-
-                        <p class="mt-4 
-                        wrap-break-word max-w-sm 
-                        text-sm font-semibold">
-                            Démonstration de LEINAD ERP ou vérification de compatibilité pour LEINAD CONNECT :
-                            dites-nous où
-                            vous en
-                            êtes, nous vous répondons rapidement.
-                        </p>
-                    </div>
-
-
-                    <div class="mt-19">
-                        <div class="bg-white md:w-100 p-5
-                        rounded-2xl">
-
-                            <div class=" ml-2 text-black font-bold text-xl">
-                                <span>Distributeur Officiel en Côte d'Ivoire</span>
-                            </div>
-
-                            <div>
-                                <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-building-complex preview-icon text-orange-700">
-                                        <path d="M10 12h4" />
-                                        <path d="M10 8h4" />
-                                        <path d="M14 21v-3a2 2 0 0 0-4 0v3" />
-                                        <path
-                                            d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
-                                        <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
-                                    </svg>
-
-                                    <div class="mt-4 ml-2">
-                                        <span class="font-bold text-black text-sm">SOPHOPSY</span>
-
-                                        <p class="text-black/70
-                                            text-xs text-nowrap">Siège social : Abidjan, Côte d'Ivoire</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-phone-call text-orange-700 mt-2 preview-icon">
-                                        <path d="M13 2a9 9 0 0 1 9 9" />
-                                        <path d="M13 6a5 5 0 0 1 5 5" />
-                                        <path
-                                            d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
-                                    </svg>
-
-                                    <div class="mt-2 ml-2">
-                                        <span class="font-bold text-black text-sm">+225 01 02 42 03 42</span>
-
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-mail text-orange-700 mt-3 preview-icon">
-                                        <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
-                                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                                    </svg>
-
-                                    <div class="mt-2 ml-2">
-                                        <span class="font-bold text-sm text-black">leinad@sophopsy.com</span>
-
-
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="flex items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="20" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="lucide lucide-timer text-orange-600 mt-2 preview-icon">
-                                        <line x1="10" x2="14" y1="2" y2="2" />
-                                        <line x1="12" x2="15" y1="14" y2="11" />
-                                        <circle cx="12" cy="14" r="8" />
-                                    </svg>
-
-                                    <div class="mt-4 ml-2">
-                                        <span class="font-bold text-black text-sm">Réponse sous 2h ouvrées</span>
-
-                                        <p class="text-black/70
-                                            text-xs text-nowrap">Même sur WhatsApp</p>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
+                <div class="mt-8 flex items-center gap-3 text-sm text-white/80">
+                    <span class="relative flex size-2.5">
+                        <span class="absolute inline-flex size-full rounded-full bg-secondary opacity-60 motion-safe:animate-ping"></span>
+                        <span class="relative inline-flex size-2.5 rounded-full bg-secondary"></span>
+                    </span>
+                    Réponse sous 2h ouvrées, même sur WhatsApp
                 </div>
-
-
-                <!-- left -->
-
-
-                <!-- right -->
-
-                <div class="bg-white p-5 
-                    border border-white/95
-                     md:mt-0 mt-5 rounded-xl shadow-2xl">
-
-                    <div>
-                        <div class="md:flex md:flex-col">
-                            <span>Votre Demande</span>
-
-                        </div>
-
-                        <div class="mt-2 text-sm">
-
-                            <label for="">Votre Besoin *</label>
-
-                            <select name="" id="" class="border border-black/20
-                                 md:w-full w-66 rounded p-2
-                                 text-black my-3">
-                                <option value="">LEINAD CONNECT: j'ai deja un logiciel</option>
-                                <option value="">Choisissez </option>
-                                <option value="">LEINAD CONNECT: je cherche un logiciel de gestion</option>
-                                <option value="">je ne sais pas encore, conseillez moi</option>
-                            </select>
-
-                        </div>
-
-                    </div>
-
-                    <div class="md:flex">
-
-                        <div>
-                            <label for="">Nom et Prenom *</label>
-                            <input type="text" placeholder="votre nom">
-                        </div>
-
-                        <div>
-                            <label for="">Entreprise</label>
-                            <input type="text" placeholder="nom de l'entreprise">
-                        </div>
-
-
-                    </div>
-
-                    <div class="md:flex mt-2">
-
-                        <div>
-                            <label for="">Email *</label>
-                            <input type="email" placeholder="votre email">
-                        </div>
-
-                        <div>
-                            <label for="" class="md:ml-12">Telephone</label>
-                            <input type="tel" placeholder="+255 XX XX XX XX" class="border mt-2 p-2 md:ml-12 rounded">
-                        </div>
-
-
-                    </div>
-
-                    <div class="flex flex-col mt-2">
-
-                        <div class="md:flex flex-col">
-                            <label for="">Logiciel actuel (s'il y en a)</label>
-                            <input type="text" placeholder="Sage 100,Omega Pos,aucun" class="text-black">
-                        </div>
-
-
-
-
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label for="">Message</label>
-
-                        <textarea name="message" id="" rows="5" placeholder="Nombre de boutique,De caisse" class="border border-black/20 rounded
-                             placeholder:text-black/70
-                             focus:outline-none focus:border-secondary p-2"></textarea>
-                    </div>
-
-
-                    <div class="text-center mt-8">
-                        <button class="btn">
-                            Envoyer ma Demande
-                        </button>
-                    </div>
-
-                    <div>
-                        <p class="text-black text-sm mt-3 text-center">
-                            Votre demande s'ouvre dans WhatsApp pour être traitée en priorité par notre équipe à
-                            Abidjan.
-                        </p>
-                    </div>
-
-                </div>
-                <!-- right -->
-
-
+                <p class="mt-3 text-sm text-white/50">Distributeur officiel en Côte d'Ivoire</p>
             </div>
+            <!-- info panel -->
+
+            <!-- form -->
+            <div class="relative p-6 md:p-12">
+                <form data-contact-form data-endpoint="" data-mailto="leinad@sophopsy.com" novalidate class="space-y-8" aria-describedby="contact-status">
+
+                    <div>
+                        <h3 class="font-heading text-2xl font-semibold text-neutral-950">Votre demande</h3>
+                        <p class="mt-1 text-sm text-neutral-500">Les champs marqués d'un * sont obligatoires.</p>
+                    </div>
+
+                    <!-- besoin -->
+                    <fieldset data-field="besoin">
+                        <legend class="text-sm font-semibold text-neutral-900">Votre besoin *</legend>
+                        <div class="mt-3 grid gap-3 sm:grid-cols-3">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="besoin" value="LEINAD ERP" data-kind="erp" class="peer sr-only">
+                                <span class="flex h-full flex-col rounded-2xl border border-stone-200 bg-white p-4 transition peer-checked:border-primary peer-checked:bg-orange-50 peer-checked:shadow-[0_0_0_1px_var(--color-primary)] peer-focus-visible:ring-2 peer-focus-visible:ring-primary/50 hover:border-stone-400">
+                                    <span class="font-heading text-sm font-semibold text-neutral-950">LEINAD ERP</span>
+                                    <span class="mt-1 text-xs leading-snug text-neutral-500">Je cherche un logiciel de gestion</span>
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="besoin" value="LEINAD CONNECT" data-kind="connect" class="peer sr-only">
+                                <span class="flex h-full flex-col rounded-2xl border border-stone-200 bg-white p-4 transition peer-checked:border-secondary peer-checked:bg-emerald-50 peer-checked:shadow-[0_0_0_1px_var(--color-secondary)] peer-focus-visible:ring-2 peer-focus-visible:ring-secondary/50 hover:border-stone-400">
+                                    <span class="font-heading text-sm font-semibold text-neutral-950">LEINAD CONNECT</span>
+                                    <span class="mt-1 text-xs leading-snug text-neutral-500">J'ai déjà un logiciel</span>
+                                </span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="besoin" value="Conseil" data-kind="conseil" class="peer sr-only">
+                                <span class="flex h-full flex-col rounded-2xl border border-stone-200 bg-white p-4 transition peer-checked:border-neutral-950 peer-checked:bg-stone-100 peer-checked:shadow-[0_0_0_1px_var(--color-neutral-950)] peer-focus-visible:ring-2 peer-focus-visible:ring-neutral-950/40 hover:border-stone-400">
+                                    <span class="font-heading text-sm font-semibold text-neutral-950">Pas encore sûr</span>
+                                    <span class="mt-1 text-xs leading-snug text-neutral-500">Conseillez-moi</span>
+                                </span>
+                            </label>
+                        </div>
+                        <p data-error="besoin" class="mt-2 hidden text-sm text-red-600" role="alert"></p>
+                    </fieldset>
+
+                    <!-- identity -->
+                    <div class="grid gap-5 sm:grid-cols-2">
+                        <div data-field="nom">
+                            <div class="relative">
+                                <input id="c-nom" name="nom" type="text" autocomplete="name" placeholder=" " required
+                                    class="peer block w-full rounded-xl border border-stone-300 bg-white px-4 pb-2 pt-6 text-base text-neutral-950 outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/15 aria-[invalid=true]:border-red-500 aria-[invalid=true]:ring-red-500/15">
+                                <label for="c-nom" class="pointer-events-none absolute left-4 top-4 origin-left text-neutral-500 transition-all duration-200 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">Nom et prénom *</label>
+                            </div>
+                            <p data-error="nom" class="mt-1.5 hidden text-sm text-red-600" role="alert"></p>
+                        </div>
+                        <div data-field="entreprise">
+                            <div class="relative">
+                                <input id="c-entreprise" name="entreprise" type="text" autocomplete="organization" placeholder=" "
+                                    class="peer block w-full rounded-xl border border-stone-300 bg-white px-4 pb-2 pt-6 text-base text-neutral-950 outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/15">
+                                <label for="c-entreprise" class="pointer-events-none absolute left-4 top-4 origin-left text-neutral-500 transition-all duration-200 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">Entreprise</label>
+                            </div>
+                        </div>
+                        <div data-field="email">
+                            <div class="relative">
+                                <input id="c-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder=" " required
+                                    class="peer block w-full rounded-xl border border-stone-300 bg-white px-4 pb-2 pt-6 text-base text-neutral-950 outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/15 aria-[invalid=true]:border-red-500 aria-[invalid=true]:ring-red-500/15">
+                                <label for="c-email" class="pointer-events-none absolute left-4 top-4 origin-left text-neutral-500 transition-all duration-200 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">Email *</label>
+                            </div>
+                            <p data-error="email" class="mt-1.5 hidden text-sm text-red-600" role="alert"></p>
+                        </div>
+                        <div data-field="telephone">
+                            <div class="relative">
+                                <input id="c-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" placeholder=" "
+                                    class="peer block w-full rounded-xl border border-stone-300 bg-white px-4 pb-2 pt-6 text-base text-neutral-950 outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/15 aria-[invalid=true]:border-red-500 aria-[invalid=true]:ring-red-500/15">
+                                <label for="c-tel" class="pointer-events-none absolute left-4 top-4 origin-left text-neutral-500 transition-all duration-200 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">Téléphone (+225 …)</label>
+                            </div>
+                            <p data-error="telephone" class="mt-1.5 hidden text-sm text-red-600" role="alert"></p>
+                        </div>
+                    </div>
+
+                    <!-- logiciel actuel (CONNECT only) -->
+                    <div data-show-for="connect" hidden>
+                        <div class="relative">
+                            <input id="c-logiciel" name="logiciel" type="text" placeholder=" "
+                                class="peer block w-full rounded-xl border border-stone-300 bg-white px-4 pb-2 pt-6 text-base text-neutral-950 outline-none transition focus:border-secondary focus:ring-4 focus:ring-secondary/15">
+                            <label for="c-logiciel" class="pointer-events-none absolute left-4 top-4 origin-left text-neutral-500 transition-all duration-200 peer-focus:top-2 peer-focus:text-xs peer-focus:text-secondary peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">Votre logiciel actuel (Sage 100, Omega POS…)</label>
+                        </div>
+                    </div>
+
+                    <!-- size -->
+                    <div class="grid gap-5 sm:grid-cols-2">
+                        <div>
+                            <p id="lbl-boutiques" class="text-sm font-semibold text-neutral-900">Boutiques</p>
+                            <div class="mt-2 inline-flex items-center rounded-full border border-stone-300 bg-white p-1" data-stepper>
+                                <button type="button" data-step="-1" aria-label="Moins de boutiques" class="flex size-9 items-center justify-center rounded-full text-lg text-neutral-700 transition hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-primary">−</button>
+                                <input name="boutiques" type="number" min="0" max="999" value="1" inputmode="numeric" aria-labelledby="lbl-boutiques" class="w-14 border-0 bg-transparent p-0 text-center text-base font-semibold text-neutral-950 outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none">
+                                <button type="button" data-step="1" aria-label="Plus de boutiques" class="flex size-9 items-center justify-center rounded-full text-lg text-neutral-700 transition hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-primary">+</button>
+                            </div>
+                        </div>
+                        <div>
+                            <p id="lbl-caisses" class="text-sm font-semibold text-neutral-900">Caisses</p>
+                            <div class="mt-2 inline-flex items-center rounded-full border border-stone-300 bg-white p-1" data-stepper>
+                                <button type="button" data-step="-1" aria-label="Moins de caisses" class="flex size-9 items-center justify-center rounded-full text-lg text-neutral-700 transition hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-primary">−</button>
+                                <input name="caisses" type="number" min="0" max="999" value="1" inputmode="numeric" aria-labelledby="lbl-caisses" class="w-14 border-0 bg-transparent p-0 text-center text-base font-semibold text-neutral-950 outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none">
+                                <button type="button" data-step="1" aria-label="Plus de caisses" class="flex size-9 items-center justify-center rounded-full text-lg text-neutral-700 transition hover:bg-stone-100 focus-visible:outline-2 focus-visible:outline-primary">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- message -->
+                    <div data-field="message">
+                        <div class="relative">
+                            <textarea id="c-message" name="message" rows="4" placeholder=" " maxlength="1500"
+                                class="peer block w-full resize-y rounded-xl border border-stone-300 bg-white px-4 pb-2 pt-7 text-base text-neutral-950 outline-none transition focus:border-primary focus:ring-4 focus:ring-primary/15"></textarea>
+                            <label for="c-message" class="pointer-events-none absolute left-4 top-4 origin-left text-neutral-500 transition-all duration-200 peer-focus:top-2 peer-focus:text-xs peer-focus:text-primary peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs">Votre message (facultatif)</label>
+                        </div>
+                    </div>
+
+                    <!-- preferred channel -->
+                    <fieldset>
+                        <legend class="text-sm font-semibold text-neutral-900">On vous répond par</legend>
+                        <div class="mt-3 flex flex-wrap gap-2">
+                            <label class="cursor-pointer">
+                                <input type="radio" name="canal" value="Email" class="peer sr-only" checked>
+                                <span class="inline-flex rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-neutral-700 transition peer-checked:border-neutral-950 peer-checked:bg-neutral-950 peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-primary/60 hover:border-stone-500">Email</span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="canal" value="Téléphone" class="peer sr-only">
+                                <span class="inline-flex rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-neutral-700 transition peer-checked:border-neutral-950 peer-checked:bg-neutral-950 peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-primary/60 hover:border-stone-500">Téléphone</span>
+                            </label>
+                            <label class="cursor-pointer">
+                                <input type="radio" name="canal" value="WhatsApp" class="peer sr-only">
+                                <span class="inline-flex rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-neutral-700 transition peer-checked:border-neutral-950 peer-checked:bg-neutral-950 peer-checked:text-white peer-focus-visible:ring-2 peer-focus-visible:ring-primary/60 hover:border-stone-500">WhatsApp</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <!-- honeypot -->
+                    <div class="absolute -left-[9999px]" aria-hidden="true">
+                        <label>Ne pas remplir <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+                    </div>
+
+                    <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                        <button type="submit" data-submit
+                            class="group font-heading inline-flex w-full items-center justify-center gap-3 rounded-full bg-primary py-1.5 pl-7 pr-1.5 text-base font-semibold text-black shadow-lg shadow-orange-500/25 transition hover:brightness-105 disabled:cursor-wait disabled:opacity-70 sm:w-auto">
+                            <span data-submit-label>Envoyer ma demande</span>
+                            <span class="flex size-10 items-center justify-center rounded-full bg-white text-black transition-transform group-hover:translate-x-0.5">
+                                <svg data-submit-icon xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10" /><path d="M7 17 17 7" /></svg>
+                                <svg data-submit-spinner class="hidden size-[18px] motion-safe:animate-spin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.2-8.56" /></svg>
+                            </span>
+                        </button>
+                        <p class="text-xs leading-snug text-neutral-500 sm:max-w-56">
+                            Audit et devis gratuits, sans engagement. Vos informations ne servent qu'à vous répondre.
+                        </p>
+                    </div>
+
+                    <p id="contact-status" data-status role="status" aria-live="polite" class="hidden rounded-xl bg-red-50 px-4 py-3 text-sm text-red-700"></p>
+                </form>
+
+                <!-- success -->
+                <div data-success hidden tabindex="-1" class="absolute inset-0 flex flex-col items-center justify-center bg-white p-8 text-center outline-none md:p-12">
+                    <span data-success-icon class="flex size-20 items-center justify-center rounded-full bg-secondary text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path data-check d="M20 6 9 17l-5-5" /></svg>
+                    </span>
+                    <h3 data-success-part class="font-heading mt-6 text-3xl font-semibold text-neutral-950">Merci <em data-success-name class="font-accent font-normal italic text-orange-600"></em></h3>
+                    <p data-success-part data-success-text class="mt-3 max-w-sm text-base leading-relaxed text-neutral-600"></p>
+                    <button data-success-reset type="button" data-success-part class="font-heading mt-8 rounded-full border border-black/10 px-6 py-2.5 text-sm font-semibold text-neutral-950 transition hover:bg-stone-100">Envoyer une autre demande</button>
+                </div>
+                <!-- success -->
+            </div>
+            <!-- form -->
 
         </div>
-
-
     </section>
     <!-- contact -->
 
@@ -2777,6 +2765,7 @@
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
     <script src="./script/index.js"></script>
     <script src="./script/features.js"></script>
+    <script src="./script/contact.js"></script>
 </body>
 
 </html>
