@@ -99,27 +99,6 @@ cards.forEach((card) => {
     });
 })
 
-// tous en un votre entreprise
-
-const stackCards = [...document.querySelectorAll("[data-stack]")];
-
-function updateStack() {
-    stackCards.forEach((card, i) => {
-        const next = stackCards[i + 1];
-        if (!next) return; // the last card always stays open
-
-        const stickyTop = parseFloat(getComputedStyle(next).top);
-        const nextIsStuck = next.getBoundingClientRect().top <= stickyTop + 1;
-
-        card.toggleAttribute("data-collapsed", nextIsStuck);
-    });
-}
-
-window.addEventListener("scroll", updateStack, { passive: true });
-window.addEventListener("resize", updateStack);
-updateStack();
-
-
 // faq : items (open / closed is driven by data-state, styles live in input.css)
 const faqItems = document.querySelectorAll('.faq-item');
 const faqCats = document.querySelectorAll('.faq-cat');

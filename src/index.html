@@ -335,217 +335,431 @@
     </div>
 
 
-    <!-- TOUTES VOTRE ENTREPRISE -->
-    <section class="bg-neutral-950 py-20 text-white md:py-28">
-        <div class="section-container grid gap-10 md:grid-cols-2 md:items-start md:gap-16">
+    <!-- FONCTIONNALITES -->
+    <section id="fonctionnalites" aria-labelledby="features-title" data-features
+        class="bg-white py-20 text-neutral-950 lg:flex lg:min-h-svh lg:items-center lg:pb-6 lg:pt-20 xl:py-24">
+        <div
+            class="mx-auto grid w-full max-w-400 gap-10 px-6 lg:gap-8 lg:px-10 xl:grid-cols-[17rem_minmax(0,1fr)] xl:gap-10 xl:px-12">
 
-            <!-- left: -->
-            <div class="md:sticky md:top-28">
-                <span class="inline-block rounded bg-orange-500/20 px-3 py-1 text-sm text-orange-300">
+            <!-- left : heading -->
+            <div class="xl:self-center">
+                <span class="inline-block rounded bg-orange-500/15 px-3 py-1 text-sm font-medium text-orange-700">
                     Fonctionnalités
                 </span>
 
-                <h2 class="mt-6 text-4xl font-semibold leading-tight md:text-6xl">
+                <h2 id="features-title"
+                    class="mt-5 text-3xl font-semibold leading-[1.1] tracking-tight md:text-4xl xl:text-[2.5rem]">
                     Toute votre entreprise,
-                    <span class="italic text-secondary">dans un seul logiciel.</span>
+                    <em class="font-accent text-[1.1em] font-normal italic text-secondary">dans un seul logiciel.</em>
                 </h2>
 
-                <p class="mt-6 max-w-md text-base text-white/80 md:text-lg">
+                <p class="mt-5 max-w-md text-base text-neutral-600 lg:max-w-xl xl:text-lg">
                     Facturation, caisse, stocks, achats et conformité FNE : tout est relié, au même endroit.
                 </p>
 
-                <button class="btn mt-8">Decouvrir Plus</button>
+                <a href="#"
+                    class="group font-heading mt-7 inline-flex items-center gap-3 rounded-full bg-primary py-1.5 pl-6 pr-1.5 font-semibold text-black shadow-lg shadow-orange-500/25 transition hover:brightness-105 lg:max-xl:hidden">
+                    Découvrir plus
+                    <span
+                        class="flex size-9 items-center justify-center rounded-full bg-white text-black transition-transform group-hover:translate-x-0.5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            aria-hidden="true">
+                            <path d="M7 7h10v10" />
+                            <path d="M7 17 17 7" />
+                        </svg>
+                    </span>
+                </a>
             </div>
             <!-- left -->
 
-            <!-- right: the cards -->
-            <div class="flex flex-col gap-6 pb-24 [overflow-anchor:none]">
+            <!-- right : horizontal accordion on desktop, vertical on phone / tablet -->
+            <div data-features-list
+                class="flex flex-col border border-neutral-300 bg-white lg:h-[clamp(26rem,calc(100svh-21rem),44rem)] lg:flex-row xl:h-[clamp(28rem,calc(100svh-10rem),46rem)]">
 
-                <!-- card 1 -->
-                <div data-stack style="--i:0" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
-                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
-                    <div class="flex h-12 items-center gap-3 px-4">
-                        <span
-                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-shield size-5">
-                                <path
-                                    d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-                            </svg>
-                        </span>
-                        <h3 class="truncate text-base font-bold md:text-xl">Facturation & devis</h3>
-                    </div>
-                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
-                        Factures, avoirs et proformas, certifiés FNE en un clic.
-                    </p>
-                </div>
+                <!-- feature 1 : Facturation &amp; devis -->
+                <article data-feature data-active="true"
+                    class="group/f relative border-neutral-300 max-lg:border-t max-lg:first:border-t-0 lg:min-w-16 lg:flex-[0_0_0%] lg:overflow-hidden lg:border-l lg:first:border-l-0 lg:data-[active=true]:flex-[1_1_0%]">
 
-                <!-- card 2 -->
-                <div data-stack style="--i:1" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
-                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
-                    <div class="flex h-12 items-center gap-3 px-4">
-                        <span
-                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-receipt size-5">
-                                <path d="M12 17V7" />
-                                <path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" />
-                                <path
-                                    d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
-                            </svg>
-                        </span>
-                        <h3 class="truncate text-base font-bold md:text-xl">Caisse / POS</h3>
-                    </div>
-                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
-                        Vente rapide, scanner, ouverture et fermeture de caisse, tickets imprimés.
-                    </p>
-                </div>
+                    <h3 class="contents">
+                        <button type="button" id="feature-1-tab" aria-expanded="true" aria-controls="feature-1-panel"
+                            class="group/tab flex w-full cursor-pointer items-center gap-4 px-5 py-5 text-left text-neutral-950 transition-[opacity,background-color,color] duration-300 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary lg:absolute lg:inset-y-0 lg:left-0 lg:w-16 lg:flex-col lg:items-center lg:gap-0 lg:px-0 lg:hover:bg-neutral-950 lg:hover:text-white lg:group-data-[active=true]/f:pointer-events-none lg:group-data-[active=true]/f:opacity-0">
+                            <span aria-hidden="true"
+                                class="order-3 ml-auto text-3xl font-light leading-none text-neutral-400 transition-[transform,color] duration-300 group-data-[active=true]/f:rotate-45 lg:order-none lg:ml-0 lg:text-4xl lg:group-hover/tab:text-white lg:group-data-[active=true]/f:rotate-0">+</span>
+                            <span
+                                class="order-2 flex-1 text-lg font-semibold leading-tight lg:order-none lg:mb-5 lg:mt-auto lg:flex-none lg:rotate-180 lg:whitespace-nowrap lg:text-xl lg:[writing-mode:vertical-rl] xl:text-[1.375rem]">Facturation &amp; devis</span>
+                            <span aria-hidden="true"
+                                class="order-1 w-8 text-2xl font-light tabular-nums leading-none text-neutral-400 lg:order-none lg:w-auto lg:text-6xl xl:text-7xl">1</span>
+                        </button>
+                    </h3>
 
-                <!-- card 3 -->
-                <div data-stack style="--i:2" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
-                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
-                    <div class="flex h-12 items-center gap-3 px-4">
-                        <span
-                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-package-check size-5">
-                                <path d="M12 22V12" />
-                                <path d="m16 17 2 2 4-4" />
-                                <path
-                                    d="M21 11.127V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l1.32-.753" />
-                                <path d="M3.29 7 12 12l8.71-5" />
-                                <path d="m7.5 4.27 8.997 5.148" />
-                            </svg>
-                        </span>
-                        <h3 class="truncate text-base font-bold md:text-xl">Stocks</h3>
-                    </div>
-                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
-                        Entrées, sorties, transferts entre boutiques, inventaire, alertes, composition.
-                    </p>
-                </div>
+                    <div id="feature-1-panel" role="region" aria-labelledby="feature-1-tab"
+                        class="overflow-hidden max-lg:h-0 max-lg:group-data-[active=true]/f:h-auto lg:pointer-events-none lg:absolute lg:inset-0 lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-data-[active=true]/f:pointer-events-auto lg:group-data-[active=true]/f:opacity-100">
+                        <div class="flex flex-col gap-5 px-5 pb-6 pt-1 lg:h-full lg:w-[var(--open-w,30rem)] lg:p-5">
 
-                <!-- card 4 -->
-                <div data-stack style="--i:3" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
-                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
-                    <div class="flex h-12 items-center gap-3 px-4">
-                        <span
-                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-hand-coins size-5">
-                                <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" />
-                                <path
-                                    d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" />
-                                <path d="m2 16 6 6" />
-                                <circle cx="16" cy="9" r="2.9" />
-                                <circle cx="6" cy="5" r="3" />
-                            </svg>
-                        </span>
-                        <h3 class="truncate text-base font-bold md:text-xl">Ventes & achats</h3>
-                    </div>
-                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
-                        Bons de commande clients et fournisseurs, réceptions, historique des prix.
-                    </p>
-                </div>
+                            <!-- visual: swap this block for a real screenshot (<img class="size-full object-cover">) -->
+                            <div data-part
+                                class="relative flex h-44 items-center justify-center overflow-hidden bg-[#f3f0ea] bg-[radial-gradient(circle_at_12%_8%,rgba(249,115,22,0.32),transparent_55%),radial-gradient(circle_at_92%_96%,rgba(11,146,104,0.26),transparent_50%)] lg:h-auto lg:min-h-36 lg:flex-1">
+                                <span
+                                    class="flex size-24 items-center justify-center rounded-3xl bg-white shadow-xl shadow-black/5 lg:size-28">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-10 text-primary lg:size-12" aria-hidden="true">
+                                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                                    </svg>
+                                </span>
+                            </div>
 
-                <!-- card 5 -->
-                <div data-stack style="--i:4" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
-                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
-                    <div class="flex h-12 items-center gap-3 px-4">
-                        <span
-                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-users size-5">
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                <path d="M16 3.128a4 4 0 0 1 0 7.744" />
-                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                                <circle cx="9" cy="7" r="4" />
-                            </svg>
-                        </span>
-                        <h3 class="truncate text-base font-bold md:text-xl">Clients & fournisseurs</h3>
-                    </div>
-                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
-                        Fiches, grands livres, paiements, relances et reprise des soldes.
-                    </p>
-                </div>
+                            <div data-part>
+                                <p aria-hidden="true"
+                                    class="font-heading hidden text-3xl font-semibold leading-tight text-neutral-950 lg:block">Facturation &amp; devis</p>
+                                <p class="max-w-xl text-base leading-relaxed text-neutral-600 lg:mt-3 lg:text-lg">Factures, avoirs et proformas, certifiés FNE en un clic.</p>
+                            </div>
 
-                <!-- card 6 -->
-                <div data-stack style="--i:5" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
-                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
-                    <div class="flex h-12 items-center gap-3 px-4">
-                        <span
-                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-layout-dashboard size-5">
-                                <rect width="7" height="9" x="3" y="3" rx="1" />
-                                <rect width="7" height="5" x="14" y="3" rx="1" />
-                                <rect width="7" height="9" x="14" y="12" rx="1" />
-                                <rect width="7" height="5" x="3" y="16" rx="1" />
-                            </svg>
-                        </span>
-                        <h3 class="truncate text-base font-bold md:text-xl">Tableaux de bord</h3>
-                    </div>
-                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
-                        Chiffre d'affaires, marges, produits phares, statistiques avancées.
-                    </p>
-                </div>
+                            <!-- room for the big number that sits at the bottom-left on desktop -->
+                            <span aria-hidden="true" class="hidden h-[4.5rem] shrink-0 lg:block"></span>
+                        </div>
 
-                <!-- card 7 -->
-                <div data-stack style="--i:6" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
-                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
-                    <div class="flex h-12 items-center gap-3 px-4">
-                        <span
-                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-user-check size-5">
-                                <path d="m16 11 2 2 4-4" />
-                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                <circle cx="9" cy="7" r="4" />
-                            </svg>
-                        </span>
-                        <h3 class="truncate text-base font-bold md:text-xl">Utilisateurs & permissions</h3>
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute bottom-5 left-5 hidden text-6xl font-light leading-none text-neutral-400 lg:block xl:text-7xl">1</span>
                     </div>
-                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
-                        Chacun ne voit que ce qui le concerne, module par module.
-                    </p>
-                </div>
+                </article>
+                <!-- feature 2 : Caisse / POS -->
+                <article data-feature data-active="false"
+                    class="group/f relative border-neutral-300 max-lg:border-t max-lg:first:border-t-0 lg:min-w-16 lg:flex-[0_0_0%] lg:overflow-hidden lg:border-l lg:first:border-l-0 lg:data-[active=true]:flex-[1_1_0%]">
 
-                <!-- card 8 -->
-                <div data-stack style="--i:7" class="group sticky top-[calc(6rem+var(--i)*3.25rem)] h-28 overflow-hidden
-                       rounded-2xl border border-gray-200 bg-white text-black shadow-lg">
-                    <div class="flex h-12 items-center gap-3 px-4">
-                        <span
-                            class="flex size-8 shrink-0 items-center justify-center rounded-full border border-orange-500 text-orange-600">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-scan-qr-code size-5">
-                                <path d="M17 12v4a1 1 0 0 1-1 1h-4" />
-                                <path d="M17 3h2a2 2 0 0 1 2 2v2" />
-                                <path d="M17 8V7" />
-                                <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
-                                <path d="M3 7V5a2 2 0 0 1 2-2h2" />
-                                <path d="M7 17h.01" />
-                                <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
-                                <rect x="7" y="7" width="5" height="5" rx="1" />
-                            </svg>
-                        </span>
-                        <h3 class="truncate text-base font-bold md:text-xl">FNE / interfaçage DGI</h3>
+                    <h3 class="contents">
+                        <button type="button" id="feature-2-tab" aria-expanded="false" aria-controls="feature-2-panel"
+                            class="group/tab flex w-full cursor-pointer items-center gap-4 px-5 py-5 text-left text-neutral-950 transition-[opacity,background-color,color] duration-300 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary lg:absolute lg:inset-y-0 lg:left-0 lg:w-16 lg:flex-col lg:items-center lg:gap-0 lg:px-0 lg:hover:bg-neutral-950 lg:hover:text-white lg:group-data-[active=true]/f:pointer-events-none lg:group-data-[active=true]/f:opacity-0">
+                            <span aria-hidden="true"
+                                class="order-3 ml-auto text-3xl font-light leading-none text-neutral-400 transition-[transform,color] duration-300 group-data-[active=true]/f:rotate-45 lg:order-none lg:ml-0 lg:text-4xl lg:group-hover/tab:text-white lg:group-data-[active=true]/f:rotate-0">+</span>
+                            <span
+                                class="order-2 flex-1 text-lg font-semibold leading-tight lg:order-none lg:mb-5 lg:mt-auto lg:flex-none lg:rotate-180 lg:whitespace-nowrap lg:text-xl lg:[writing-mode:vertical-rl] xl:text-[1.375rem]">Caisse / POS</span>
+                            <span aria-hidden="true"
+                                class="order-1 w-8 text-2xl font-light tabular-nums leading-none text-neutral-400 lg:order-none lg:w-auto lg:text-6xl xl:text-7xl">2</span>
+                        </button>
+                    </h3>
+
+                    <div id="feature-2-panel" role="region" aria-labelledby="feature-2-tab"
+                        class="overflow-hidden max-lg:h-0 max-lg:group-data-[active=true]/f:h-auto lg:pointer-events-none lg:absolute lg:inset-0 lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-data-[active=true]/f:pointer-events-auto lg:group-data-[active=true]/f:opacity-100">
+                        <div class="flex flex-col gap-5 px-5 pb-6 pt-1 lg:h-full lg:w-[var(--open-w,30rem)] lg:p-5">
+
+                            <!-- visual: swap this block for a real screenshot (<img class="size-full object-cover">) -->
+                            <div data-part
+                                class="relative flex h-44 items-center justify-center overflow-hidden bg-[#f3f0ea] bg-[radial-gradient(circle_at_12%_8%,rgba(11,146,104,0.30),transparent_55%),radial-gradient(circle_at_92%_96%,rgba(249,115,22,0.28),transparent_50%)] lg:h-auto lg:min-h-36 lg:flex-1">
+                                <span
+                                    class="flex size-24 items-center justify-center rounded-3xl bg-white shadow-xl shadow-black/5 lg:size-28">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-10 text-secondary lg:size-12" aria-hidden="true">
+                                        <path d="M12 17V7" /> <path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" /> <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div data-part>
+                                <p aria-hidden="true"
+                                    class="font-heading hidden text-3xl font-semibold leading-tight text-neutral-950 lg:block">Caisse / POS</p>
+                                <p class="max-w-xl text-base leading-relaxed text-neutral-600 lg:mt-3 lg:text-lg">Vente rapide, scanner, ouverture et fermeture de caisse, tickets imprimés.</p>
+                            </div>
+
+                            <!-- room for the big number that sits at the bottom-left on desktop -->
+                            <span aria-hidden="true" class="hidden h-[4.5rem] shrink-0 lg:block"></span>
+                        </div>
+
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute bottom-5 left-5 hidden text-6xl font-light leading-none text-neutral-400 lg:block xl:text-7xl">2</span>
                     </div>
-                    <p class="px-4 text-sm transition-opacity duration-300 group-data-[collapsed]:opacity-0">
-                        Certification intégrée : QR code, sticker officiel, numérotation.
-                    </p>
-                </div>
+                </article>
+                <!-- feature 3 : Stocks -->
+                <article data-feature data-active="false"
+                    class="group/f relative border-neutral-300 max-lg:border-t max-lg:first:border-t-0 lg:min-w-16 lg:flex-[0_0_0%] lg:overflow-hidden lg:border-l lg:first:border-l-0 lg:data-[active=true]:flex-[1_1_0%]">
+
+                    <h3 class="contents">
+                        <button type="button" id="feature-3-tab" aria-expanded="false" aria-controls="feature-3-panel"
+                            class="group/tab flex w-full cursor-pointer items-center gap-4 px-5 py-5 text-left text-neutral-950 transition-[opacity,background-color,color] duration-300 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary lg:absolute lg:inset-y-0 lg:left-0 lg:w-16 lg:flex-col lg:items-center lg:gap-0 lg:px-0 lg:hover:bg-neutral-950 lg:hover:text-white lg:group-data-[active=true]/f:pointer-events-none lg:group-data-[active=true]/f:opacity-0">
+                            <span aria-hidden="true"
+                                class="order-3 ml-auto text-3xl font-light leading-none text-neutral-400 transition-[transform,color] duration-300 group-data-[active=true]/f:rotate-45 lg:order-none lg:ml-0 lg:text-4xl lg:group-hover/tab:text-white lg:group-data-[active=true]/f:rotate-0">+</span>
+                            <span
+                                class="order-2 flex-1 text-lg font-semibold leading-tight lg:order-none lg:mb-5 lg:mt-auto lg:flex-none lg:rotate-180 lg:whitespace-nowrap lg:text-xl lg:[writing-mode:vertical-rl] xl:text-[1.375rem]">Stocks</span>
+                            <span aria-hidden="true"
+                                class="order-1 w-8 text-2xl font-light tabular-nums leading-none text-neutral-400 lg:order-none lg:w-auto lg:text-6xl xl:text-7xl">3</span>
+                        </button>
+                    </h3>
+
+                    <div id="feature-3-panel" role="region" aria-labelledby="feature-3-tab"
+                        class="overflow-hidden max-lg:h-0 max-lg:group-data-[active=true]/f:h-auto lg:pointer-events-none lg:absolute lg:inset-0 lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-data-[active=true]/f:pointer-events-auto lg:group-data-[active=true]/f:opacity-100">
+                        <div class="flex flex-col gap-5 px-5 pb-6 pt-1 lg:h-full lg:w-[var(--open-w,30rem)] lg:p-5">
+
+                            <!-- visual: swap this block for a real screenshot (<img class="size-full object-cover">) -->
+                            <div data-part
+                                class="relative flex h-44 items-center justify-center overflow-hidden bg-[#f3f0ea] bg-[radial-gradient(circle_at_12%_8%,rgba(249,115,22,0.32),transparent_55%),radial-gradient(circle_at_92%_96%,rgba(11,146,104,0.26),transparent_50%)] lg:h-auto lg:min-h-36 lg:flex-1">
+                                <span
+                                    class="flex size-24 items-center justify-center rounded-3xl bg-white shadow-xl shadow-black/5 lg:size-28">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-10 text-primary lg:size-12" aria-hidden="true">
+                                        <path d="M12 22V12" /> <path d="m16 17 2 2 4-4" /> <path d="M21 11.127V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.729l7 4a2 2 0 0 0 2 .001l1.32-.753" /> <path d="M3.29 7 12 12l8.71-5" /> <path d="m7.5 4.27 8.997 5.148" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div data-part>
+                                <p aria-hidden="true"
+                                    class="font-heading hidden text-3xl font-semibold leading-tight text-neutral-950 lg:block">Stocks</p>
+                                <p class="max-w-xl text-base leading-relaxed text-neutral-600 lg:mt-3 lg:text-lg">Entrées, sorties, transferts entre boutiques, inventaire, alertes, composition.</p>
+                            </div>
+
+                            <!-- room for the big number that sits at the bottom-left on desktop -->
+                            <span aria-hidden="true" class="hidden h-[4.5rem] shrink-0 lg:block"></span>
+                        </div>
+
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute bottom-5 left-5 hidden text-6xl font-light leading-none text-neutral-400 lg:block xl:text-7xl">3</span>
+                    </div>
+                </article>
+                <!-- feature 4 : Ventes &amp; achats -->
+                <article data-feature data-active="false"
+                    class="group/f relative border-neutral-300 max-lg:border-t max-lg:first:border-t-0 lg:min-w-16 lg:flex-[0_0_0%] lg:overflow-hidden lg:border-l lg:first:border-l-0 lg:data-[active=true]:flex-[1_1_0%]">
+
+                    <h3 class="contents">
+                        <button type="button" id="feature-4-tab" aria-expanded="false" aria-controls="feature-4-panel"
+                            class="group/tab flex w-full cursor-pointer items-center gap-4 px-5 py-5 text-left text-neutral-950 transition-[opacity,background-color,color] duration-300 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary lg:absolute lg:inset-y-0 lg:left-0 lg:w-16 lg:flex-col lg:items-center lg:gap-0 lg:px-0 lg:hover:bg-neutral-950 lg:hover:text-white lg:group-data-[active=true]/f:pointer-events-none lg:group-data-[active=true]/f:opacity-0">
+                            <span aria-hidden="true"
+                                class="order-3 ml-auto text-3xl font-light leading-none text-neutral-400 transition-[transform,color] duration-300 group-data-[active=true]/f:rotate-45 lg:order-none lg:ml-0 lg:text-4xl lg:group-hover/tab:text-white lg:group-data-[active=true]/f:rotate-0">+</span>
+                            <span
+                                class="order-2 flex-1 text-lg font-semibold leading-tight lg:order-none lg:mb-5 lg:mt-auto lg:flex-none lg:rotate-180 lg:whitespace-nowrap lg:text-xl lg:[writing-mode:vertical-rl] xl:text-[1.375rem]">Ventes &amp; achats</span>
+                            <span aria-hidden="true"
+                                class="order-1 w-8 text-2xl font-light tabular-nums leading-none text-neutral-400 lg:order-none lg:w-auto lg:text-6xl xl:text-7xl">4</span>
+                        </button>
+                    </h3>
+
+                    <div id="feature-4-panel" role="region" aria-labelledby="feature-4-tab"
+                        class="overflow-hidden max-lg:h-0 max-lg:group-data-[active=true]/f:h-auto lg:pointer-events-none lg:absolute lg:inset-0 lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-data-[active=true]/f:pointer-events-auto lg:group-data-[active=true]/f:opacity-100">
+                        <div class="flex flex-col gap-5 px-5 pb-6 pt-1 lg:h-full lg:w-[var(--open-w,30rem)] lg:p-5">
+
+                            <!-- visual: swap this block for a real screenshot (<img class="size-full object-cover">) -->
+                            <div data-part
+                                class="relative flex h-44 items-center justify-center overflow-hidden bg-[#f3f0ea] bg-[radial-gradient(circle_at_12%_8%,rgba(11,146,104,0.30),transparent_55%),radial-gradient(circle_at_92%_96%,rgba(249,115,22,0.28),transparent_50%)] lg:h-auto lg:min-h-36 lg:flex-1">
+                                <span
+                                    class="flex size-24 items-center justify-center rounded-3xl bg-white shadow-xl shadow-black/5 lg:size-28">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-10 text-secondary lg:size-12" aria-hidden="true">
+                                        <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 17" /> <path d="m7 21 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9" /> <path d="m2 16 6 6" /> <circle cx="16" cy="9" r="2.9" /> <circle cx="6" cy="5" r="3" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div data-part>
+                                <p aria-hidden="true"
+                                    class="font-heading hidden text-3xl font-semibold leading-tight text-neutral-950 lg:block">Ventes &amp; achats</p>
+                                <p class="max-w-xl text-base leading-relaxed text-neutral-600 lg:mt-3 lg:text-lg">Bons de commande clients et fournisseurs, réceptions, historique des prix.</p>
+                            </div>
+
+                            <!-- room for the big number that sits at the bottom-left on desktop -->
+                            <span aria-hidden="true" class="hidden h-[4.5rem] shrink-0 lg:block"></span>
+                        </div>
+
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute bottom-5 left-5 hidden text-6xl font-light leading-none text-neutral-400 lg:block xl:text-7xl">4</span>
+                    </div>
+                </article>
+                <!-- feature 5 : Clients &amp; fournisseurs -->
+                <article data-feature data-active="false"
+                    class="group/f relative border-neutral-300 max-lg:border-t max-lg:first:border-t-0 lg:min-w-16 lg:flex-[0_0_0%] lg:overflow-hidden lg:border-l lg:first:border-l-0 lg:data-[active=true]:flex-[1_1_0%]">
+
+                    <h3 class="contents">
+                        <button type="button" id="feature-5-tab" aria-expanded="false" aria-controls="feature-5-panel"
+                            class="group/tab flex w-full cursor-pointer items-center gap-4 px-5 py-5 text-left text-neutral-950 transition-[opacity,background-color,color] duration-300 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary lg:absolute lg:inset-y-0 lg:left-0 lg:w-16 lg:flex-col lg:items-center lg:gap-0 lg:px-0 lg:hover:bg-neutral-950 lg:hover:text-white lg:group-data-[active=true]/f:pointer-events-none lg:group-data-[active=true]/f:opacity-0">
+                            <span aria-hidden="true"
+                                class="order-3 ml-auto text-3xl font-light leading-none text-neutral-400 transition-[transform,color] duration-300 group-data-[active=true]/f:rotate-45 lg:order-none lg:ml-0 lg:text-4xl lg:group-hover/tab:text-white lg:group-data-[active=true]/f:rotate-0">+</span>
+                            <span
+                                class="order-2 flex-1 text-lg font-semibold leading-tight lg:order-none lg:mb-5 lg:mt-auto lg:flex-none lg:rotate-180 lg:whitespace-nowrap lg:text-xl lg:[writing-mode:vertical-rl] xl:text-[1.375rem]">Clients &amp; fournisseurs</span>
+                            <span aria-hidden="true"
+                                class="order-1 w-8 text-2xl font-light tabular-nums leading-none text-neutral-400 lg:order-none lg:w-auto lg:text-6xl xl:text-7xl">5</span>
+                        </button>
+                    </h3>
+
+                    <div id="feature-5-panel" role="region" aria-labelledby="feature-5-tab"
+                        class="overflow-hidden max-lg:h-0 max-lg:group-data-[active=true]/f:h-auto lg:pointer-events-none lg:absolute lg:inset-0 lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-data-[active=true]/f:pointer-events-auto lg:group-data-[active=true]/f:opacity-100">
+                        <div class="flex flex-col gap-5 px-5 pb-6 pt-1 lg:h-full lg:w-[var(--open-w,30rem)] lg:p-5">
+
+                            <!-- visual: swap this block for a real screenshot (<img class="size-full object-cover">) -->
+                            <div data-part
+                                class="relative flex h-44 items-center justify-center overflow-hidden bg-[#f3f0ea] bg-[radial-gradient(circle_at_12%_8%,rgba(249,115,22,0.32),transparent_55%),radial-gradient(circle_at_92%_96%,rgba(11,146,104,0.26),transparent_50%)] lg:h-auto lg:min-h-36 lg:flex-1">
+                                <span
+                                    class="flex size-24 items-center justify-center rounded-3xl bg-white shadow-xl shadow-black/5 lg:size-28">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-10 text-primary lg:size-12" aria-hidden="true">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <path d="M16 3.128a4 4 0 0 1 0 7.744" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <circle cx="9" cy="7" r="4" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div data-part>
+                                <p aria-hidden="true"
+                                    class="font-heading hidden text-3xl font-semibold leading-tight text-neutral-950 lg:block">Clients &amp; fournisseurs</p>
+                                <p class="max-w-xl text-base leading-relaxed text-neutral-600 lg:mt-3 lg:text-lg">Fiches, grands livres, paiements, relances et reprise des soldes.</p>
+                            </div>
+
+                            <!-- room for the big number that sits at the bottom-left on desktop -->
+                            <span aria-hidden="true" class="hidden h-[4.5rem] shrink-0 lg:block"></span>
+                        </div>
+
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute bottom-5 left-5 hidden text-6xl font-light leading-none text-neutral-400 lg:block xl:text-7xl">5</span>
+                    </div>
+                </article>
+                <!-- feature 6 : Tableaux de bord -->
+                <article data-feature data-active="false"
+                    class="group/f relative border-neutral-300 max-lg:border-t max-lg:first:border-t-0 lg:min-w-16 lg:flex-[0_0_0%] lg:overflow-hidden lg:border-l lg:first:border-l-0 lg:data-[active=true]:flex-[1_1_0%]">
+
+                    <h3 class="contents">
+                        <button type="button" id="feature-6-tab" aria-expanded="false" aria-controls="feature-6-panel"
+                            class="group/tab flex w-full cursor-pointer items-center gap-4 px-5 py-5 text-left text-neutral-950 transition-[opacity,background-color,color] duration-300 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary lg:absolute lg:inset-y-0 lg:left-0 lg:w-16 lg:flex-col lg:items-center lg:gap-0 lg:px-0 lg:hover:bg-neutral-950 lg:hover:text-white lg:group-data-[active=true]/f:pointer-events-none lg:group-data-[active=true]/f:opacity-0">
+                            <span aria-hidden="true"
+                                class="order-3 ml-auto text-3xl font-light leading-none text-neutral-400 transition-[transform,color] duration-300 group-data-[active=true]/f:rotate-45 lg:order-none lg:ml-0 lg:text-4xl lg:group-hover/tab:text-white lg:group-data-[active=true]/f:rotate-0">+</span>
+                            <span
+                                class="order-2 flex-1 text-lg font-semibold leading-tight lg:order-none lg:mb-5 lg:mt-auto lg:flex-none lg:rotate-180 lg:whitespace-nowrap lg:text-xl lg:[writing-mode:vertical-rl] xl:text-[1.375rem]">Tableaux de bord</span>
+                            <span aria-hidden="true"
+                                class="order-1 w-8 text-2xl font-light tabular-nums leading-none text-neutral-400 lg:order-none lg:w-auto lg:text-6xl xl:text-7xl">6</span>
+                        </button>
+                    </h3>
+
+                    <div id="feature-6-panel" role="region" aria-labelledby="feature-6-tab"
+                        class="overflow-hidden max-lg:h-0 max-lg:group-data-[active=true]/f:h-auto lg:pointer-events-none lg:absolute lg:inset-0 lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-data-[active=true]/f:pointer-events-auto lg:group-data-[active=true]/f:opacity-100">
+                        <div class="flex flex-col gap-5 px-5 pb-6 pt-1 lg:h-full lg:w-[var(--open-w,30rem)] lg:p-5">
+
+                            <!-- visual: swap this block for a real screenshot (<img class="size-full object-cover">) -->
+                            <div data-part
+                                class="relative flex h-44 items-center justify-center overflow-hidden bg-[#f3f0ea] bg-[radial-gradient(circle_at_12%_8%,rgba(11,146,104,0.30),transparent_55%),radial-gradient(circle_at_92%_96%,rgba(249,115,22,0.28),transparent_50%)] lg:h-auto lg:min-h-36 lg:flex-1">
+                                <span
+                                    class="flex size-24 items-center justify-center rounded-3xl bg-white shadow-xl shadow-black/5 lg:size-28">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-10 text-secondary lg:size-12" aria-hidden="true">
+                                        <rect width="7" height="9" x="3" y="3" rx="1" /> <rect width="7" height="5" x="14" y="3" rx="1" /> <rect width="7" height="9" x="14" y="12" rx="1" /> <rect width="7" height="5" x="3" y="16" rx="1" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div data-part>
+                                <p aria-hidden="true"
+                                    class="font-heading hidden text-3xl font-semibold leading-tight text-neutral-950 lg:block">Tableaux de bord</p>
+                                <p class="max-w-xl text-base leading-relaxed text-neutral-600 lg:mt-3 lg:text-lg">Chiffre d'affaires, marges, produits phares, statistiques avancées.</p>
+                            </div>
+
+                            <!-- room for the big number that sits at the bottom-left on desktop -->
+                            <span aria-hidden="true" class="hidden h-[4.5rem] shrink-0 lg:block"></span>
+                        </div>
+
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute bottom-5 left-5 hidden text-6xl font-light leading-none text-neutral-400 lg:block xl:text-7xl">6</span>
+                    </div>
+                </article>
+                <!-- feature 7 : Utilisateurs &amp; permissions -->
+                <article data-feature data-active="false"
+                    class="group/f relative border-neutral-300 max-lg:border-t max-lg:first:border-t-0 lg:min-w-16 lg:flex-[0_0_0%] lg:overflow-hidden lg:border-l lg:first:border-l-0 lg:data-[active=true]:flex-[1_1_0%]">
+
+                    <h3 class="contents">
+                        <button type="button" id="feature-7-tab" aria-expanded="false" aria-controls="feature-7-panel"
+                            class="group/tab flex w-full cursor-pointer items-center gap-4 px-5 py-5 text-left text-neutral-950 transition-[opacity,background-color,color] duration-300 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary lg:absolute lg:inset-y-0 lg:left-0 lg:w-16 lg:flex-col lg:items-center lg:gap-0 lg:px-0 lg:hover:bg-neutral-950 lg:hover:text-white lg:group-data-[active=true]/f:pointer-events-none lg:group-data-[active=true]/f:opacity-0">
+                            <span aria-hidden="true"
+                                class="order-3 ml-auto text-3xl font-light leading-none text-neutral-400 transition-[transform,color] duration-300 group-data-[active=true]/f:rotate-45 lg:order-none lg:ml-0 lg:text-4xl lg:group-hover/tab:text-white lg:group-data-[active=true]/f:rotate-0">+</span>
+                            <span
+                                class="order-2 flex-1 text-lg font-semibold leading-tight lg:order-none lg:mb-5 lg:mt-auto lg:flex-none lg:rotate-180 lg:whitespace-nowrap lg:text-xl lg:[writing-mode:vertical-rl] xl:text-[1.375rem]">Utilisateurs &amp; permissions</span>
+                            <span aria-hidden="true"
+                                class="order-1 w-8 text-2xl font-light tabular-nums leading-none text-neutral-400 lg:order-none lg:w-auto lg:text-6xl xl:text-7xl">7</span>
+                        </button>
+                    </h3>
+
+                    <div id="feature-7-panel" role="region" aria-labelledby="feature-7-tab"
+                        class="overflow-hidden max-lg:h-0 max-lg:group-data-[active=true]/f:h-auto lg:pointer-events-none lg:absolute lg:inset-0 lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-data-[active=true]/f:pointer-events-auto lg:group-data-[active=true]/f:opacity-100">
+                        <div class="flex flex-col gap-5 px-5 pb-6 pt-1 lg:h-full lg:w-[var(--open-w,30rem)] lg:p-5">
+
+                            <!-- visual: swap this block for a real screenshot (<img class="size-full object-cover">) -->
+                            <div data-part
+                                class="relative flex h-44 items-center justify-center overflow-hidden bg-[#f3f0ea] bg-[radial-gradient(circle_at_12%_8%,rgba(249,115,22,0.32),transparent_55%),radial-gradient(circle_at_92%_96%,rgba(11,146,104,0.26),transparent_50%)] lg:h-auto lg:min-h-36 lg:flex-1">
+                                <span
+                                    class="flex size-24 items-center justify-center rounded-3xl bg-white shadow-xl shadow-black/5 lg:size-28">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-10 text-primary lg:size-12" aria-hidden="true">
+                                        <path d="m16 11 2 2 4-4" /> <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div data-part>
+                                <p aria-hidden="true"
+                                    class="font-heading hidden text-3xl font-semibold leading-tight text-neutral-950 lg:block">Utilisateurs &amp; permissions</p>
+                                <p class="max-w-xl text-base leading-relaxed text-neutral-600 lg:mt-3 lg:text-lg">Chacun ne voit que ce qui le concerne, module par module.</p>
+                            </div>
+
+                            <!-- room for the big number that sits at the bottom-left on desktop -->
+                            <span aria-hidden="true" class="hidden h-[4.5rem] shrink-0 lg:block"></span>
+                        </div>
+
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute bottom-5 left-5 hidden text-6xl font-light leading-none text-neutral-400 lg:block xl:text-7xl">7</span>
+                    </div>
+                </article>
+                <!-- feature 8 : FNE / interfaçage DGI -->
+                <article data-feature data-active="false"
+                    class="group/f relative border-neutral-300 max-lg:border-t max-lg:first:border-t-0 lg:min-w-16 lg:flex-[0_0_0%] lg:overflow-hidden lg:border-l lg:first:border-l-0 lg:data-[active=true]:flex-[1_1_0%]">
+
+                    <h3 class="contents">
+                        <button type="button" id="feature-8-tab" aria-expanded="false" aria-controls="feature-8-panel"
+                            class="group/tab flex w-full cursor-pointer items-center gap-4 px-5 py-5 text-left text-neutral-950 transition-[opacity,background-color,color] duration-300 focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-primary lg:absolute lg:inset-y-0 lg:left-0 lg:w-16 lg:flex-col lg:items-center lg:gap-0 lg:px-0 lg:hover:bg-neutral-950 lg:hover:text-white lg:group-data-[active=true]/f:pointer-events-none lg:group-data-[active=true]/f:opacity-0">
+                            <span aria-hidden="true"
+                                class="order-3 ml-auto text-3xl font-light leading-none text-neutral-400 transition-[transform,color] duration-300 group-data-[active=true]/f:rotate-45 lg:order-none lg:ml-0 lg:text-4xl lg:group-hover/tab:text-white lg:group-data-[active=true]/f:rotate-0">+</span>
+                            <span
+                                class="order-2 flex-1 text-lg font-semibold leading-tight lg:order-none lg:mb-5 lg:mt-auto lg:flex-none lg:rotate-180 lg:whitespace-nowrap lg:text-xl lg:[writing-mode:vertical-rl] xl:text-[1.375rem]">FNE / interfaçage DGI</span>
+                            <span aria-hidden="true"
+                                class="order-1 w-8 text-2xl font-light tabular-nums leading-none text-neutral-400 lg:order-none lg:w-auto lg:text-6xl xl:text-7xl">8</span>
+                        </button>
+                    </h3>
+
+                    <div id="feature-8-panel" role="region" aria-labelledby="feature-8-tab"
+                        class="overflow-hidden max-lg:h-0 max-lg:group-data-[active=true]/f:h-auto lg:pointer-events-none lg:absolute lg:inset-0 lg:opacity-0 lg:transition-opacity lg:duration-300 lg:group-data-[active=true]/f:pointer-events-auto lg:group-data-[active=true]/f:opacity-100">
+                        <div class="flex flex-col gap-5 px-5 pb-6 pt-1 lg:h-full lg:w-[var(--open-w,30rem)] lg:p-5">
+
+                            <!-- visual: swap this block for a real screenshot (<img class="size-full object-cover">) -->
+                            <div data-part
+                                class="relative flex h-44 items-center justify-center overflow-hidden bg-[#f3f0ea] bg-[radial-gradient(circle_at_12%_8%,rgba(11,146,104,0.30),transparent_55%),radial-gradient(circle_at_92%_96%,rgba(249,115,22,0.28),transparent_50%)] lg:h-auto lg:min-h-36 lg:flex-1">
+                                <span
+                                    class="flex size-24 items-center justify-center rounded-3xl bg-white shadow-xl shadow-black/5 lg:size-28">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" class="size-10 text-secondary lg:size-12" aria-hidden="true">
+                                        <path d="M17 12v4a1 1 0 0 1-1 1h-4" /> <path d="M17 3h2a2 2 0 0 1 2 2v2" /> <path d="M17 8V7" /> <path d="M21 17v2a2 2 0 0 1-2 2h-2" /> <path d="M3 7V5a2 2 0 0 1 2-2h2" /> <path d="M7 17h.01" /> <path d="M7 21H5a2 2 0 0 1-2-2v-2" /> <rect x="7" y="7" width="5" height="5" rx="1" />
+                                    </svg>
+                                </span>
+                            </div>
+
+                            <div data-part>
+                                <p aria-hidden="true"
+                                    class="font-heading hidden text-3xl font-semibold leading-tight text-neutral-950 lg:block">FNE / interfaçage DGI</p>
+                                <p class="max-w-xl text-base leading-relaxed text-neutral-600 lg:mt-3 lg:text-lg">Certification intégrée : QR code, sticker officiel, numérotation.</p>
+                            </div>
+
+                            <!-- room for the big number that sits at the bottom-left on desktop -->
+                            <span aria-hidden="true" class="hidden h-[4.5rem] shrink-0 lg:block"></span>
+                        </div>
+
+                        <span aria-hidden="true"
+                            class="pointer-events-none absolute bottom-5 left-5 hidden text-6xl font-light leading-none text-neutral-400 lg:block xl:text-7xl">8</span>
+                    </div>
+                </article>
 
             </div>
+            <!-- right -->
+
         </div>
     </section>
-    <!-- TOUTES VOTRE ENTREPRISE -->
+    <!-- FONCTIONNALITES -->
 
 
     <!-- LEINAD CONNECT -->
@@ -2557,7 +2771,12 @@
 
     <!-- toast -->
 
+    <!-- smooth scroll + scroll-driven animation (CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
     <script src="./script/index.js"></script>
+    <script src="./script/features.js"></script>
 </body>
 
 </html>
