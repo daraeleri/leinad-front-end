@@ -1,13 +1,38 @@
+const nav = document.getElementById('site-nav');
 const btn = document.getElementById('menu-btn');
 const menu = document.getElementById('mobile-menu');
 const iconOpen = document.getElementById('icon-open');
 const iconClose = document.getElementById('icon-close');
 
-btn.addEventListener('click', () => {
-    const isHidden = menu.classList.toggle('hidden');
-    iconOpen.classList.toggle('hidden', !isHidden);
-    iconClose.classList.toggle('hidden', isHidden);
+// navbar: transparent at the top of the page, frosted once scrolled
+const updateNavScroll = () => {
+    nav.dataset.scrolled = String(window.scrollY > 8);
+};
+updateNavScroll();
+window.addEventListener('scroll', updateNavScroll, { passive: true });
 
+// navbar: phone / tablet menu
+const setMenu = (open) => {
+    menu.classList.toggle('hidden', !open);
+    iconOpen.classList.toggle('hidden', open);
+    iconClose.classList.toggle('hidden', !open);
+    btn.setAttribute('aria-expanded', String(open));
+    nav.dataset.open = String(open);
+};
+
+btn.addEventListener('click', () => {
+    setMenu(menu.classList.contains('hidden'));
+});
+
+// close with Escape, after choosing a link, or when the desktop layout takes over
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
+});
+menu.addEventListener('click', (e) => {
+    if (e.target.closest('a')) setMenu(false);
+});
+window.matchMedia('(min-width: 1024px)').addEventListener('change', (e) => {
+    if (e.matches) setMenu(false);
 });
 
 

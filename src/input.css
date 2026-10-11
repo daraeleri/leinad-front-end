@@ -168,9 +168,6 @@
         @apply flex h-10 items-center justify-center border hover:bg-orange-100 rounded-2xl hover:text-black;
     }
 
-    .tarifs {
-        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-red-200 text-black before:rounded-2xl before:rotate-3;
-    }
 
 
     label {
@@ -181,13 +178,7 @@
         @apply border border-black/20 mt-2 p-2 rounded text-black focus:outline-none focus:border-secondary;
     }
 
-    .small-cards {
-        @apply border border-white/20 p-6 rounded-xl hover:border-primary my-5 text-center;
-    }
 
-    .small-cardSize {
-        @apply md:scale-130 md:z-10;
-    }
 
 
 
