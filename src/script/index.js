@@ -54,50 +54,75 @@ updateNavbarScroll();
 // });
 
 
-// section 3 js
-const infos = {
+// situation selector: pick what looks like you, the recommendation card follows
+const situations = {
     excel: {
+        kind: "erp",
         name: "LEINAD ERP",
         text: "Dites adieu aux tableurs : une gestion complète, FNE incluse, avec vos données déjà importées.",
-        button: "Decouvrir LEINAD ERP",
+        button: "Découvrir LEINAD ERP",
+        href: "#fonctionnalites",
     },
-
     erp: {
+        kind: "erp",
         name: "LEINAD ERP",
         text: "Une seule plateforme pour les ventes, le stock, la facturation, la caisse et la certification FNE.",
-        button: "Decouvrir LEINAD ERP",
+        button: "Découvrir LEINAD ERP",
+        href: "#fonctionnalites",
     },
-
     pos: {
+        kind: "connect",
         name: "LEINAD CONNECT",
         text: "Gardez votre caisse : LEINAD la relie à la FNE et chaque ticket est certifié.",
-        button: "Decouvrir LEINAD CONNECT",
+        button: "Découvrir LEINAD CONNECT",
+        href: "#connect",
     },
     sage: {
+        kind: "connect",
         name: "LEINAD CONNECT",
         text: "Gardez votre logiciel : LEINAD le connecte à la FNE sans rien changer à vos habitudes.",
-        button: "Decouvrir LEINAD CONNECT",
+        button: "Découvrir LEINAD CONNECT",
+        href: "#connect",
     },
 };
 
-const cards = document.querySelectorAll(".left-cards");
-const card_info = document.getElementById("account-name");
-const card_text = document.getElementById("account-text");
-const card_btn = document.getElementById("btn-name");
+const situationOptions = document.querySelectorAll("[data-situation]");
+const situationPanel = document.querySelector("[data-situation-panel]");
 
-cards.forEach((card) => {
-    card.addEventListener("click", () => {
-        const info = infos[card.getAttribute("key")];
+if (situationPanel) {
+    const nameEl = situationPanel.querySelector("[data-situation-name]");
+    const textEl = situationPanel.querySelector("[data-situation-text]");
+    const ctaEl = situationPanel.querySelector("[data-situation-cta]");
+    const ctaLabel = ctaEl.querySelector("[data-cta-label]");
 
-        card_info.textContent = info.name;
-        card_text.textContent = info.text;
-        card_btn.textContent = info.button;
+    situationOptions.forEach((option) => {
+        option.addEventListener("click", () => {
+            const info = situations[option.dataset.situation];
+            if (!info) return;
 
-        cards.forEach((c) => c.classList.remove("active"));
-        card.classList.add("active")
+            situationOptions.forEach((o) => o.setAttribute("aria-pressed", String(o === option)));
 
+            const apply = () => {
+                situationPanel.dataset.kind = info.kind;
+                nameEl.textContent = info.name;
+                textEl.textContent = info.text;
+                ctaLabel.textContent = info.button;
+                ctaEl.setAttribute("href", info.href);
+            };
+
+            // fade the text out and back in when GSAP is there, otherwise just swap it
+            const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            if (window.gsap && !reduce) {
+                gsap.timeline()
+                    .to([nameEl, textEl], { autoAlpha: 0, y: 8, duration: 0.15, ease: "power1.in", overwrite: true })
+                    .add(apply)
+                    .to([nameEl, textEl], { autoAlpha: 1, y: 0, duration: 0.35, stagger: 0.06, ease: "power2.out" });
+            } else {
+                apply();
+            }
+        });
     });
-})
+}
 
 // faq : items (open / closed is driven by data-state, styles live in input.css)
 const faqItems = document.querySelectorAll('.faq-item');
