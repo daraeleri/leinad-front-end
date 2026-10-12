@@ -26,7 +26,7 @@
                 </a>
 
                 <!-- desktop nav links -->
-                <ul class="md:flex gap-6 items-center text-neutral-700 font-medium hidden">
+                <ul class="min-[1150px]:flex gap-6 items-center text-neutral-700 font-medium hidden">
                     <li><a href="#" class="nav-link">LEINAD ERP</a></li>
                     <li><a href="#" class="nav-link">LEINAD CONNECT</a></li>
                     <li><a href="#" class="nav-link">FNE</a></li>
@@ -36,14 +36,14 @@
 
                 <!-- right side: Espace client + Demarche une demo pill -->
                 <div class="flex items-center gap-3">
-                    <a href="#" class="hidden md:flex items-center gap-1.5 text-neutral-700 font-medium hover:text-primary transition">
+                    <a href="#" class="hidden min-[1150px]:flex items-center gap-1.5 text-neutral-700 font-medium hover:text-primary transition">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <circle cx="9" cy="8" r="4"/>
                             <path d="M19 13c0 3.5-3 6.5-7 7l-2.5-1.5C8.5 18.5 10 16 12 14.5c2 1.5 4 2.5 6 2.5"/>
                         </svg>
                         Espace client
                     </a>
-                    <a href="#" class="btn-nav hidden md:inline-flex items-center gap-3 bg-primary text-black font-semibold pl-5 pr-1.5 py-1.5 rounded-full transition">
+                    <a href="#" class="btn-nav hidden min-[1150px]:inline-flex items-center gap-3 bg-primary text-black font-semibold pl-5 pr-1.5 py-1.5 rounded-full transition">
                         Demander une démo
                         <span class="flex size-7 items-center justify-center rounded-full bg-white shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -52,7 +52,7 @@
                             </svg>
                         </span>
                     </a>
-                    <button id="menu-btn" class="ml-auto md:hidden p-2 rounded-full hover:bg-neutral-200 transition" aria-label="Menu" aria-expanded="false">
+                    <button id="menu-btn" class="ml-auto min-[1150px]:hidden p-2 rounded-full hover:bg-neutral-200 transition" aria-label="Menu" aria-expanded="false">
                         <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 6h16" />
@@ -69,7 +69,7 @@
             </div>
 
             <!-- mobile menu overlay -->
-            <div id="mobile-menu" class="hidden pb-4 md:hidden bg-white border-t border-neutral-200">
+            <div id="mobile-menu" class="hidden pb-4 min-[1150px]:hidden bg-white border-t border-neutral-200">
                 <ul class="flex flex-col gap-3 px-4 text-neutral-800 font-medium">
                     <li><a href="#" class="block py-2 nav-link-mobile">LEINAD ERP</a></li>
                     <li><a href="#" class="block py-2 nav-link-mobile">LEINAD CONNECT</a></li>
@@ -806,7 +806,7 @@
     <!-- LE FNE SANS STRESS -->
     <section id="fne" aria-labelledby="fne-title" class="section-container mt-24 scroll-mt-24 md:mt-36">
         <!-- heading -->
-        <div class="grid gap-6 md:grid-cols-2 md:items-start md:gap-16">
+        <div class="grid gap-6 lg:grid-cols-2 lg:items-start lg:gap-16">
             <div>
                 <p class="font-heading text-sm font-semibold text-secondary">Conformité</p>
                 <h2 id="fne-title" class="mt-3 text-4xl font-bold leading-[1.1] tracking-tight text-neutral-950 md:text-5xl">
@@ -1758,7 +1758,7 @@
 
     <!-- contact -->
     <section id="contact" aria-labelledby="contact-title" class="section-container mt-24 scroll-mt-24 md:mt-36">
-        <div class="grid overflow-hidden rounded-4xl border border-black/5 bg-white shadow-[0_30px_80px_-30px_rgba(15,23,42,0.35)] lg:grid-cols-[5fr_7fr]">
+        <div class="grid overflow-hidden rounded-4xl border border-black/5 bg-white shadow-[0_30px_80px_-30px_rgba(15,23,42,0.35)] xl:grid-cols-[5fr_7fr]">
 
             <!-- info panel -->
             <div class="relative isolate overflow-hidden bg-neutral-950 p-8 text-white md:p-12">
@@ -2008,11 +2008,11 @@
         <!-- heading -->
 
         <!-- cards: bottom-aligned on desktop so their heights stagger with the text length, like the reference -->
-        <div class="mt-12 grid gap-5 md:mt-16 md:grid-cols-3 md:items-end md:gap-6">
+        <div class="mt-12 grid gap-5 md:mt-16 md:grid-cols-2 md:gap-6 xl:grid-cols-3 xl:items-end">
 
             <!-- 1 : conformité -->
             <article
-                class="flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-10">
+                class="flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-8 xl:p-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                     class="text-primary" aria-hidden="true">
                     <path fill="currentColor"
@@ -2048,7 +2048,7 @@
 
             <!-- 2 : deux offres -->
             <article
-                class="flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-10">
+                class="flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-8 xl:p-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                     class="text-secondary" aria-hidden="true">
                     <circle cx="25" cy="25" r="17" fill="none" stroke="currentColor" stroke-width="16" />
@@ -2081,7 +2081,7 @@
 
             <!-- 3 : support -->
             <article
-                class="flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-10">
+                class="md:col-span-2 xl:col-span-1 flex flex-col rounded-4xl bg-[#ecebe8] p-8 transition-transform duration-300 motion-safe:hover:-translate-y-1 md:p-8 xl:p-10">
                 <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"
                     class="text-neutral-950" aria-hidden="true">
                     <g fill="currentColor">
