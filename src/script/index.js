@@ -56,31 +56,77 @@ gsap.registerPlugin(ScrollTrigger);
 const left = document.querySelector(".leftCard");
 const right = document.querySelector(".rightCard");
 
-gsap.from(".leftCard",{
-    xPercent:-120,
-    opacity:0,
-    duration:0.8,
-    ease:"power3.out",
-    stagger:0.15,
-    scrollTrigger:{
-        trigger:".leftCard",
-        toggleActions:"restart none none none",
-        start:"top 80%",
-        markers:true
+gsap.from(".leftCard", {
+    xPercent: -120,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power3.out",
+    stagger: 0.15,
+    scrollTrigger: {
+        trigger: ".leftCard",
+        toggleActions: "restart none none none",
+        start: "top 80%",
+        markers: true
     }
 })
 
-gsap.from(".rightCard",{
-    xPercent:120,
-    opacity:0,
-    duration:1,
-    ease:"power3.out",
-    scrollTrigger:{
-        trigger:".rightCard",
-        toggleActions:"restart none none none",
-        start:"top 80%",
-        markers:true
+gsap.from(".rightCard", {
+    xPercent: 120,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
+    scrollTrigger: {
+        trigger: ".rightCard",
+        toggleActions: "restart none none none",
+        start: "top 80%",
+        markers: true
     },
 });
 
-window.addEventListener("load",()=>ScrollTrigger.refresh());
+window.addEventListener("load", () => ScrollTrigger.refresh());
+
+// third section
+const lenis = new Lenis();
+
+lenis.on("scroll", ScrollTrigger.update);
+
+gsap.ticker.add((time) => {
+    lenis.raf(time * 1000);
+});
+
+gsap.ticker.lagSmoothing(0);
+
+const cards = document.querySelectorAll(".sticky-cards .cards");
+const totalCards = cards.length;
+const segmentSize = 1 / totalCards;
+
+const cardYOffset = 5;
+const cardScaleStep = 0.075;
+
+cards.forEach((card, i) => {
+    gsap.set(card, {
+        xPercent: -50,
+        yPercent: -50 * i * cardYOffset,
+        scale: 1 - i * cardScaleStep
+    });
+});
+
+scrollTrigger.create({
+    trigger:".sticky - cards",
+    start:"top top",
+    end:`+=${window.innerHeight * 8}px`,
+    pin:true,
+    pinSpacing:true,
+    scrub:1,
+    onUpdate:(self)=>{
+        const progress = self.progress;
+
+        const activeIndex = Math.min(
+            Math.floor(progress/segmentSize),
+            totalCards -1,
+        );
+
+        const segProgess = (progress - activeIndex * segmentSize)/
+        segmentSize
+    },
+});

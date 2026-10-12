@@ -332,6 +332,9 @@
   .my-1 {
     margin-block: var(--spacing);
   }
+  .my-2 {
+    margin-block: calc(var(--spacing) * 2);
+  }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
