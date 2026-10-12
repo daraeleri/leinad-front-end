@@ -67,6 +67,7 @@
     --radius-3xl: 1.5rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-sm: 8px;
+    --perspective-normal: 500px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -639,6 +640,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-x-clip {
+    overflow-x: clip;
+  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -1058,6 +1062,12 @@
   }
   .\[overflow-anchor\:none\] {
     overflow-anchor: none;
+  }
+  .\[perspective\:500px\] {
+    perspective: 500px;
+  }
+  .perspective-normal {
+    perspective: var(--perspective-normal);
   }
   .group-data-\[collapsed\]\:opacity-0:is(:where(.group)[data-collapsed] *) {
     opacity: 0%;
