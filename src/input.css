@@ -313,3 +313,21 @@ html.lenis body {
     transition-duration: 1ms;
     transition-behavior: allow-discrete;
 }
+
+/* LEINAD CONNECT diagram: dashes travelling from your software to the DGI */
+@keyframes flow-dash {
+    to {
+        stroke-dashoffset: -24;
+    }
+}
+
+.flow-line {
+    stroke-dasharray: 4 20;
+    animation: flow-dash 1.1s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .flow-line {
+        animation: none;
+    }
+}
