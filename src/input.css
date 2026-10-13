@@ -194,11 +194,11 @@
     }
 
     .tarif1 {
-        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-secondary text-black before:rounded-2xl before:rotate-3;
+        @apply relative bg-white border rounded-xl max-w-xl w-full md:flex-1 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-secondary text-black before:rounded-2xl before:rotate-3;
     }
 
     .tarif2 {
-        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-primary text-black before:rounded-2xl before:rotate-3;
+        @apply relative bg-white border rounded-xl max-w-xl w-full md:flex-1  md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-primary text-black before:rounded-2xl before:rotate-3;
     }
 
 
