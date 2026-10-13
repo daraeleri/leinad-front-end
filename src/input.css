@@ -84,7 +84,7 @@
     }
 
     nav {
-        @apply fixed top-0 left-0 w-full z-50 transition-colors duration-300;
+        @apply fixed top-3 inset-x-4 rounded-2xl mx-auto md:inset-x-8 max-w-7xl z-50 transition-colors duration-300;
     }
 
     .btn {
