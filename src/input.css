@@ -151,9 +151,8 @@
 
     /* FIFTH SECTION */
 
-        .line-buttons {
-        @apply border border-gray-700/70 rounded-full md:text-sm 
-            shrink-0 md:w-10 w-4 text-xs text-center
+    .line-buttons {
+        @apply border border-gray-700/70 rounded-full md:text-sm shrink-0 md:w-10 w-4 text-xs text-center
     }
 
     /* FIFTH SECTION */
@@ -194,8 +193,12 @@
         @apply flex h-10 items-center justify-center border hover:bg-orange-100 rounded-2xl hover:text-black;
     }
 
-    .tarifs {
-        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-red-200 text-black before:rounded-2xl before:rotate-3;
+    .tarif1 {
+        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-secondary text-black before:rounded-2xl before:rotate-3;
+    }
+
+    .tarif2 {
+        @apply relative bg-white border rounded-xl md:w-150 md:h-99 h-97 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-primary text-black before:rounded-2xl before:rotate-3;
     }
 
 
@@ -208,7 +211,7 @@
     }
 
     .small-cards {
-        @apply border border-white/20 p-6 rounded-xl hover:border-primary my-5 text-center;
+        @apply bg-gray-200 p-6 rounded-xl my-5 text-center;
     }
 
     .small-cardSize {
