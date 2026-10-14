@@ -132,7 +132,7 @@
 
     /* FORTH SECTION */
     .context-cards {
-        @apply border rounded md:w-65 w-full max-w-sm md:max-w-none;
+        @apply border border-gray-400 rounded-2xl bg-white/70 md:w-75 w-full max-w-sm md:max-w-none;
     }
 
     .num-context {
@@ -194,11 +194,11 @@
     }
 
     .tarif1 {
-        @apply relative bg-white border rounded-xl max-w-xl w-full md:flex-1 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-secondary text-black before:rounded-2xl before:rotate-3;
+        @apply relative border border-black/5 rounded-xl max-w-xl w-full md:flex-1 md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-secondary text-black before:rounded-2xl before:rotate-3;
     }
 
     .tarif2 {
-        @apply relative bg-white border rounded-xl max-w-xl w-full md:flex-1  md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-primary text-black before:rounded-2xl before:rotate-3;
+        @apply relative border border-black/5 rounded-xl max-w-xl w-full md:flex-1  md:mt-24 p-1 before:content-[''] before:absolute before:inset-0 before:-z-10 before:border-2 before:border-primary text-black before:rounded-2xl before:rotate-3;
     }
 
 
